@@ -1,0 +1,2 @@
+Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | ? { -not [string]::IsNullOrEmpty($_.DisplayName) } | Sort-Object -Property DisplayName | Select-Object -Property DisplayName, DisplayVersion, InstallLocation | Export-Csv -Path .\WmiData.csv -NoTypeInformation
+Start-Sleep 55

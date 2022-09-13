@@ -1,0 +1,2 @@
+Path,Verified,Date,Publisher,Company,Description,Product,Product Version,File Version,Machine Type,Binary Version,Original Name,Internal Name,Copyright,Comments,Entropy
+"D:\Samsung_NVM_Express_Driver_3.3.exe","Signed","8:10 AM 1/21/2020","Samsung Electronics CO., LTD.","Samsung Electronics Co., Ltd","Samsung NVM Express Driver","Samsung NVM Express Driver","3.3.0.2003","3.3.0.2003","32-bit","3.3.0.2003","Samsung NVM Express Driver.exe","setup","Copyright © Samsung Electronics Co., Ltd 2020.","n/a","7.972"

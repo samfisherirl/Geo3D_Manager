@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Aktuális weboldal hozzáadása a listához."
+   },
+   "advertising_category_desc": {
+      "message": "A reklám nyomkövetőket arra használják, hogy elemezzék a weboldalak forgalmát, a felhasználók viselkedését vagy az oldal látogatóinak mintáit."
+   },
+   "advertising_category_title": {
+      "message": "Hirdetés"
+   },
+   "advertising_category_tooltip": {
+      "message": "Nyomkövetők, amelyek egy weboldal forgalmát vagy a felhasználók viselkedését elemzik."
+   },
+   "advertising_page_button_block": {
+      "message": "Engedélyezd a kategória letiltását"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Vond vissza a kategória letiltását"
+   },
+   "advertising_page_title": {
+      "message": "Reklám nyomkövetők (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Reklám nyomkövetők"
+   },
+   "analytics_category_desc": {
+      "message": "Az oldal analitikai nyomkövetőket arra használják, hogy a weboldal használatáról szóló adatokat gyűjtsék össze velük."
+   },
+   "analytics_category_title": {
+      "message": "Oldal Analitika"
+   },
+   "analytics_category_tooltip": {
+      "message": "Kapcsolatok az adatelemző és weboldal használati nyomkövetőkkel."
+   },
+   "analytics_page_button_block": {
+      "message": "Engedélyezd a kategória letiltását"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Vond vissza a kategória letiltását"
+   },
+   "analytics_page_title": {
+      "message": "Weboldal analitikai nyomkövetők (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Weboldal analitikai nyomkövetők"
+   },
+   "app_desc": {
+      "message": "Megvédi a bizalmas információidat azzal, hogy letiltja a nyomkövetőket, amelyek különböző típusú információkat gyűjtenek rólad böngészés közben."
+   },
+   "app_name": {
+      "message": "Bitdefender Nyomkövetés-blokkoló"
+   },
+   "browser_enable_plugin": {
+      "message": "Engedélyezd a Nyomkövetés-blokkolót a böngészőben"
+   },
+   "browser_not_installed": {
+      "message": "Ez a böngésző nincs telepítve az eszközödön"
+   },
+   "browser_session_blocked": {
+      "message": "a jelenlegi böngészési alkalom során blokkolt nyomkövetők"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Engedélyezd a Nyomkövető-blokkolót az internetes adataid védelme érdekében."
+   },
+   "enable_protection": {
+      "message": "Engedélyezd a védelmet ezen a weboldalon"
+   },
+   "essential_category_desc": {
+      "message": "A létfontosságú nyomkövetők a weboldal működőképességéhez létfontosságú elemeket ellenőrzi."
+   },
+   "essential_category_title": {
+      "message": "Létfontosságú"
+   },
+   "essential_category_tooltip": {
+      "message": "Kapcsolatok olyan nyomkövetőkkel, amelyek kritikus fontosságúak a weboldalak működőképességéhez."
+   },
+   "essential_page_button_block": {
+      "message": "Engedélyezd a kategória letiltását"
+   },
+   "essential_page_button_unblock": {
+      "message": "Vond vissza a kategória letiltását"
+   },
+   "essential_page_title": {
+      "message": "Létfontosságú nyomkövetők (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Létfontosságú nyomkövetők"
+   },
+   "exception_action_desc": {
+      "message": "Weboldal manuális hozzáadása vagy eltávolítása"
+   },
+   "exceptions_desc": {
+      "message": "A kivételek közé felvett weboldalakon nem lesznek letiltva a nyomkövetők."
+   },
+   "exceptions_title": {
+      "message": "Kivételek"
+   },
+   "extension_status_desc": {
+      "message": "Bővítmény engedélyezése vagy letiltása"
+   },
+   "extension_status_off": {
+      "message": "A Nyomkövető-blokkoló KI van kapcsolva"
+   },
+   "extension_status_on": {
+      "message": "A Nyomkövető-blokkoló BE van kapcsolva"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "További információk elrejtése"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Telepítsd a Nyomkövetés-blokkolót a böngészőben"
+   },
+   "interaction_category_desc": {
+      "message": "Az ügyfél interakció nyomkövetőkkel azt mérik, hogy milyen a felhasználói interakció különböző beviteli formák, például chat vagy ügyfélszolgálat használata esetén."
+   },
+   "interaction_category_title": {
+      "message": "Ügyfél interakció"
+   },
+   "interaction_category_tooltip": {
+      "message": "A nyomkövetőket arra használják, hogy felmérjék az olyan interakciós formákat, mint a chat vagy az ügyfélszolgálat."
+   },
+   "interaction_page_button_block": {
+      "message": "Engedélyezd a kategória letiltását"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Vond vissza a kategória letiltását"
+   },
+   "interaction_page_title": {
+      "message": "Ügyfél interakció nyomkövetők (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Ügyfél interakció nyomkövetők"
+   },
+   "not_enabled": {
+      "message": "Nincs bekapcsolva"
+   },
+   "off": {
+      "message": "kikapcsolva"
+   },
+   "on": {
+      "message": "bekapcsolva"
+   },
+   "page_load": {
+      "message": "Oldal betöltése"
+   },
+   "pause_protection": {
+      "message": "Szüneteltesd a védelmet ezen a weboldalon"
+   },
+   "plugins_title": {
+      "message": "Válaszd ki, hogy mely alkalmazások működjenek együtt a Nyomkövetés-blokkolóval."
+   },
+   "seconds": {
+      "message": "sec"
+   },
+   "settings_title": {
+      "message": "Beállítások"
+   },
+   "short_name": {
+      "message": "Nyomkövetés blokkolás"
+   },
+   "show_more_details": {
+      "message": "További részletek"
+   },
+   "social_category_desc": {
+      "message": "Közösségi média nyomkövetők a különböző közösségi média felületek közönségeinek, tevékenységeinek és a felhasználók elköteleződésének ellenőrzésére használható."
+   },
+   "social_category_title": {
+      "message": "Közösségi média"
+   },
+   "social_category_tooltip": {
+      "message": "A nyomkövetőkkel azt mérik, mekkora az elköteleződés az egyes közösségi média felületek esetében."
+   },
+   "social_page_button_block": {
+      "message": "Engedélyezd a kategória letiltását"
+   },
+   "social_page_button_unblock": {
+      "message": "Vond vissza a kategória letiltását"
+   },
+   "social_page_title": {
+      "message": "Közösségi média nyomkövetők (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Közösségi média nyomkövetők"
+   },
+   "special_offers": {
+      "message": "Különleges ajánlatok"
+   },
+   "special_offers_tooltip": {
+      "message": "Kereskedelmi célú nyomkövetőket használunk annak érdekében, hogy könnyedén elérhetővé tudjuk tenni a különleges ajánlatainkat. A küldetésünk az, hogy megvédjük a biztonságodat. Soha, semmilyen céllal nem osztjuk meg senkivel a rólad gyűjtött információt."
+   },
+   "str": {
+      "message": "nyomkövetők"
+   },
+   "tooltip": {
+      "message": "A Nyomkövető-blokkoló megvédi a privát adataidat böngészés közben az adatgyűjtés letiltásával, megakadályozva ezzel az adataid felhasználását kereskedelmi célokra, vagy profilkészítésre."
+   },
+   "trackers_blocked": {
+      "message": "Nyomkövetők letiltva"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "Ez az URL már létezik."
+   },
+   "url_is_empty": {
+      "message": "Ez az URL üres."
+   },
+   "url_not_valid": {
+      "message": "az URL érvénytelen."
+   },
+   "website_added_list": {
+      "message": "Weboldal hozzáadva"
+   },
+   "website_url_enter": {
+      "message": "Írd be egy weboldal URL címét"
+   }
+}

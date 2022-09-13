@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Ajouter un nouveau site web à la liste."
+   },
+   "advertising_category_desc": {
+      "message": "Les trackers publicitaires sont utilisés pour analyser le trafic du site web, le comportement de l’utilisateur ou les modèles de trafic des visiteurs."
+   },
+   "advertising_category_title": {
+      "message": "Publicité"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trackers qui analysent le trafic d’un site ou le comportement des utilisateurs."
+   },
+   "advertising_page_button_block": {
+      "message": "Activer le blocage pour cette catégorie"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Désactiver le blocage pour cette catégorie"
+   },
+   "advertising_page_title": {
+      "message": "Trackers publicitaires (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Trackers publicitaires"
+   },
+   "analytics_category_desc": {
+      "message": "Les trackers d’analyse du site sont utilisés pour collecter des données relatives à l’utilisation de la page web."
+   },
+   "analytics_category_title": {
+      "message": "Analyse du site"
+   },
+   "analytics_category_tooltip": {
+      "message": "En rapport aux trackers d’analyse des données et de l’utilisation des pages web."
+   },
+   "analytics_page_button_block": {
+      "message": "Activer le blocage pour cette catégorie"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Désactiver le blocage pour cette catégorie"
+   },
+   "analytics_page_title": {
+      "message": "Trackers d’analyse du site (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Trackers d’analyse du site"
+   },
+   "app_desc": {
+      "message": "Protège votre vie privée en bloquant les trackers qui collectent divers types de données lorsque vous êtes en ligne."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Activer le Bloqueur de trackers sur ce navigateur"
+   },
+   "browser_not_installed": {
+      "message": "Ce navigateur n'est pas installé sur votre appareil"
+   },
+   "browser_session_blocked": {
+      "message": "trackers bloqués lors de la session de navigation actuelle"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Activez le Bloqueur de trackers pour protéger votre vie privée en ligne"
+   },
+   "enable_protection": {
+      "message": "Activer la protection sur ce site web"
+   },
+   "essential_category_desc": {
+      "message": "Les trackers essentiels sont utilisés pour surveiller des fonctionnalités critiques du site web."
+   },
+   "essential_category_title": {
+      "message": "Essentiel"
+   },
+   "essential_category_tooltip": {
+      "message": "En rapport aux trackers critiques pour une fonctionnalité d’une page web."
+   },
+   "essential_page_button_block": {
+      "message": "Activer le blocage pour cette catégorie"
+   },
+   "essential_page_button_unblock": {
+      "message": "Désactiver le blocage pour cette catégorie"
+   },
+   "essential_page_title": {
+      "message": "Trackers essentiels (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Trackers essentiels"
+   },
+   "exception_action_desc": {
+      "message": "Ajoutez ou supprimez manuellement des sites web ci-dessous"
+   },
+   "exceptions_desc": {
+      "message": "Les trackers des sites web marqués comme exceptions ne seront pas bloqués."
+   },
+   "exceptions_title": {
+      "message": "Exceptions"
+   },
+   "extension_status_desc": {
+      "message": "Activer ou désactiver une extension"
+   },
+   "extension_status_off": {
+      "message": "Le Bloqueur de trackers est désactivé"
+   },
+   "extension_status_on": {
+      "message": "Le Bloqueur de trackers est activé"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Masquer les détails"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Installer le Bloqueur de trackers sur ce navigateur"
+   },
+   "interaction_category_desc": {
+      "message": "Les trackers d’interaction avec le client sont utilisés pour mesurer l’interaction de l’utilisateur avec les différents moyens de communication tels que les chats et supports."
+   },
+   "interaction_category_title": {
+      "message": "Interaction avec le client"
+   },
+   "interaction_category_tooltip": {
+      "message": "Trackers utilisés pour mesurer l’interaction avec les moyens de communication tels que les chats et supports."
+   },
+   "interaction_page_button_block": {
+      "message": "Activer le blocage pour cette catégorie"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Désactiver le blocage pour cette catégorie"
+   },
+   "interaction_page_title": {
+      "message": "Trackers d’interaction avec le client (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Trackers d’interaction avec le client"
+   },
+   "not_enabled": {
+      "message": "Pas activé"
+   },
+   "off": {
+      "message": "Non"
+   },
+   "on": {
+      "message": "Oui"
+   },
+   "page_load": {
+      "message": "Chargement de la page"
+   },
+   "pause_protection": {
+      "message": "Interrompre la protection sur ce site web"
+   },
+   "plugins_title": {
+      "message": "Choisissez quelles applications doivent être gérées par le Bloqueur de trackers"
+   },
+   "seconds": {
+      "message": "sec"
+   },
+   "settings_title": {
+      "message": "Paramètres"
+   },
+   "short_name": {
+      "message": "Bloqueur de trackers"
+   },
+   "show_more_details": {
+      "message": "Plus de détails"
+   },
+   "social_category_desc": {
+      "message": "Les trackers de réseaux sociaux sont utilisés pour surveiller l’audience sociale, l’activité et l’engagement de l’utilisateur avec diverses plateformes de réseaux sociaux."
+   },
+   "social_category_title": {
+      "message": "les réseaux sociaux"
+   },
+   "social_category_tooltip": {
+      "message": "Trackers utilisés pour mesurer l’engagement avec diverses plateformes de réseaux sociaux."
+   },
+   "social_page_button_block": {
+      "message": "Activer le blocage pour cette catégorie"
+   },
+   "social_page_button_unblock": {
+      "message": "Désactiver le blocage pour cette catégorie"
+   },
+   "social_page_title": {
+      "message": "Trackers de réseaux sociaux (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Trackers de réseaux sociaux"
+   },
+   "special_offers": {
+      "message": "Offres spéciales"
+   },
+   "special_offers_tooltip": {
+      "message": "Nous utilisons des trackers commerciaux pour vous communiquer facilement nos offres spéciales. Notre mission est de protéger votre vie privée. Nous ne partageons jamais les informations collectées, avec qui que ce soit, et pour quelque raison que ce soit."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "Le Bloqueur de trackers protège votre vie privée en empêchant la collecte de données permettant d'établir votre profil et de vous proposer des publicités ciblées."
+   },
+   "trackers_blocked": {
+      "message": "Trackers bloqués"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "L'URL existe déjà."
+   },
+   "url_is_empty": {
+      "message": "L'URL est vide"
+   },
+   "url_not_valid": {
+      "message": "L'URL n'est pas valide."
+   },
+   "website_added_list": {
+      "message": "Site web ajouté"
+   },
+   "website_url_enter": {
+      "message": "Saisissez l’URL du site web"
+   }
+}

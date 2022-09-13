@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Přidání aktuální webové stránky do seznamu."
+   },
+   "advertising_category_desc": {
+      "message": "Reklamní trackery slouží k analýze návštěvnosti webových stránek a k analýze chování uživatelů."
+   },
+   "advertising_category_title": {
+      "message": "Reklama"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trackery, které analyzují návštěvnost webových stránek nebo chování při používání."
+   },
+   "advertising_page_button_block": {
+      "message": "Povolit blokování pro tuto kategorii"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Zakázat blokování pro tuto kategorii"
+   },
+   "advertising_page_title": {
+      "message": "Reklamní trackery (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Reklamní trackery"
+   },
+   "analytics_category_desc": {
+      "message": "Analytika stránek slouží ke shromažďování údajů o používání webových stránek."
+   },
+   "analytics_category_title": {
+      "message": "Analytika stránky"
+   },
+   "analytics_category_tooltip": {
+      "message": "Vztahuje se k analýze dat a sledování využití webových stránek."
+   },
+   "analytics_page_button_block": {
+      "message": "Povolit blokování pro tuto kategorii"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Zakázat blokování pro tuto kategorii"
+   },
+   "analytics_page_title": {
+      "message": "Trackery analytiky stránek (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Trackery analytiky stránek"
+   },
+   "app_desc": {
+      "message": "Chrání vaše soukromí tím, že blokuje trackery, které sbírají různé typy dat pokaždé, když procházíte web."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "V tomto prohlížeči povolit Anti-tracker"
+   },
+   "browser_not_installed": {
+      "message": "Tento prohlížeč není instalovaný na vašem zařízení"
+   },
+   "browser_session_blocked": {
+      "message": "v aktuální relaci procházení jsou trackery blokovány"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Povolit Anti-tracker, aby bylo vaše online bezpečí chráněno"
+   },
+   "enable_protection": {
+      "message": "Povolit ochranu na těchto webových stránkách"
+   },
+   "essential_category_desc": {
+      "message": "Základní trackery se používají k monitorování kritických funkcí webových stránek."
+   },
+   "essential_category_title": {
+      "message": "Základní"
+   },
+   "essential_category_tooltip": {
+      "message": "Vztahuje se na trackery, které jsou důležité pro funkčnost webových stránek."
+   },
+   "essential_page_button_block": {
+      "message": "Povolit blokování pro tuto kategorii"
+   },
+   "essential_page_button_unblock": {
+      "message": "Zakázat blokování pro tuto kategorii"
+   },
+   "essential_page_title": {
+      "message": "Základní trackery (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Základní trackery"
+   },
+   "exception_action_desc": {
+      "message": "Níže přidejte nebo odeberte ručně webové stránky"
+   },
+   "exceptions_desc": {
+      "message": "Trackery uvedené ve výjimkách webových stránek nebudou blokovány."
+   },
+   "exceptions_title": {
+      "message": "Výjimky"
+   },
+   "extension_status_desc": {
+      "message": "Povolit nebo zakázat rozšíření"
+   },
+   "extension_status_off": {
+      "message": "Anti-tracker je vypnutý"
+   },
+   "extension_status_on": {
+      "message": "Anti-tracker je zapnutý"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Skrýt více detailů"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Instalovat Anti-tracker do tohoto prohlížeče"
+   },
+   "interaction_category_desc": {
+      "message": "Trackery interakce se zákazníkem slouží k měření interakce uživatele s různými vstupními formami, jako je chat nebo podpora."
+   },
+   "interaction_category_title": {
+      "message": "Interakce se zákazníkem"
+   },
+   "interaction_category_tooltip": {
+      "message": "Trackery používané k měření interakce - např. s chatem nebo podporou."
+   },
+   "interaction_page_button_block": {
+      "message": "Povolit blokování pro tuto kategorii"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Zakázat blokování pro tuto kategorii"
+   },
+   "interaction_page_title": {
+      "message": "Trackery interakce se zákazníky (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Trackery interakce se zákazníky"
+   },
+   "not_enabled": {
+      "message": "Není aktivován"
+   },
+   "off": {
+      "message": "Vyp."
+   },
+   "on": {
+      "message": "Zap."
+   },
+   "page_load": {
+      "message": "Načtení stránky"
+   },
+   "pause_protection": {
+      "message": "Pozastavte ochranu na této webové stránce"
+   },
+   "plugins_title": {
+      "message": "Vyberte, které aplikace by měly pracovat s Anti- trackerem"
+   },
+   "seconds": {
+      "message": "sec"
+   },
+   "settings_title": {
+      "message": "Nastavení"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Zobrazit více podrobností"
+   },
+   "social_category_desc": {
+      "message": "Trackery sociálních médií slouží k monitorování sociálního publika, aktivity a zapojení uživatelů do různých platforem sociálních médií."
+   },
+   "social_category_title": {
+      "message": "Sociální média"
+   },
+   "social_category_tooltip": {
+      "message": "Trackery slouží k měření angažovanosti na různých platformách sociálních médií."
+   },
+   "social_page_button_block": {
+      "message": "Povolit blokování pro tuto kategorii"
+   },
+   "social_page_button_unblock": {
+      "message": "Zakázat blokování pro tuto kategorii"
+   },
+   "social_page_title": {
+      "message": "Trackery sociálních medií (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Trackery sociálních medií"
+   },
+   "special_offers": {
+      "message": "Zvláštní nabídky"
+   },
+   "special_offers_tooltip": {
+      "message": "Používáme komerční trackery, abychom vám pomohli snadno najít naše speciální nabídky, naším posláním je chránit vaše soukromí, nikdy s nikým nesdílíme žádné informace získané za jakýmkoliv účelem."
+   },
+   "str": {
+      "message": "trackery"
+   },
+   "tooltip": {
+      "message": "Anti- tracker chrání vaše online soukromí  tím, že blokuje sběr dat, který by umožnil vaše profilování a komerční zacílení."
+   },
+   "trackers_blocked": {
+      "message": "Trackery blokovány"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL již exituje."
+   },
+   "url_is_empty": {
+      "message": "Adresa URL je prázdná"
+   },
+   "url_not_valid": {
+      "message": "Odkaz je neplatný."
+   },
+   "website_added_list": {
+      "message": "Přidány webové stránky"
+   },
+   "website_url_enter": {
+      "message": "Zadejte URL adresu webu"
+   }
+}

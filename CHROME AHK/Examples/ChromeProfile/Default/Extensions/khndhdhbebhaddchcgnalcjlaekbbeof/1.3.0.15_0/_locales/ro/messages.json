@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Adaugă în listă site-ul web curent."
+   },
+   "advertising_category_desc": {
+      "message": "Trackerele publicitare se utilizează pentru a analiza traficul de pe site-urile web, comportamentul utilizatorilor sau tiparele de trafic generat de utilizatori."
+   },
+   "advertising_category_title": {
+      "message": "Publicitate"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trackerele care analizează traficul pe site-urile web sau comportamentul de utilizare."
+   },
+   "advertising_page_button_block": {
+      "message": "Activează blocarea pentru această categorie"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Dezactivează blocarea pentru această categorie"
+   },
+   "advertising_page_title": {
+      "message": "Trackere publicitare (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Trackere publicitare"
+   },
+   "analytics_category_desc": {
+      "message": "Trackerele de analiză site se utilizează pentru a colecta date referitoare la utilizarea paginilor web."
+   },
+   "analytics_category_title": {
+      "message": "Date de analiză site"
+   },
+   "analytics_category_tooltip": {
+      "message": "Are legătură cu trackerele care vizează datele de analiză site și utilizarea paginilor web."
+   },
+   "analytics_page_button_block": {
+      "message": "Activează blocarea pentru această categorie"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Dezactivează blocarea pentru această categorie"
+   },
+   "analytics_page_title": {
+      "message": "Trackere de analiză de site (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Trackere de analiză de site"
+   },
+   "app_desc": {
+      "message": "Îți protejează confidențialitatea prin blocarea trackerelor care colectează diferite tipuri de date de fiecare dată când navighezi în mediul online."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Activează funcția Anti-tracker pe acest browser"
+   },
+   "browser_not_installed": {
+      "message": "Acest browser nu este instalat pe dispozitivul dumneavoastră"
+   },
+   "browser_session_blocked": {
+      "message": "trackerele blocate în sesiunea actuală de navigare"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Activează Anti-tracker pentru a-ți proteja confidențialitatea online"
+   },
+   "enable_protection": {
+      "message": "Activeaza protecția pe acest site"
+   },
+   "essential_category_desc": {
+      "message": "Trackerele esențiale se utilizează pentru a monitoriza funcționalitățile de importanță critică ale paginilor web."
+   },
+   "essential_category_title": {
+      "message": "Esențial"
+   },
+   "essential_category_tooltip": {
+      "message": "Are legătură cu trackerele care sunt critice pentru funcționarea paginii web."
+   },
+   "essential_page_button_block": {
+      "message": "Activează blocarea pentru această categorie"
+   },
+   "essential_page_button_unblock": {
+      "message": "Dezactivează blocarea pentru această categorie"
+   },
+   "essential_page_title": {
+      "message": "Trackere esențiale (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Trackere esențiale"
+   },
+   "exception_action_desc": {
+      "message": "Adaugă sau elimină manual site-urile web în secțiunea de mai jos"
+   },
+   "exceptions_desc": {
+      "message": "Trackerele de pe site-urile incluse în lista de excepții nu vor fi blocate."
+   },
+   "exceptions_title": {
+      "message": "Excepții"
+   },
+   "extension_status_desc": {
+      "message": "Activează sau dezactivează extensia"
+   },
+   "extension_status_off": {
+      "message": "Funcția Anti-tracker este INACTIVĂ"
+   },
+   "extension_status_on": {
+      "message": "Funcția Anti-tracker este ACTIVĂ"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Ascundere detalii suplimentare"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Instalează Anti-tracker pe acest browser"
+   },
+   "interaction_category_desc": {
+      "message": "Trackere de interacțiune cu clienții se utilizează pentru a măsura interacțiunea utilizatorilor cu diferite forme de introducere de informații, cum ar fi chat sau suport."
+   },
+   "interaction_category_title": {
+      "message": "Interacțiunea cu clienții"
+   },
+   "interaction_category_tooltip": {
+      "message": "Trackere utilizate pentru a măsura interacțiunea prin forme de comunicare precum chat sau suport."
+   },
+   "interaction_page_button_block": {
+      "message": "Activează blocarea pentru această categorie"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Dezactivează blocarea pentru această categorie"
+   },
+   "interaction_page_title": {
+      "message": "Trackere de interacțiune cu clienții (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Trackere de interacțiune cu clienții"
+   },
+   "not_enabled": {
+      "message": "Nu este activat"
+   },
+   "off": {
+      "message": "Inactiv"
+   },
+   "on": {
+      "message": "Activ"
+   },
+   "page_load": {
+      "message": "Încărcare pagină"
+   },
+   "pause_protection": {
+      "message": "Întrerupeți protecția pe acest site"
+   },
+   "plugins_title": {
+      "message": "Selectează aplicațiile pentru care dorești să activezi funcția Anti-tracker"
+   },
+   "seconds": {
+      "message": "sec"
+   },
+   "settings_title": {
+      "message": "Setări"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Mai multe detalii"
+   },
+   "social_category_desc": {
+      "message": "Trackerele de rețelele de socializare se utilizează pentru a monitoriza audiența pe rețelele de socializare, activitatea și implicarea utilizatorilor pentru diferite platforme de socializare."
+   },
+   "social_category_title": {
+      "message": "Rețele de socializare"
+   },
+   "social_category_tooltip": {
+      "message": "Trackere utilizate pentru a măsura implicarea în diferite platforme social media."
+   },
+   "social_page_button_block": {
+      "message": "Activează blocarea pentru această categorie"
+   },
+   "social_page_button_unblock": {
+      "message": "Dezactivează blocarea pentru această categorie"
+   },
+   "social_page_title": {
+      "message": "Trackere de social media (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Trackere de social media"
+   },
+   "special_offers": {
+      "message": "Oferte speciale"
+   },
+   "special_offers_tooltip": {
+      "message": "Folosim trackere comerciale pentru a te ajuta să găsești cu ușurință ofertele noastre speciale. Misiunea noastră este de a-ți proteja confidențialitatea. Nu partajăm nimănui niciodată și în niciun scop informațiile colectate."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "Anti-tracker îți protejează confidențialitatea online blocând colectarea de date, care ar permite crearea de profiluri și targetarea comercială."
+   },
+   "trackers_blocked": {
+      "message": "Proces blocat"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL-ul există deja."
+   },
+   "url_is_empty": {
+      "message": "Câmpul adresei URL este necompletat"
+   },
+   "url_not_valid": {
+      "message": "URL nevalabil."
+   },
+   "website_added_list": {
+      "message": "Site web adăugat"
+   },
+   "website_url_enter": {
+      "message": "Introdu adresa URL a site-ului web"
+   }
+}

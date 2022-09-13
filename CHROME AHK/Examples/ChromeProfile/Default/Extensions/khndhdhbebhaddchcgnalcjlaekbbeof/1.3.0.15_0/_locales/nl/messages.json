@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Huidige website toevoegen aan de lijst."
+   },
+   "advertising_category_desc": {
+      "message": "Reclametrackers worden gebruikt voor de analyse van patronen in websiteverkeer, gedrag van gebruikers of verkeer van bezoekers."
+   },
+   "advertising_category_title": {
+      "message": "Reclame"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trackers die websiteverkeer of gebruikersgedrag analyseren."
+   },
+   "advertising_page_button_block": {
+      "message": "Blokkering inschakelen voor deze categorie"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Blokkering uitschakelen voor deze categorie"
+   },
+   "advertising_page_title": {
+      "message": "Reclametrackers (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Reclametrackers"
+   },
+   "analytics_category_desc": {
+      "message": "Websitetrackers worden gebruikt om gegevens over het gebruik van webpagina's te verzamelen."
+   },
+   "analytics_category_title": {
+      "message": "Website-analytics"
+   },
+   "analytics_category_tooltip": {
+      "message": "Heeft betrekking op trackers voor gegevensanalytics en gebruik van webpagina's."
+   },
+   "analytics_page_button_block": {
+      "message": "Blokkering inschakelen voor deze categorie"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Blokkering uitschakelen voor deze categorie"
+   },
+   "analytics_page_title": {
+      "message": "Trackers website-analytics (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Trackers website-analytics"
+   },
+   "app_desc": {
+      "message": "Beschermt uw privacy door trackers te blokkeren die verschillende soorten gegevens inzamelen telkens u zich online begeeft."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Anti-tracker op deze browser inschakelen"
+   },
+   "browser_not_installed": {
+      "message": "Deze browser is niet op uw apparaat geïnstalleerd"
+   },
+   "browser_session_blocked": {
+      "message": "trackers geblokkeerd in de huidige surfsessie"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Schakel Anti-tracker in om uw online privacy te beschermen"
+   },
+   "enable_protection": {
+      "message": "Schakel bescherming in op deze website"
+   },
+   "essential_category_desc": {
+      "message": "Essentiële trackers worden gebruikt om de kritieke functionaliteiten van webpagina's te monitoren."
+   },
+   "essential_category_title": {
+      "message": "Essentieel"
+   },
+   "essential_category_tooltip": {
+      "message": "Heeft betrekking op trackers die van essentieel belang zijn voor de functionaliteit van de webpagina."
+   },
+   "essential_page_button_block": {
+      "message": "Blokkering inschakelen voor deze categorie"
+   },
+   "essential_page_button_unblock": {
+      "message": "Blokkering uitschakelen voor deze categorie"
+   },
+   "essential_page_title": {
+      "message": "Essentiële trackers (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Essentiële trackers "
+   },
+   "exception_action_desc": {
+      "message": "Voeg websites hieronder handmatig toe of verwijder ze"
+   },
+   "exceptions_desc": {
+      "message": "Trackers op uitgezonderde websites worden niet geblokkeerd."
+   },
+   "exceptions_title": {
+      "message": "Uitzonderingen"
+   },
+   "extension_status_desc": {
+      "message": "Extensie inschakelen of uitschakelen"
+   },
+   "extension_status_off": {
+      "message": "Anti-tracker is UIT"
+   },
+   "extension_status_on": {
+      "message": "Anti-tracker is AAN"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Meer gegevens verbergen"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Anti-tracker op deze browser installeren"
+   },
+   "interaction_category_desc": {
+      "message": "Trackers Klanteninteractie worden gebruikt om de interactie van gebruikers met verschillende invoervormen, zoals chat of ondersteuning, te meten."
+   },
+   "interaction_category_title": {
+      "message": "Klanteninteractie"
+   },
+   "interaction_category_tooltip": {
+      "message": "Trackers die worden gebruikt om interactie met chat, ondersteuning en dergelijke te meten."
+   },
+   "interaction_page_button_block": {
+      "message": "Blokkering inschakelen voor deze categorie"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Blokkering uitschakelen voor deze categorie"
+   },
+   "interaction_page_title": {
+      "message": "Trackers klanteninteracties (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Trackers klanteninteracties "
+   },
+   "not_enabled": {
+      "message": "Niet ingeschakeld"
+   },
+   "off": {
+      "message": "Uit"
+   },
+   "on": {
+      "message": "Aan"
+   },
+   "page_load": {
+      "message": "Laadtijd pagina"
+   },
+   "pause_protection": {
+      "message": "Bescherming op deze website pauzeren"
+   },
+   "plugins_title": {
+      "message": "Kies welke toepassingen samen met Anti-tracker moeten werken"
+   },
+   "seconds": {
+      "message": "sec"
+   },
+   "settings_title": {
+      "message": "Instellingen"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Meer details"
+   },
+   "social_category_desc": {
+      "message": "Trackers Sociale Media worden gebruikt voor de monitoring van het sociale publiek, de activiteiten en het gebruikersengagement met verschillende sociale mediaplatformen."
+   },
+   "social_category_title": {
+      "message": "Sociale media"
+   },
+   "social_category_tooltip": {
+      "message": "Trackers die worden gebruikt om engagement met verschillende sociale mediaplatformen te meten."
+   },
+   "social_page_button_block": {
+      "message": "Blokkering inschakelen voor deze categorie"
+   },
+   "social_page_button_unblock": {
+      "message": "Blokkering uitschakelen voor deze categorie"
+   },
+   "social_page_title": {
+      "message": "Trackers sociale media (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Trackers sociale media "
+   },
+   "special_offers": {
+      "message": "Speciale aanbiedingen"
+   },
+   "special_offers_tooltip": {
+      "message": "We maken gebruik van commerciële trackers om u te helpen onze speciale aanbiedingen makkelijk te vinden. Onze missie is om uw privacy te beschermen. Ingezamelde informatie wordt nooit gedeeld, met niemand en om geen enkele reden."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "Anti-tracker beschermt uw online privacy door de inzameling van gegevens, die profilering alsook specifiek op u gerichte reclame, te blokkeren."
+   },
+   "trackers_blocked": {
+      "message": "Trackers geblokkeerd"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL bestaat al."
+   },
+   "url_is_empty": {
+      "message": "De URL is leeg"
+   },
+   "url_not_valid": {
+      "message": "De URL is ongeldig."
+   },
+   "website_added_list": {
+      "message": "Website toegevoegd"
+   },
+   "website_url_enter": {
+      "message": "Voer website-URL in"
+   }
+}

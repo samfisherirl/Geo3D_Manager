@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Add current website to the list."
+   },
+   "advertising_category_desc": {
+      "message": "Advertising trackers are used to analyze website traffic, user behavior, or site visitors' patterns."
+   },
+   "advertising_category_title": {
+      "message": "Advertising"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trackers that analyze website traffic or usage behavior."
+   },
+   "advertising_page_button_block": {
+      "message": "Enable blocking for this category"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Disable blocking for this category"
+   },
+   "advertising_page_title": {
+      "message": "Advertising trackers (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Advertising trackers"
+   },
+   "analytics_category_desc": {
+      "message": "Site Analytics trackers are used to gather data regarding webpage usage."
+   },
+   "analytics_category_title": {
+      "message": "Site Analytics"
+   },
+   "analytics_category_tooltip": {
+      "message": "Relates to data analytics and webpage usage trackers."
+   },
+   "analytics_page_button_block": {
+      "message": "Enable blocking for this category"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Disable blocking for this category"
+   },
+   "analytics_page_title": {
+      "message": "Site Analytics trackers (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Site Analytics trackers"
+   },
+   "app_desc": {
+      "message": "Protects your privacy by blocking trackers that collect different type of data everytime you navigate online."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Enable Anti-tracker on this browser"
+   },
+   "browser_not_installed": {
+      "message": "This browser isn't installed on your device"
+   },
+   "browser_session_blocked": {
+      "message": "trackers blocked in the current browsing session"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Enable Anti-tracker to protect your online privacy"
+   },
+   "enable_protection": {
+      "message": "Enable protection on this website"
+   },
+   "essential_category_desc": {
+      "message": "Essential trackers are used to monitor critical webpage functionalities."
+   },
+   "essential_category_title": {
+      "message": "Essential"
+   },
+   "essential_category_tooltip": {
+      "message": "Relates to trackers that are critical for webpage functionality."
+   },
+   "essential_page_button_block": {
+      "message": "Enable blocking for this category"
+   },
+   "essential_page_button_unblock": {
+      "message": "Disable blocking for this category"
+   },
+   "essential_page_title": {
+      "message": "Essential trackers (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Essential trackers"
+   },
+   "exception_action_desc": {
+      "message": "Manually add or remove websites below"
+   },
+   "exceptions_desc": {
+      "message": "Trackers on excepted websites will not be blocked."
+   },
+   "exceptions_title": {
+      "message": "Exceptions"
+   },
+   "extension_status_desc": {
+      "message": "Enable or disable extension"
+   },
+   "extension_status_off": {
+      "message": "Anti-tracker is OFF"
+   },
+   "extension_status_on": {
+      "message": "Anti-tracker is ON"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Hide more details"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Install Anti-tracker on this browser"
+   },
+   "interaction_category_desc": {
+      "message": "Customer Interaction trackers are used to measure user interaction with different input forms such as chat or support."
+   },
+   "interaction_category_title": {
+      "message": "Customer Interaction"
+   },
+   "interaction_category_tooltip": {
+      "message": "Trackers used to measure interaction with forms such as chat or support."
+   },
+   "interaction_page_button_block": {
+      "message": "Enable blocking for this category"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Disable blocking for this category"
+   },
+   "interaction_page_title": {
+      "message": "Customer Interaction trackers (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Customer Interaction trackers"
+   },
+   "not_enabled": {
+      "message": "Not enabled"
+   },
+   "off": {
+      "message": "Off"
+   },
+   "on": {
+      "message": "On"
+   },
+   "page_load": {
+      "message": "Page load"
+   },
+   "pause_protection": {
+      "message": "Pause protection on this website"
+   },
+   "plugins_title": {
+      "message": "Choose which applications should work together with Anti-tracker"
+   },
+   "seconds": {
+      "message": "sec"
+   },
+   "settings_title": {
+      "message": "Settings"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Show more details"
+   },
+   "social_category_desc": {
+      "message": "Social Media trackers are used to monitor social audience, activity and user engagement with different social media platforms."
+   },
+   "social_category_title": {
+      "message": "Social Media"
+   },
+   "social_category_tooltip": {
+      "message": "Trackers used to measure engagement with different social media platforms."
+   },
+   "social_page_button_block": {
+      "message": "Enable blocking for this category"
+   },
+   "social_page_button_unblock": {
+      "message": "Disable blocking for this category"
+   },
+   "social_page_title": {
+      "message": "Social Media trackers (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Social Media trackers"
+   },
+   "special_offers": {
+      "message": "Special offers"
+   },
+   "special_offers_tooltip": {
+      "message": "We use commercial trackers to help you find our special offers easily. Our mission is to protect your privacy. We never share any of the information collected with anybody, for any purpose."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "Anti-tracker protects your online privacy by blocking data collection that would enable your profiling and commercial targeting."
+   },
+   "trackers_blocked": {
+      "message": "Trackers blocked"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL already exists."
+   },
+   "url_is_empty": {
+      "message": "The URL is empty"
+   },
+   "url_not_valid": {
+      "message": "The URL is invalid."
+   },
+   "website_added_list": {
+      "message": "Website added"
+   },
+   "website_url_enter": {
+      "message": "Enter website URL"
+   }
+}

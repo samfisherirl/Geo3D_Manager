@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Добавить текущий сайт в список."
+   },
+   "advertising_category_desc": {
+      "message": "Рекламное отслеживающее ПО используются для анализа трафика сайта, поведения пользователей или моделей посетителей сайта."
+   },
+   "advertising_category_title": {
+      "message": "Реклама"
+   },
+   "advertising_category_tooltip": {
+      "message": "Трекеры, которые анализируют посещаемость сайта и поведение пользователей."
+   },
+   "advertising_page_button_block": {
+      "message": "Включить блокирование для этой категории"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Отключить блокирование для этой категории"
+   },
+   "advertising_page_title": {
+      "message": "Трекеры рекламы (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Рекламные трекеры"
+   },
+   "analytics_category_desc": {
+      "message": "Трекеры Site Analytics используются для сбора данных об использовании веб-страниц."
+   },
+   "analytics_category_title": {
+      "message": "Аналитика сайта"
+   },
+   "analytics_category_tooltip": {
+      "message": "Относится к анализу данных и отслеживанию использования веб-страниц."
+   },
+   "analytics_page_button_block": {
+      "message": "Включить блокирование для этой категории"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Отключить блокирование для этой категории"
+   },
+   "analytics_page_title": {
+      "message": "Трекеры аналитики сайта (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Трекеры аналитики сайта"
+   },
+   "app_desc": {
+      "message": "Защищает Вашу конфиденциальность, блокируя отслеживающее ПО, которое собирает различные данные каждый раз, когда Вы выходите в Интернет. "
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Включить анти-трекер в этом браузере"
+   },
+   "browser_not_installed": {
+      "message": "Этот браузер не установлен на Вашем устройстве"
+   },
+   "browser_session_blocked": {
+      "message": "отслеживающее ПО заблокировано в текущей сессии "
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Включите Anti-tracker для защиты Вашей конфиденциальности в Интернете"
+   },
+   "enable_protection": {
+      "message": "Включить защиту на этом сайте"
+   },
+   "essential_category_desc": {
+      "message": "Трекеры Essential используются для мониторинга важных функций веб-страницы."
+   },
+   "essential_category_title": {
+      "message": "Основной"
+   },
+   "essential_category_tooltip": {
+      "message": "Относится к трекерам, которые важны для функциональности веб-страницы."
+   },
+   "essential_page_button_block": {
+      "message": "Включить блокирование для этой категории"
+   },
+   "essential_page_button_unblock": {
+      "message": "Отключить блокирование для этой категории"
+   },
+   "essential_page_title": {
+      "message": "Основные трекеры (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Основные трекеры"
+   },
+   "exception_action_desc": {
+      "message": "Вручную добавить или удалить сайты ниже"
+   },
+   "exceptions_desc": {
+      "message": "Трекеры на исключенных сайтах не будут заблокированы."
+   },
+   "exceptions_title": {
+      "message": "Исключения"
+   },
+   "extension_status_desc": {
+      "message": "Включить или отключить расширение"
+   },
+   "extension_status_off": {
+      "message": "Анти-трекер выключен"
+   },
+   "extension_status_on": {
+      "message": "Анти-трекер включен"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Скрыть дополнительные сведения"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Установите анти-трекер в этом браузере"
+   },
+   "interaction_category_desc": {
+      "message": "Трекеры Customer Interaction используются для измерения взаимодействия пользователя с различными формами ввода, такими как чат или поддержка."
+   },
+   "interaction_category_title": {
+      "message": "Взаимодействие с клиентами"
+   },
+   "interaction_category_tooltip": {
+      "message": "Трекеры используются для измерения взаимодействия с такими формами, как чат или поддержка."
+   },
+   "interaction_page_button_block": {
+      "message": "Включить блокирование для этой категории"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Отключить блокирование для этой категории"
+   },
+   "interaction_page_title": {
+      "message": "Трекеры взаимодействия с клиентами (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Трекеры взаимодействия с клиентами"
+   },
+   "not_enabled": {
+      "message": "Не включено"
+   },
+   "off": {
+      "message": "Выкл."
+   },
+   "on": {
+      "message": "Вкл."
+   },
+   "page_load": {
+      "message": "Загрузка страницы "
+   },
+   "pause_protection": {
+      "message": "Приостановить защиту на этом сайте"
+   },
+   "plugins_title": {
+      "message": "Выберите, какие приложения должны работать вместе с Анти-трекером"
+   },
+   "seconds": {
+      "message": "сек."
+   },
+   "settings_title": {
+      "message": "Настройки"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Подробнее"
+   },
+   "social_category_desc": {
+      "message": "Трекеры Social Media используются для мониторинга социальной аудитории, активности и взаимодействия пользователей с различными платформами социальных сетей."
+   },
+   "social_category_title": {
+      "message": "Социальное СМИ"
+   },
+   "social_category_tooltip": {
+      "message": "Трекеры использовались для измерения взаимодействия с различными платформами социальных сетей."
+   },
+   "social_page_button_block": {
+      "message": "Включить блокирование для этой категории"
+   },
+   "social_page_button_unblock": {
+      "message": "Отключить блокирование для этой категории"
+   },
+   "social_page_title": {
+      "message": "Трекеры социальных СМИ  (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Трекеры социальных СМИ "
+   },
+   "special_offers": {
+      "message": "Специальные предложения"
+   },
+   "special_offers_tooltip": {
+      "message": "Мы используем коммерческие трекеры, чтобы помочь вам легко находить наши специальные предложения. Наша цель - обеспечить вашу конфиденциальность. Мы никогда не передаем какую-либо информацию, собранную кому-либо, для любых целей."
+   },
+   "str": {
+      "message": "трекеры"
+   },
+   "tooltip": {
+      "message": "Анти-трекер защищает вашу конфиденциальность в Интернете, блокируя сбор данных, который реализует профилирование и коммерческий таргетинг."
+   },
+   "trackers_blocked": {
+      "message": "Отслеживающее ПО заблокировано"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL уже существует."
+   },
+   "url_is_empty": {
+      "message": "URL пуст"
+   },
+   "url_not_valid": {
+      "message": "Недопустимая URL."
+   },
+   "website_added_list": {
+      "message": "Сайт добавлен"
+   },
+   "website_url_enter": {
+      "message": "Введите URL сайта"
+   }
+}

@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "現在のウェブサイトをリストに追加します。"
+   },
+   "advertising_category_desc": {
+      "message": "広告トラッカーは、ウェブサイトのトラフィック、ユーザーの行動、および訪問者のトラフィックパターンを分析するために使用されます。"
+   },
+   "advertising_category_title": {
+      "message": "広告"
+   },
+   "advertising_category_tooltip": {
+      "message": "ウェブサイトのトラフィックや利用状況を分析するトラッカー。"
+   },
+   "advertising_page_button_block": {
+      "message": "このカテゴリーのブロックを有効にする"
+   },
+   "advertising_page_button_unblock": {
+      "message": "このカテゴリーのブロックを無効にする"
+   },
+   "advertising_page_title": {
+      "message": "広告トラッカー (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "広告トラッカー"
+   },
+   "analytics_category_desc": {
+      "message": "サイトアナリティクストラッカーは、ウェブページの利用状況に関するデータの収集に使用されます。"
+   },
+   "analytics_category_title": {
+      "message": "サイトアナリティクス"
+   },
+   "analytics_category_tooltip": {
+      "message": "データアナリティクスおよびウェブページ利用状況に関連します。"
+   },
+   "analytics_page_button_block": {
+      "message": "このカテゴリーのブロックを有効にする"
+   },
+   "analytics_page_button_unblock": {
+      "message": "このカテゴリーのブロックを無効にする"
+   },
+   "analytics_page_title": {
+      "message": "サイトアナリティクス トラッカー (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "サイトアナリティクス トラッカー"
+   },
+   "app_desc": {
+      "message": "ウェブサイトへのアクセス時にさまざまなデータを収集するトラッカーをブロックし、プライバシーを保護します。"
+   },
+   "app_name": {
+      "message": "Bitdefender アンチトラッカー"
+   },
+   "browser_enable_plugin": {
+      "message": "このブラウザでアンチトラッカーを有効にする"
+   },
+   "browser_not_installed": {
+      "message": "インストールされていません"
+   },
+   "browser_session_blocked": {
+      "message": "現在のブラウザセッションでブロックしたトラッカー"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "アンチトラッカーを有効にしてオンラインでのプライバシーを保護"
+   },
+   "enable_protection": {
+      "message": "このウェブサイトでの保護を有効にする"
+   },
+   "essential_category_desc": {
+      "message": "必須トラッカーは、ウェブサイトの重要な機能のモニタリングに使用されます。"
+   },
+   "essential_category_title": {
+      "message": "必須"
+   },
+   "essential_category_tooltip": {
+      "message": "ウェブサイトの機能のために重要なトラッカーに関連します。"
+   },
+   "essential_page_button_block": {
+      "message": "このカテゴリーのブロックを有効にする"
+   },
+   "essential_page_button_unblock": {
+      "message": "このカテゴリーのブロックを無効にする"
+   },
+   "essential_page_title": {
+      "message": "必須トラッカー (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "必須トラッカー"
+   },
+   "exception_action_desc": {
+      "message": "以下でウェブサイトを手動で追加または削除できます。"
+   },
+   "exceptions_desc": {
+      "message": "例外設定されたウェブサイトのトラッカーはブロックされません。"
+   },
+   "exceptions_title": {
+      "message": "例外"
+   },
+   "extension_status_desc": {
+      "message": "拡張機能の有効化/無効化"
+   },
+   "extension_status_off": {
+      "message": "アンチトラッカーは OFF です"
+   },
+   "extension_status_on": {
+      "message": "アンチトラッカーは ON です"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "詳細を非表示"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "このブラウザにアンチトラッカーをインストールする"
+   },
+   "interaction_category_desc": {
+      "message": "カスタマーインタラクショントラッカーは、チャットやサポートなど、さまざまな形式でのユーザーとの対話を計測するために使用されます。"
+   },
+   "interaction_category_title": {
+      "message": "カスタマーインタラクション"
+   },
+   "interaction_category_tooltip": {
+      "message": "チャットやサポートなど、さまざまな形式でのユーザーとの対話を計測するために使用されるトラッカー。"
+   },
+   "interaction_page_button_block": {
+      "message": "このカテゴリーのブロックを有効にする"
+   },
+   "interaction_page_button_unblock": {
+      "message": "このカテゴリーのブロックを無効にする"
+   },
+   "interaction_page_title": {
+      "message": "カスタマーインタラクショントラッカー (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "カスタマーインタラクショントラッカー"
+   },
+   "not_enabled": {
+      "message": "オフ"
+   },
+   "off": {
+      "message": "オフ"
+   },
+   "on": {
+      "message": "オン"
+   },
+   "page_load": {
+      "message": "ページ読み込み"
+   },
+   "pause_protection": {
+      "message": "このウェブサイトでの保護を一時停止"
+   },
+   "plugins_title": {
+      "message": "アンチトラッカーと連携させるアプリケーションを選択してください"
+   },
+   "seconds": {
+      "message": "秒"
+   },
+   "settings_title": {
+      "message": "設定"
+   },
+   "short_name": {
+      "message": "アンチトラッカー"
+   },
+   "show_more_details": {
+      "message": "詳細を表示"
+   },
+   "social_category_desc": {
+      "message": "ソーシャルメディアトラッカーは、さまざまなソーシャルメディア プラットフォームにおけるオーディエンス、アクティビティ、およびユーザーエンゲージメントを監視するために使用されます。"
+   },
+   "social_category_title": {
+      "message": "ソーシャルメディア"
+   },
+   "social_category_tooltip": {
+      "message": "さまざまなソーシャルメディア プラットフォームにおけるオーディエンス、アクティビティ、およびユーザーエンゲージメントを監視するために使用されるトラッカー。"
+   },
+   "social_page_button_block": {
+      "message": "このカテゴリーのブロックを有効にする"
+   },
+   "social_page_button_unblock": {
+      "message": "このカテゴリーのブロックを無効にする"
+   },
+   "social_page_title": {
+      "message": "ソーシャルメディアトラッカー (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "ソーシャルメディアトラッカー"
+   },
+   "special_offers": {
+      "message": "特別価格"
+   },
+   "special_offers_tooltip": {
+      "message": "弊社は、お客様がお得なキャンペーンを見つけやすくする目的でコマーシャルトラッカーを使用しています。弊社のミッションはお客様のプライバシーを守ることですので、いかなる目的のためにも収集した情報を第三者と共有することは絶対にありません。"
+   },
+   "str": {
+      "message": "トラッカー"
+   },
+   "tooltip": {
+      "message": "アンチトラッカーは、プロファイリングや商業的ターゲティングを可能にするデータ収集をブロックすることで、オンラインのプライバシーを保護します。"
+   },
+   "trackers_blocked": {
+      "message": "ブロックしたトラッカー"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL は既に存在します。"
+   },
+   "url_is_empty": {
+      "message": "URL が空白です"
+   },
+   "url_not_valid": {
+      "message": "URLが無効です。"
+   },
+   "website_added_list": {
+      "message": "ウェブサイトが追加されました"
+   },
+   "website_url_enter": {
+      "message": "ウェブサイト URL を入力"
+   }
+}

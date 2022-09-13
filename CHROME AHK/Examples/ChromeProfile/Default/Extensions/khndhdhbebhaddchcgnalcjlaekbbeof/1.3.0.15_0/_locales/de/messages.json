@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Aktuelle Website zur Liste hinzufügen."
+   },
+   "advertising_category_desc": {
+      "message": "Werbe-Tracker dienen der Analyse von Website-Verkehr, von Nutzerverhalten oder von Datenverkehrsmustern von Website-Besuchern."
+   },
+   "advertising_category_title": {
+      "message": "Werbung"
+   },
+   "advertising_category_tooltip": {
+      "message": "Tracker, die den Website-Verkehr oder das Nutzungsverhalten analysieren."
+   },
+   "advertising_page_button_block": {
+      "message": "Blockieren für diese Kategorie aktivieren"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Blockieren für diese Kategorie deaktivieren"
+   },
+   "advertising_page_title": {
+      "message": "Werbe-Tracker (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Werbe-Tracker"
+   },
+   "analytics_category_desc": {
+      "message": "Site-Analytics-Tracker dienen der Sammlung von Daten über die Nutzung von Webseiten."
+   },
+   "analytics_category_title": {
+      "message": "Site Analytics"
+   },
+   "analytics_category_tooltip": {
+      "message": "Bezieht sich auf Datenanalysen und Tracker für die Webseitennutzung."
+   },
+   "analytics_page_button_block": {
+      "message": "Blockieren für diese Kategorie aktivieren"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Blockieren für diese Kategorie deaktivieren"
+   },
+   "analytics_page_title": {
+      "message": "Site-Analytics-Tracker (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Site-Analytics-Tracker"
+   },
+   "app_desc": {
+      "message": "Schützt Ihre Privatsphäre, indem er Tracker blockiert, die bei jedem Besuch im Internet unterschiedlichste Daten sammeln."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-Tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Anti-Tracker für diesen Browser aktivieren"
+   },
+   "browser_not_installed": {
+      "message": "Dieser Browser ist auf Ihrem Gerät nicht installiert"
+   },
+   "browser_session_blocked": {
+      "message": "in der aktuellen Browser-Sitzung blockierte Tracker"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Anti-Tracker zum Schutz Ihrer Online-Privatsphäre aktivieren"
+   },
+   "enable_protection": {
+      "message": "Schutz für diese Website aktivieren"
+   },
+   "essential_category_desc": {
+      "message": "Wesentliche Tracker dienen der Überwachung kritischer Webseiten-Funktionen."
+   },
+   "essential_category_title": {
+      "message": "Wesentlich"
+   },
+   "essential_category_tooltip": {
+      "message": "Bezieht sich auf Tracker, die für die Funktionalität von Webseiten entscheidend sind."
+   },
+   "essential_page_button_block": {
+      "message": "Blockieren für diese Kategorie aktivieren"
+   },
+   "essential_page_button_unblock": {
+      "message": "Blockieren für diese Kategorie deaktivieren"
+   },
+   "essential_page_title": {
+      "message": "Wesentliche Tracker (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Wesentliche Tracker"
+   },
+   "exception_action_desc": {
+      "message": "Im Folgenden können Sie Website manuell hinzufügen oder entfernen"
+   },
+   "exceptions_desc": {
+      "message": "Tracker auf ausgenommenen Websites werden nicht blockiert."
+   },
+   "exceptions_title": {
+      "message": "Ausnahmen"
+   },
+   "extension_status_desc": {
+      "message": "Erweiterung aktivieren oder deaktivieren"
+   },
+   "extension_status_off": {
+      "message": "Anti-Tracker ist DEAKTIVIERT"
+   },
+   "extension_status_on": {
+      "message": "Anti-Tracker ist AKTIVIERT"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Weitere Details ausblenden"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Anti-Tracker für diesen Browser installieren"
+   },
+   "interaction_category_desc": {
+      "message": "Kundeninteraktions-Tracker dienen der Messung der Benutzerinteraktion mit verschiedenen Eingabemöglichkeiten wie Chat oder Support."
+   },
+   "interaction_category_title": {
+      "message": "Kundeninteraktion"
+   },
+   "interaction_category_tooltip": {
+      "message": "Tracker zur Messung der Interaktion mit Eingabemöglichkeiten wie Chat oder Support."
+   },
+   "interaction_page_button_block": {
+      "message": "Blockieren für diese Kategorie aktivieren"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Blockieren für diese Kategorie deaktivieren"
+   },
+   "interaction_page_title": {
+      "message": "Kundeninteraktions-Tracker (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Kundeninteraktions-Tracker"
+   },
+   "not_enabled": {
+      "message": "Nicht aktiviert"
+   },
+   "off": {
+      "message": "Aus"
+   },
+   "on": {
+      "message": "An"
+   },
+   "page_load": {
+      "message": "Laden der Seite"
+   },
+   "pause_protection": {
+      "message": "Schutz für diese Website anhalten"
+   },
+   "plugins_title": {
+      "message": "Wählen Sie aus, welche Anwendungen mit dem Anti-Tracker zusammenarbeiten sollen"
+   },
+   "seconds": {
+      "message": "Sek"
+   },
+   "settings_title": {
+      "message": "Einstellungen"
+   },
+   "short_name": {
+      "message": "Anti-Tracker"
+   },
+   "show_more_details": {
+      "message": "Weitere Details"
+   },
+   "social_category_desc": {
+      "message": "Social-Media-Tracker dienen der Überwachung von Social-Media-Zielgruppen sowie der Aktivitäten und Nutzerbindung über verschiedene Social-Media-Plattformen."
+   },
+   "social_category_title": {
+      "message": "Social Media"
+   },
+   "social_category_tooltip": {
+      "message": "Tracker zur Messung der Nutzerbindung über verschiedene Social-Media-Plattformen."
+   },
+   "social_page_button_block": {
+      "message": "Blockieren für diese Kategorie aktivieren"
+   },
+   "social_page_button_unblock": {
+      "message": "Blockieren für diese Kategorie deaktivieren"
+   },
+   "social_page_title": {
+      "message": "Social-Media-Tracker (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Social-Media-Tracker"
+   },
+   "special_offers": {
+      "message": "Sonderangebote"
+   },
+   "special_offers_tooltip": {
+      "message": "Wir verwenden kommerzielle Tracker, damit Sie unsere Sonderangebote leichter finden. Wir haben es uns zur Aufgabe gemacht, Ihre Privatsphäre zu schützen. Wir geben die gesammelten Daten unter keinen Umständen an Dritte weiter."
+   },
+   "str": {
+      "message": "Tracker"
+   },
+   "tooltip": {
+      "message": "Anti-Tracker schützt Ihre Privatsphäre im Netz, indem es die Datenerfassung blockiert, die der Erstellung von Benutzerprofilen und der Schaltung von gezielter Werbung dient."
+   },
+   "trackers_blocked": {
+      "message": "Tracker blockiert"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "Die URL existiert bereits."
+   },
+   "url_is_empty": {
+      "message": "URL ist leer"
+   },
+   "url_not_valid": {
+      "message": "Das URL-Schema ist ungültig."
+   },
+   "website_added_list": {
+      "message": "Website hinzugefügt"
+   },
+   "website_url_enter": {
+      "message": "Website-URL eingeben"
+   }
+}

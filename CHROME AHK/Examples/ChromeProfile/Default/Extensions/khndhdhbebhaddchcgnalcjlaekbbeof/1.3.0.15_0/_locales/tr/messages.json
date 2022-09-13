@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Mevcut web sitesini listeye ekle."
+   },
+   "advertising_category_desc": {
+      "message": "Reklam izleyiciler, web sitesi trafiğini, kullanıcı davranışlarını veya site ziyaretçilerinin modellerini analiz etmek için kullanılır."
+   },
+   "advertising_category_title": {
+      "message": "reklam"
+   },
+   "advertising_category_tooltip": {
+      "message": "Web sitesi trafiğini veya kullanım davranışını analiz eden izleyici."
+   },
+   "advertising_page_button_block": {
+      "message": "Bu kategori için engellemeyi etkinleştir"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Bu kategori için engellemeyi devre dışı bırak"
+   },
+   "advertising_page_title": {
+      "message": "Reklam İzleyicisi (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Reklam izleyici"
+   },
+   "analytics_category_desc": {
+      "message": "Site Analiz izleyicileri, web sayfası kullanımıyla ilgili verileri toplamak için kullanılır."
+   },
+   "analytics_category_title": {
+      "message": "Site Analizi"
+   },
+   "analytics_category_tooltip": {
+      "message": "veri analitiği ve web sayfası kullanımı izleyiciler ile ilgilidir."
+   },
+   "analytics_page_button_block": {
+      "message": "Bu kategori için engellemeyi etkinleştir"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Bu kategori için engellemeyi devre dışı bırak"
+   },
+   "analytics_page_title": {
+      "message": "Alan Analitik İzleyici (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Alan Analitik İzleyici"
+   },
+   "app_desc": {
+      "message": "Her çevrimiçi gezindiğinizde farklı türde veri toplayan izleyicileri engelleyerek gizliliğinizi korur."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Anti-tracker'ı bu tarayıcıda etkinleştir"
+   },
+   "browser_not_installed": {
+      "message": "Bu tarayıcı cihazınıza yüklenmedi"
+   },
+   "browser_session_blocked": {
+      "message": "İzleyiciler mevcut tarama oturumunda engellendi"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Çevrimiçi gizliliğinizi korumak için Anti-tracker özelliğini etkinleştirin"
+   },
+   "enable_protection": {
+      "message": "Bu web sitesinde korumayı etkinleştir"
+   },
+   "essential_category_desc": {
+      "message": "Temel izleyiciler, kritik web sayfası işlevlerini izlemek için kullanılır."
+   },
+   "essential_category_title": {
+      "message": "Temel"
+   },
+   "essential_category_tooltip": {
+      "message": "Web sayfası işlevselliği için kritik önem taşıyan izleyiciler ile ilgilidir."
+   },
+   "essential_page_button_block": {
+      "message": "Bu kategori için engellemeyi etkinleştir"
+   },
+   "essential_page_button_unblock": {
+      "message": "Bu kategori için engellemeyi devre dışı bırak"
+   },
+   "essential_page_title": {
+      "message": "Temel İzleyici (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Temel izleyici"
+   },
+   "exception_action_desc": {
+      "message": "Aşağıdaki web sitelerini el ile ekleyin veya kaldırın"
+   },
+   "exceptions_desc": {
+      "message": "İstisna edilen web sitelerindeki izleyiciler engellenmeyecek."
+   },
+   "exceptions_title": {
+      "message": "İstisnalar"
+   },
+   "extension_status_desc": {
+      "message": "Uzantıyı etkinleştir veya devre dışı bırak"
+   },
+   "extension_status_off": {
+      "message": "Anti-tracker KAPALI"
+   },
+   "extension_status_on": {
+      "message": "Anti-tracker AÇIK"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Daha fazla ayrıntıyı gizle"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Anti-tracker'ı bu tarayıcıya yükleyin"
+   },
+   "interaction_category_desc": {
+      "message": "Müşteri Etkileşimi izleyici, sohbet veya destek gibi farklı giriş formlarıyla kullanıcı etkileşimini ölçmek için kullanılır."
+   },
+   "interaction_category_title": {
+      "message": "Müşteri Etkileşimi"
+   },
+   "interaction_category_tooltip": {
+      "message": "İzleyiciler, sohbet veya destek gibi formlarla etkileşimi ölçmek için kullanılır."
+   },
+   "interaction_page_button_block": {
+      "message": "Bu kategori için engellemeyi etkinleştir"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Bu kategori için engellemeyi devre dışı bırak"
+   },
+   "interaction_page_title": {
+      "message": "Müşteri Etkileşimi izleyici (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Müşteri Etkileşimi izleyici"
+   },
+   "not_enabled": {
+      "message": "Etkin değil"
+   },
+   "off": {
+      "message": "Kapalı"
+   },
+   "on": {
+      "message": "Açık"
+   },
+   "page_load": {
+      "message": "Sayfa yükü"
+   },
+   "pause_protection": {
+      "message": "Bu web sitesinde korumayı duraklat"
+   },
+   "plugins_title": {
+      "message": "Anti-tracker ile birlikte hangi uygulamaların çalışması gerektiğini seçin"
+   },
+   "seconds": {
+      "message": "sn"
+   },
+   "settings_title": {
+      "message": "Ayarlar"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Daha fazla ayrıntı"
+   },
+   "social_category_desc": {
+      "message": "Sosyal Medya izleyicileri, sosyal izleyici kitlesini, etkinliği ve farklı sosyal medya platformlarıyla kullanıcı katılımını izlemek için kullanılır."
+   },
+   "social_category_title": {
+      "message": "Sosyal Medya"
+   },
+   "social_category_tooltip": {
+      "message": "İzleyiciler, farklı sosyal medya platformlarıyla etkileşimi ölçmek için kullanılır."
+   },
+   "social_page_button_block": {
+      "message": "Bu kategori için engellemeyi etkinleştir"
+   },
+   "social_page_button_unblock": {
+      "message": "Bu kategori için engellemeyi devre dışı bırak"
+   },
+   "social_page_title": {
+      "message": "Sosyal Medya İzleyici (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Sosyal Medya İzleyici"
+   },
+   "special_offers": {
+      "message": "Özel teklifler"
+   },
+   "special_offers_tooltip": {
+      "message": "Özel tekliflerimizi kolayca bulmanıza yardımcı olmak için ticari izleyicileri kullanıyoruz.Misyonumuz gizliliğinizi korumak, toplanan bilgileri hiçbir zaman herhangi bir amaç için paylaşmıyoruz."
+   },
+   "str": {
+      "message": "izleyiciler"
+   },
+   "tooltip": {
+      "message": "Anti-tracker, ticari bir hedef haline gelmemeniz için veri toplamayı engelleyerek  çevrimiçi gizliliğinizi korur"
+   },
+   "trackers_blocked": {
+      "message": "Erişim engellendi"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL zaten var."
+   },
+   "url_is_empty": {
+      "message": "URL boş"
+   },
+   "url_not_valid": {
+      "message": "URL geçersiz."
+   },
+   "website_added_list": {
+      "message": "Websitesi eklendi"
+   },
+   "website_url_enter": {
+      "message": "Web sitesi URL’sini girin"
+   }
+}

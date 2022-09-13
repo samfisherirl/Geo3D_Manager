@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "เพิ่มเว็บไซต์ปัจจุบันลงในรายการ"
+   },
+   "advertising_category_desc": {
+      "message": "เครื่องมือติดตามการโฆษณา ใช้เพื่อวิเคราะห์ปริมาณการใช้งานเว็บไซต์ พฤติกรรมของผู้ใช้งาน หรือรูปแบบของผู้เยี่ยมชมเว็บไซต์"
+   },
+   "advertising_category_title": {
+      "message": "โฆษณา"
+   },
+   "advertising_category_tooltip": {
+      "message": "เครื่องมือติดตามที่วิเคราะห์ปริมาณการใช้งานเว็บไซต์ หรือพฤติกรรมการใช้งาน"
+   },
+   "advertising_page_button_block": {
+      "message": "เปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "advertising_page_button_unblock": {
+      "message": "ปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "advertising_page_title": {
+      "message": "เครื่องมือติดตามการโฆษณา (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "เครื่องมือติดตามการโฆษณา"
+   },
+   "analytics_category_desc": {
+      "message": "เครื่องมือติดตามไซต์ Analytics ใช้เพื่อรวบรวมข้อมูลเกี่ยวกับการใช้หน้าเว็บ"
+   },
+   "analytics_category_title": {
+      "message": "การวิเคราะห์ไซต์"
+   },
+   "analytics_category_tooltip": {
+      "message": "เกี่ยวข้องกับการวิเคราะห์ข้อมูล และเครื่องมือติดตามการใช้เว็บเพจ"
+   },
+   "analytics_page_button_block": {
+      "message": "เปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "analytics_page_button_unblock": {
+      "message": "ปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "analytics_page_title": {
+      "message": "เครื่องมือติดตามไซต์ Analytics (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "เครื่องมือติดตามการวิเคราะห์ผ่านไซต์"
+   },
+   "app_desc": {
+      "message": "ปกป้องความเป็นส่วนตัวของคุณ ด้วยการบล็อคตัวติดตาม ที่สามารถรวบรวมข้อมูลประเภทต่างๆ ทุกครั้งที่คุณใช้การนำทางออนไลน์"
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "เปิดใช้งานตัวป้องกันการติดตามในเบราว์เซอร์นี้"
+   },
+   "browser_not_installed": {
+      "message": "บราวเซอร์นี้ไม่ได้ถูกติดตั้งบนอุปกรณ์นี้"
+   },
+   "browser_session_blocked": {
+      "message": "เครื่องมือติดตามถูกบล็อคในเซสชันการเรียกดูปัจจุบัน"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "เปิดใช้งานตัวติดตาม เพื่อปกป้องความเป็นส่วนตัวออนไลน์ของคุณ"
+   },
+   "enable_protection": {
+      "message": "เปิดใช้งานการป้องกันบนเว็บไซต์นี้"
+   },
+   "essential_category_desc": {
+      "message": "เครื่องมือติดตามที่สำคัญ ถูกใช้เพื่อตรวจสอบฟังก์ชันการทำงานของเว็บเพจที่สำคัญ"
+   },
+   "essential_category_title": {
+      "message": "Essential"
+   },
+   "essential_category_tooltip": {
+      "message": "เกี่ยวข้องกับเครื่องมือติดตามที่มีความสำคัญต่อการทำงานของหน้าเว็บ"
+   },
+   "essential_page_button_block": {
+      "message": "เปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "essential_page_button_unblock": {
+      "message": "ปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "essential_page_title": {
+      "message": "เครื่องมือติดตามที่จำเป็น (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "เครื่องมือติดตามที่จำเป็น"
+   },
+   "exception_action_desc": {
+      "message": "เพิ่มหรือลบเว็บไซต์ด้านล่างด้วยตนเอง"
+   },
+   "exceptions_desc": {
+      "message": "เครื่องมือติดตามเว็บไซต์ที่ถูกยกเว้นจะไม่ถูกบล็อก"
+   },
+   "exceptions_title": {
+      "message": "การยกเว้น"
+   },
+   "extension_status_desc": {
+      "message": "เปิดใช้งาน หรือ ปิดใช้งานส่วนขยาย"
+   },
+   "extension_status_off": {
+      "message": "ตัวป้องกันการติดตามปิดทำงาน"
+   },
+   "extension_status_on": {
+      "message": "ตัวป้องกันการติดตามเปิดอยู่"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "ซ่อนรายละเอียดเพิ่มเติม"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "ติดตั้งตัวป้องกันการติดตามบนเบราว์เซอร์นี้"
+   },
+   "interaction_category_desc": {
+      "message": "เครื่องมือติดตามการปฏิสัมพันธ์กับลูกค้า ใช้เพื่อวัดการโต้ตอบของผู้ใช้งาน กับรูปแบบการป้อนข้อมูลที่แตกต่างกัน เช่น การแชทหรือการสนับสนุน"
+   },
+   "interaction_category_title": {
+      "message": "ปฏิสัมพันธ์กับลูกค้า"
+   },
+   "interaction_category_tooltip": {
+      "message": "เครื่องมือติดตามที่ใช้ในการวัดการโต้ตอบรูปแบบต่างๆ เช่น การแชทหรือการสนับสนุน"
+   },
+   "interaction_page_button_block": {
+      "message": "เปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "interaction_page_button_unblock": {
+      "message": "ปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "interaction_page_title": {
+      "message": "เครื่องมือติดตามการโต้ตอบกับลูกค้า (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "เครื่องมือติดตามการโต้ตอบกับลูกค้า"
+   },
+   "not_enabled": {
+      "message": "ไม่ได้เปิดทำงาน"
+   },
+   "off": {
+      "message": "ปิด"
+   },
+   "on": {
+      "message": "เปิด"
+   },
+   "page_load": {
+      "message": "โหลดหน้าเพจ"
+   },
+   "pause_protection": {
+      "message": "หยุดการป้องกันชั่วคราวในเว็บไซต์นี้"
+   },
+   "plugins_title": {
+      "message": "เลือกแอปพลิเคชั่นที่ควรทำงานร่วมกับ Anti-tracker"
+   },
+   "seconds": {
+      "message": "วินาที"
+   },
+   "settings_title": {
+      "message": "ตั้งค่า"
+   },
+   "short_name": {
+      "message": "ต่อต้าน-การติดตามตำแหน่ง"
+   },
+   "show_more_details": {
+      "message": "แสดงรายละเอียดเพิ่มเติม"
+   },
+   "social_category_desc": {
+      "message": "เครื่องมือติดตามโซเชียลมีเดีย ถูกใช้เพื่อตรวจสอบผู้ชมโซเชียลกิจกรรม และการมีส่วนร่วมของผู้ใช้งาน ด้วยแพลตฟอร์มโซเชียลมีเดียต่างๆ"
+   },
+   "social_category_title": {
+      "message": "โซเชียลมีเดีย"
+   },
+   "social_category_tooltip": {
+      "message": "เครื่องมือติดตามใช้ในการวัดผลการมีส่วนร่วมกับแพลตฟอร์มโซเชียลมีเดียต่างๆ"
+   },
+   "social_page_button_block": {
+      "message": "เปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "social_page_button_unblock": {
+      "message": "ปิดใช้งานการบล็อกสำหรับหมวดหมู่นี้"
+   },
+   "social_page_title": {
+      "message": "เครื่องมือติดตามโซเชียลมีเดีย (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "เครื่องมือติดตามโซเชียลมีเดีย"
+   },
+   "special_offers": {
+      "message": "ข้อเสนอพิเศษ"
+   },
+   "special_offers_tooltip": {
+      "message": "เราใช้เครื่องมือติดตามเชิงพาณิชย์ เพื่อช่วยให้คุณค้นหาข้อเสนอพิเศษของเราได้อย่างง่ายดาย ภารกิจของเราคือเพื่อปกป้องความเป็นส่วนตัวของคุณ เราจะไม่แบ่งปันข้อมูลใดๆ ที่เก็บรวบรวมข้อมูลกับใครเพื่อวัตถุประสงค์ใดๆ"
+   },
+   "str": {
+      "message": "ติดตาม"
+   },
+   "tooltip": {
+      "message": "ตัวป้องกันการติดตาม จะช่วยปกป้องความเป็นส่วนตัวออนไลน์ของคุณ ด้วยการบล็อก การรวบรวมข้อมูลที่จะเปิดใช้งาน การทำโปรไฟล์ และการกำหนดเป้าหมายเชิงพาณิชย์ต่างๆ"
+   },
+   "trackers_blocked": {
+      "message": "เครื่องมือติดตามถูกบล็อค"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL นี้มีอยู่แล้ว"
+   },
+   "url_is_empty": {
+      "message": "URL นี้ว่างเปล่า"
+   },
+   "url_not_valid": {
+      "message": "URL ไม่ถูกต้อง"
+   },
+   "website_added_list": {
+      "message": "การเพิ่มเว็บไซต์"
+   },
+   "website_url_enter": {
+      "message": "ป้อน URL เว็บไซต์"
+   }
+}

@@ -1,0 +1,2 @@
+BROWSER_KEYS.ENABLED = "Chrome_enabled";
+BROWSER_VALUES.SOURCE = "chrome";

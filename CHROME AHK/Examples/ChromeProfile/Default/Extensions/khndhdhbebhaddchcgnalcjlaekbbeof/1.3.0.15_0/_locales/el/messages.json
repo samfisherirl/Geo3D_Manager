@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Προσθέστε τον τρέχοντα ιστότοπο στη λίστα."
+   },
+   "advertising_category_desc": {
+      "message": "Οι συσκευές παρακολούθησης διαφήμισης χρησιμοποιούνται για την ανάλυση της επισκεψιμότητας των ιστότοπων, της συμπεριφοράς των χρηστών ή των μοτίβων επισκεπτών ιστότοπων."
+   },
+   "advertising_category_title": {
+      "message": "Διαφήμιση"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trackers που αναλύουν την επισκεψιμότητα του ιστότοπου ή τη συμπεριφορά χρήσης."
+   },
+   "advertising_page_button_block": {
+      "message": "Ξεκινήστε να αποκλείετε αυτήν την κατηγορία"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Διακόψτε το κλείδωμα αυτής της κατηγορίας"
+   },
+   "advertising_page_title": {
+      "message": "Trackers διαφημίσεων (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Trackers διαφήμισης"
+   },
+   "analytics_category_desc": {
+      "message": "Οι trackers ανάλυσης ιστοστελίδων χρησιμοποιούνται για τη συλλογή δεδομένων σχετικά με τη χρήση της ιστοσελίδας."
+   },
+   "analytics_category_title": {
+      "message": "Ανάλυση Ιστοστελίδας"
+   },
+   "analytics_category_tooltip": {
+      "message": "Σχετικά με την ανάλυση δεδομένων και τους trackers χρήσης ιστοσελίδων."
+   },
+   "analytics_page_button_block": {
+      "message": "Ξεκινήστε να αποκλείετε αυτήν την κατηγορία"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Διακόψτε το κλείδωμα αυτής της κατηγορίας"
+   },
+   "analytics_page_title": {
+      "message": "Trackers ιστοτόπου (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Τrackers ιστοτόπου"
+   },
+   "app_desc": {
+      "message": "Προστατεύει την ιδιωτική σας ζωή αποκλείοντας τους trackers που συλλέγουν διαφορετικό τύπο δεδομένων κάθε φορά που σερφάρετε στο διαδίκτυο."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Ενεργοποιήστε την υπηρεσία Anti-tracker σε αυτό το πρόγραμμα περιήγησης"
+   },
+   "browser_not_installed": {
+      "message": "Αυτό το πρόγραμμα περιήγησης δεν εχει εγκατασταθεί στη συσκευή σας"
+   },
+   "browser_session_blocked": {
+      "message": "trackers έχουν αποκλειστεί στην τρέχουσα περίοδο λειτουργίας περιήγησης"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Ενεργοποιήστε το Anti-tracker για να προστατεύσετε το προσωπικό σας απόρρητο"
+   },
+   "enable_protection": {
+      "message": "Ενεργοποιήστε την προστασία σε αυτόν τον ιστότοπο"
+   },
+   "essential_category_desc": {
+      "message": "Οι βασικοί trackers χρησιμοποιούνται για την παρακολούθηση σημαντικών λειτουργιών ιστοσελίδας."
+   },
+   "essential_category_title": {
+      "message": "Essential"
+   },
+   "essential_category_tooltip": {
+      "message": "Αναφέρεται στους trackers που είναι κρίσιμοι για τη λειτουργικότητα της ιστοσελίδας."
+   },
+   "essential_page_button_block": {
+      "message": "Ξεκινήστε να αποκλείετε αυτήν την κατηγορία"
+   },
+   "essential_page_button_unblock": {
+      "message": "Διακόψτε το κλείδωμα αυτής της κατηγορίας"
+   },
+   "essential_page_title": {
+      "message": "Βασικοί trackers (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Βασικοί trackers"
+   },
+   "exception_action_desc": {
+      "message": "Μη αυτόματη προσθήκη ή κατάργηση ιστότοπων παρακάτω"
+   },
+   "exceptions_desc": {
+      "message": "Οι trackers σε ιστότοπους με εξαίρεση δεν αποκλείονται."
+   },
+   "exceptions_title": {
+      "message": "Εξαιρέσεις"
+   },
+   "extension_status_desc": {
+      "message": "Ενεργοποίηση ή απενεργοποίηση της επέκτασης"
+   },
+   "extension_status_off": {
+      "message": "Ο anti-tracker είναι απενεργοποιημένος"
+   },
+   "extension_status_on": {
+      "message": "Ο anti-tracker είναι ενεργοποιημένος"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Απόκρυψη περισσότερων λεπτομερειών"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Εγκαταστήστε το Anti-tracker σε αυτό το πρόγραμμα περιήγησης"
+   },
+   "interaction_category_desc": {
+      "message": "Οι trackers αλληλεπίδρασης πελατών χρησιμοποιούνται για τη μέτρηση της αλληλεπίδρασης των χρηστών με διαφορετικές φόρμες εισόδου, όπως η συνομιλία ή η υποστήριξη."
+   },
+   "interaction_category_title": {
+      "message": "Αλληλεπίδραση Πελατών"
+   },
+   "interaction_category_tooltip": {
+      "message": "Οι trackers χρησιμοποιούνται για τη μέτρηση της αλληλεπίδρασης με φόρμες όπως η συνομιλία ή η υποστήριξη."
+   },
+   "interaction_page_button_block": {
+      "message": "Ξεκινήστε να αποκλείετε αυτήν την κατηγορία"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Διακόψτε το κλείδωμα αυτής της κατηγορίας"
+   },
+   "interaction_page_title": {
+      "message": "Τrackers αλληλεπίδρασης πελατών (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Τrackers αλληλεπίδρασης πελατών"
+   },
+   "not_enabled": {
+      "message": "Μη ενεργό"
+   },
+   "off": {
+      "message": "Ανενεργό"
+   },
+   "on": {
+      "message": "Ενεργό"
+   },
+   "page_load": {
+      "message": "Φόρτωση σελίδας"
+   },
+   "pause_protection": {
+      "message": "Παύση προστασίας σε αυτόν τον ιστότοπο"
+   },
+   "plugins_title": {
+      "message": "Επιλέξτε ποιες εφαρμογές θα πρέπει να συνεργάζονται με το Anti-tracker"
+   },
+   "seconds": {
+      "message": "δευτ"
+   },
+   "settings_title": {
+      "message": "Ρυθμίσεις"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Προβολή περισσότερων λεπτομερειών"
+   },
+   "social_category_desc": {
+      "message": "Οι trackers κοινωνικών μέσων χρησιμοποιούνται για την παρακολούθηση του κοινωνικού κοινού, της δραστηριότητας και της εμπλοκής του χρήστη με διαφορετικές πλατφόρμες κοινωνικών μέσων."
+   },
+   "social_category_title": {
+      "message": "Κοινωνικά Δίκτυα"
+   },
+   "social_category_tooltip": {
+      "message": "Οι trackers χρησιμοποιούνται για τη μέτρηση της δέσμευσης με διαφορετικές πλατφόρμες κοινωνικών μέσων."
+   },
+   "social_page_button_block": {
+      "message": "Ξεκινήστε να αποκλείετε αυτήν την κατηγορία"
+   },
+   "social_page_button_unblock": {
+      "message": "Διακόψτε το κλείδωμα αυτής της κατηγορίας"
+   },
+   "social_page_title": {
+      "message": "    Trackers κοινωνικών δικτύων (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Trackers κοινωνικών δικτύων"
+   },
+   "special_offers": {
+      "message": "Ειδικές προσφορές"
+   },
+   "special_offers_tooltip": {
+      "message": "Χρησιμοποιούμε τους εμπορικούς trackers για να σας βοηθήσουμε να βρείτε εύκολα τις ειδικές προσφορές μας. Αποστολή μας είναι να προστατέψουμε το ιδιωτικό σας απόρρητο. Ποτέ δεν μοιραζόμαστε καμία από τις πληροφορίες που συλλέξαμε με κανέναν, για οποιονδήποτε σκοπό."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "Το Anti-tracker προστατεύει την προστασία της ιδιωτικής ζωής σας στο διαδίκτυο, εμποδίζοντας τη συλλογή δεδομένων που θα επιτρέψει τη δημιουργία προφίλ και την εμπορική στόχευσή σας."
+   },
+   "trackers_blocked": {
+      "message": "Trackers blocked"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "Η διεύθυνση URL υπάρχει ήδη."
+   },
+   "url_is_empty": {
+      "message": "Η διεύθυνση URL είναι κενή"
+   },
+   "url_not_valid": {
+      "message": "Η διεύθυνση URL δεν είναι έγκυρη."
+   },
+   "website_added_list": {
+      "message": "Ο ιστότοπος προστέθηκε"
+   },
+   "website_url_enter": {
+      "message": "Εισαγάγετε τη διεύθυνση ιστότοπου"
+   }
+}

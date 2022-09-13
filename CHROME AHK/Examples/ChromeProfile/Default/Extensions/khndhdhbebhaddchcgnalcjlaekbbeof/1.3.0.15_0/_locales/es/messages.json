@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Añadir el sitio web actual a la lista."
+   },
+   "advertising_category_desc": {
+      "message": "Los rastreadores de publicidad se utilizan para analizar el tráfico del sitio web, el comportamiento de los usuarios o los patrones de los visitantes."
+   },
+   "advertising_category_title": {
+      "message": "Publicidad"
+   },
+   "advertising_category_tooltip": {
+      "message": "Rastreadores que analizan el tráfico del sitio web o el comportamiento de los usuarios."
+   },
+   "advertising_page_button_block": {
+      "message": "Habilitar el bloqueo para esta categoría"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Inhabilitar el bloqueo para esta categoría"
+   },
+   "advertising_page_title": {
+      "message": "Rastreadores de publicidad (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Rastreadores de publicidad"
+   },
+   "analytics_category_desc": {
+      "message": "Los rastreadores de análisis del sitio se utilizan para recopilar datos sobre el uso de la página web."
+   },
+   "analytics_category_title": {
+      "message": "Análisis del sitio"
+   },
+   "analytics_category_tooltip": {
+      "message": "Relacionado con los rastreadores de análisis de datos y del uso de la página web."
+   },
+   "analytics_page_button_block": {
+      "message": "Habilitar el bloqueo para esta categoría"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Inhabilitar el bloqueo para esta categoría"
+   },
+   "analytics_page_title": {
+      "message": "Rastreadores de análisis del sitio (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Rastreadores de análisis del sitio"
+   },
+   "app_desc": {
+      "message": "Protege su privacidad mediante el bloqueo de rastreadores que recopilan diferentes tipos de datos cuando navega por Internet."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Habilitar Anti-tracker en este navegador"
+   },
+   "browser_not_installed": {
+      "message": "Este navegador no está instalado en su dispositivo"
+   },
+   "browser_session_blocked": {
+      "message": "rastreadores bloqueados en la sesión de navegación actual"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Habilite Anti-tracker para proteger su privacidad en Internet"
+   },
+   "enable_protection": {
+      "message": "Habilitar la protección en este sitio web"
+   },
+   "essential_category_desc": {
+      "message": "Los rastreadores esenciales se utilizan para monitorizar las funciones críticas de la página web."
+   },
+   "essential_category_title": {
+      "message": "Esencial"
+   },
+   "essential_category_tooltip": {
+      "message": "Relacionado con los rastreadores críticos para el funcionamiento de la página web."
+   },
+   "essential_page_button_block": {
+      "message": "Habilitar el bloqueo para esta categoría"
+   },
+   "essential_page_button_unblock": {
+      "message": "Inhabilitar el bloqueo para esta categoría"
+   },
+   "essential_page_title": {
+      "message": "Rastreadores esenciales (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Rastreadores esenciales"
+   },
+   "exception_action_desc": {
+      "message": "Añadir o eliminar los sitios web que aparecen a continuación"
+   },
+   "exceptions_desc": {
+      "message": "No se bloquearán los rastreadores de los sitios web exceptuados."
+   },
+   "exceptions_title": {
+      "message": "Exclusiones"
+   },
+   "extension_status_desc": {
+      "message": "Habilitar o inhabilitar extensión"
+   },
+   "extension_status_off": {
+      "message": "Anti-tracker está DESACTIVADO"
+   },
+   "extension_status_on": {
+      "message": "Anti-tracker está ACTIVADO"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Ocultar más detalles"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Instalar Anti-tracker en este navegador"
+   },
+   "interaction_category_desc": {
+      "message": "Los rastreadores de interacción con el cliente se utilizan para medir la interacción del usuario con diferentes sistemas de entrada, como pueden ser un chat o un formulario de soporte."
+   },
+   "interaction_category_title": {
+      "message": "Interacción con el cliente"
+   },
+   "interaction_category_tooltip": {
+      "message": "Rastreadores utilizados para medir la interacción con sistemas de entrada como pueden ser un chat o un formulario de soporte."
+   },
+   "interaction_page_button_block": {
+      "message": "Habilitar el bloqueo para esta categoría"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Inhabilitar el bloqueo para esta categoría"
+   },
+   "interaction_page_title": {
+      "message": "Rastreadores de interacción con el cliente (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Rastreadores de interacción con el cliente"
+   },
+   "not_enabled": {
+      "message": "No activado"
+   },
+   "off": {
+      "message": "Desactivado"
+   },
+   "on": {
+      "message": "Activado"
+   },
+   "page_load": {
+      "message": "Carga de la página"
+   },
+   "pause_protection": {
+      "message": "Pausar la protección en este sitio web"
+   },
+   "plugins_title": {
+      "message": "Escoja las aplicaciones que deben funcionar junto con Anti-tracker"
+   },
+   "seconds": {
+      "message": "seg"
+   },
+   "settings_title": {
+      "message": "Configuración"
+   },
+   "short_name": {
+      "message": "Anti-tracker"
+   },
+   "show_more_details": {
+      "message": "Ver más detalles"
+   },
+   "social_category_desc": {
+      "message": "Los rastreadores de redes sociales se utilizan para monitorizar la audiencia, actividad e interacción del usuario con diferentes plataformas de redes sociales."
+   },
+   "social_category_title": {
+      "message": "Redes sociales"
+   },
+   "social_category_tooltip": {
+      "message": "Rastreadores utilizados para medir la actividad en diferentes plataformas de redes sociales."
+   },
+   "social_page_button_block": {
+      "message": "Habilitar el bloqueo para esta categoría"
+   },
+   "social_page_button_unblock": {
+      "message": "Inhabilitar el bloqueo para esta categoría"
+   },
+   "social_page_title": {
+      "message": "Rastreadores de redes sociales (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Rastreadores de redes sociales"
+   },
+   "special_offers": {
+      "message": "Ofertas especiales"
+   },
+   "special_offers_tooltip": {
+      "message": "Utilizamos rastreadores comerciales para ayudarle a encontrar fácilmente nuestras ofertas especiales. Nuestra misión es proteger su privacidad. Nunca compartimos con nadie ninguna información recopilada, por ningún motivo."
+   },
+   "str": {
+      "message": "rastreadores"
+   },
+   "tooltip": {
+      "message": "Anti-tracker protege su privacidad online bloqueando la recopilación de datos que permitiría crear su perfil y conocer sus intereses en cuanto a compras."
+   },
+   "trackers_blocked": {
+      "message": "Rastreadores bloqueados"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL ya existe."
+   },
+   "url_is_empty": {
+      "message": "La URL está vacía"
+   },
+   "url_not_valid": {
+      "message": "La URL no es válida."
+   },
+   "website_added_list": {
+      "message": "Sitio web añadido"
+   },
+   "website_url_enter": {
+      "message": "Introduzca la URL del sitio web"
+   }
+}

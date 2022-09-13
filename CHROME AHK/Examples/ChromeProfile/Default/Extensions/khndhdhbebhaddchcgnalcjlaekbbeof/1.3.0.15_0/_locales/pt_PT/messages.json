@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Adicionar o site atual à lista."
+   },
+   "advertising_category_desc": {
+      "message": "Publicidade utilizada para analisar o tráfego do site, o comportamento do utilizador ou os padrões dos visitantes do site."
+   },
+   "advertising_category_title": {
+      "message": "Publicidade"
+   },
+   "advertising_category_tooltip": {
+      "message": "Monitorizadores que analisam o tráfego ou comportamento de utilização do site"
+   },
+   "advertising_page_button_block": {
+      "message": "Ativar bloqueio para esta categoria"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Desativar o bloqueio desta categoria"
+   },
+   "advertising_page_title": {
+      "message": "Monitorizadores de publicidade (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Monitorizadores de publicidade"
+   },
+   "analytics_category_desc": {
+      "message": "Monitorizadores de Analíticas de sites são utilizadas para recolher dados sobre a utilização da página web."
+   },
+   "analytics_category_title": {
+      "message": "Analíticas do site"
+   },
+   "analytics_category_tooltip": {
+      "message": "Relaciona-se a monitorizadores de analítica de dados e utilização da página web."
+   },
+   "analytics_page_button_block": {
+      "message": "Ativar bloqueio para esta categoria"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Desativar o bloqueio desta categoria"
+   },
+   "analytics_page_title": {
+      "message": "Monitorizadores de analítica de sites (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Monitorizadores de analítica de sites"
+   },
+   "app_desc": {
+      "message": "Protege a sua privacidade ao bloquear os monitorizadores que recolhem diferentes tipos de dados sempre que navega online."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Ativar Anti-tracker neste navegador"
+   },
+   "browser_not_installed": {
+      "message": "Esse navegador não está instalado no seu dispositivo"
+   },
+   "browser_session_blocked": {
+      "message": "monitorizadores bloqueados na sessão de navegação atual"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Ative o Anti-tracker para proteger a sua privacidade online"
+   },
+   "enable_protection": {
+      "message": "Ative a proteção neste site"
+   },
+   "essential_category_desc": {
+      "message": "Monitorizadores de Essenciais são utilizados para monitorizar funcionalidades críticas da página web."
+   },
+   "essential_category_title": {
+      "message": "Essencial"
+   },
+   "essential_category_tooltip": {
+      "message": "Relaciona-se a monitorizadores que são críticos para a funcionalidade da página web."
+   },
+   "essential_page_button_block": {
+      "message": "Ativar bloqueio para esta categoria"
+   },
+   "essential_page_button_unblock": {
+      "message": "Desativar o bloqueio desta categoria"
+   },
+   "essential_page_title": {
+      "message": "Monitorizadores essenciais (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Monitorizadores essenciais"
+   },
+   "exception_action_desc": {
+      "message": "Adicionar ou remover manualmente os sites abaixo"
+   },
+   "exceptions_desc": {
+      "message": "Monitorizadores dos sites marcados como exceções não serão bloqueados."
+   },
+   "exceptions_title": {
+      "message": "Exceções"
+   },
+   "extension_status_desc": {
+      "message": "Ativar ou desativar extensão"
+   },
+   "extension_status_off": {
+      "message": "O Anti-tracker está DESLIGADO"
+   },
+   "extension_status_on": {
+      "message": "O Anti-tracker está LIGADO"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Esconder mais detalhes"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Instalar Anti-tracker neste navegador"
+   },
+   "interaction_category_desc": {
+      "message": "Monitorizadores de interação com clientes são utilizados para medir as interações dos utilizadores com diferentes formas de entrada como chats e apoios."
+   },
+   "interaction_category_title": {
+      "message": "Interação do Cliente"
+   },
+   "interaction_category_tooltip": {
+      "message": "Monitorizadores utilizados para medir a interação com formas como chats ou apoio."
+   },
+   "interaction_page_button_block": {
+      "message": "Ativar bloqueio para esta categoria"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Desativar o bloqueio desta categoria"
+   },
+   "interaction_page_title": {
+      "message": "Monitorizadores de Interações de Clientes (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Monitorizadores de Interações de Clientes"
+   },
+   "not_enabled": {
+      "message": "Desativado"
+   },
+   "off": {
+      "message": "Desligado"
+   },
+   "on": {
+      "message": "Ligado"
+   },
+   "page_load": {
+      "message": "Carregamento da página"
+   },
+   "pause_protection": {
+      "message": "Pausar proteção neste site"
+   },
+   "plugins_title": {
+      "message": "Escolha que aplicações devem funcionar juntamente com o Anti-tracker"
+   },
+   "seconds": {
+      "message": "seg"
+   },
+   "settings_title": {
+      "message": "Definições"
+   },
+   "short_name": {
+      "message": "Antitracker"
+   },
+   "show_more_details": {
+      "message": "Mais detalhes"
+   },
+   "social_category_desc": {
+      "message": "Monitorizadores de Redes Sociais são utilizados para monitorizar o público em redes sociais, as suas atividades e o envolvimento dos utilizadores nas diferentes plataformas de redes sociais."
+   },
+   "social_category_title": {
+      "message": "Mídia Social"
+   },
+   "social_category_tooltip": {
+      "message": "Monitorizadores utilizados para medir a interação com diferentes plataformas de redes sociais."
+   },
+   "social_page_button_block": {
+      "message": "Ativar bloqueio para esta categoria"
+   },
+   "social_page_button_unblock": {
+      "message": "Desativar o bloqueio desta categoria"
+   },
+   "social_page_title": {
+      "message": "Monitorizadores de redes sociais (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Monitorizadores de redes sociais"
+   },
+   "special_offers": {
+      "message": "Ofertas especiais"
+   },
+   "special_offers_tooltip": {
+      "message": "Utilizamos monitorizadores comerciais para o ajudar a encontrar as nossas ofertas especiais de forma fácil. A nossa missão é proteger a sua privacidade. Nunca partilhamos a sua informação recolhida com ninguém, por razão alguma."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "O anti-tracker protege a sua privacidade online ao bloquear a recolha de dados que possibilitariam a criação de um perfil e o direcionamento de propaganda"
+   },
+   "trackers_blocked": {
+      "message": "Monitorizadores bloqueados"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL já existe."
+   },
+   "url_is_empty": {
+      "message": "O URL está vazio"
+   },
+   "url_not_valid": {
+      "message": "O URL é inválido."
+   },
+   "website_added_list": {
+      "message": "Site adicionado"
+   },
+   "website_url_enter": {
+      "message": "Inserir o URL do site"
+   }
+}

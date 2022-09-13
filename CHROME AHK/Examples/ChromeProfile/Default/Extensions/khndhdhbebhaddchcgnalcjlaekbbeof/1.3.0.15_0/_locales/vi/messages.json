@@ -1,0 +1,227 @@
+{
+   "add_curr_website": {
+      "message": "Thêm trang web hiện tại vào danh sách."
+   },
+   "advertising_category_desc": {
+      "message": "Trình theo dõi quảng cáo được sử dụng để phân tích lưu lượng truy cập trang web, hành vi người dùng hoặc mẫu của khách truy cập trang web."
+   },
+   "advertising_category_title": {
+      "message": "Quảng cáo"
+   },
+   "advertising_category_tooltip": {
+      "message": "Trình theo dõi phân tích lưu lượng truy cập trang web hoặc hành vi sử dụng."
+   },
+   "advertising_page_button_block": {
+      "message": "Cho phép chặn đối với danh mục này"
+   },
+   "advertising_page_button_unblock": {
+      "message": "Vô hiệu hóa chặn cho thể loại này"
+   },
+   "advertising_page_title": {
+      "message": "Trình theo dõi quảng cáo (%d)"
+   },
+   "advertising_trackers_tooltip": {
+      "message": "Trình theo dõi quảng cáo"
+   },
+   "analytics_category_desc": {
+      "message": "Trình theo dõi phân tích trang web được sử dụng để thu thập dữ liệu về việc sử dụng trang web."
+   },
+   "analytics_category_title": {
+      "message": "Phân tích trang web"
+   },
+   "analytics_category_tooltip": {
+      "message": "Liên quan đến phân tích dữ liệu và trình theo dõi sử dụng trang web."
+   },
+   "analytics_page_button_block": {
+      "message": "Cho phép chặn đối với danh mục này"
+   },
+   "analytics_page_button_unblock": {
+      "message": "Vô hiệu hóa chặn cho thể loại này"
+   },
+   "analytics_page_title": {
+      "message": "Trình theo dõi phân tích trang web (%d)"
+   },
+   "analytics_trackers_tooltip": {
+      "message": "Trình theo dõi phân tích trang web"
+   },
+   "app_desc": {
+      "message": "Bảo vệ quyền riêng tư của bạn bằng cách chặn các trình theo dõi thu thập loại dữ liệu khác nhau mỗi khi bạn điều hướng trực tuyến."
+   },
+   "app_name": {
+      "message": "Bitdefender Anti-tracker"
+   },
+   "browser_enable_plugin": {
+      "message": "Kích hoạt tính năng Anti-tracker trình duyệt này"
+   },
+   "browser_not_installed": {
+      "message": "Trình duyệt này chưa được cài đặt trên thiết bị của bạn"
+   },
+   "browser_session_blocked": {
+      "message": "trình theo dõi bị chặn trong phiên duyệt hiện tại"
+   },
+   "chrome_label": {
+      "message": "Google Chrome"
+   },
+   "enable_app": {
+      "message": "Bật Anti-tracker để bảo vệ quyền riêng tư trực tuyến của bạn"
+   },
+   "enable_protection": {
+      "message": "Cho phép bảo vệ trên trang web này"
+   },
+   "essential_category_desc": {
+      "message": "Trình theo dõi cần thiết được sử dụng để theo dõi các chức năng quan trọng của trang web."
+   },
+   "essential_category_title": {
+      "message": "Cơ bản"
+   },
+   "essential_category_tooltip": {
+      "message": "Liên quan đến trình theo dõi quan trọng đối với chức năng trang web."
+   },
+   "essential_page_button_block": {
+      "message": "Cho phép chặn đối với danh mục này"
+   },
+   "essential_page_button_unblock": {
+      "message": "Vô hiệu hóa chặn cho thể loại này"
+   },
+   "essential_page_title": {
+      "message": "Trình theo dõi cơ bản (%d)"
+   },
+   "essentials_trackers_tooltip": {
+      "message": "Theo dõi cần thiết"
+   },
+   "exception_action_desc": {
+      "message": "Thêm hoặc xóa thủ công các trang web dưới đây"
+   },
+   "exceptions_desc": {
+      "message": "Trình theo dõi các trang web ngoại trừ sẽ không bị chặn."
+   },
+   "exceptions_title": {
+      "message": "Ngoại trừ"
+   },
+   "extension_status_desc": {
+      "message": "Bật hoặc tắt tiện ích mở rộng"
+   },
+   "extension_status_off": {
+      "message": "Anti-tracker đang tắt"
+   },
+   "extension_status_on": {
+      "message": "Anti-tracker đang BẬT"
+   },
+   "firefox_label": {
+      "message": "Mozilla Firefox"
+   },
+   "hide_more_details": {
+      "message": "Ẩn thêm chi tiết"
+   },
+   "iexplore_label": {
+      "message": "Internet Explorer"
+   },
+   "install_extension": {
+      "message": "Cài đặt Anti-tracker trên trình duyệt này"
+   },
+   "interaction_category_desc": {
+      "message": "Trình theo dõi tương tác của khách hàng được sử dụng để đo lường sự tương tác của người dùng với các hình thức nhập khác nhau như trò chuyện hoặc hỗ trợ."
+   },
+   "interaction_category_title": {
+      "message": "Tương tác khách hàng"
+   },
+   "interaction_category_tooltip": {
+      "message": "Trình theo dõi được sử dụng để đo lường sự tương tác với các hình thức như trò chuyện hoặc hỗ trợ."
+   },
+   "interaction_page_button_block": {
+      "message": "Cho phép chặn đối với danh mục này"
+   },
+   "interaction_page_button_unblock": {
+      "message": "Vô hiệu hóa chặn cho thể loại này"
+   },
+   "interaction_page_title": {
+      "message": "Trình theo dõi tương tác của khách hàng (%d)"
+   },
+   "interaction_trackers_tooltip": {
+      "message": "Trình theo dõi tương tác của khách hàng"
+   },
+   "not_enabled": {
+      "message": "Không được kích hoạt"
+   },
+   "off": {
+      "message": "Tắt"
+   },
+   "on": {
+      "message": "Bật"
+   },
+   "page_load": {
+      "message": "Tải trang"
+   },
+   "pause_protection": {
+      "message": "Tạm dừng bảo vệ trên trang web này"
+   },
+   "plugins_title": {
+      "message": "Chọn ứng dụng nào sẽ hoạt động cùng với Anti-tracker"
+   },
+   "seconds": {
+      "message": "giây"
+   },
+   "settings_title": {
+      "message": "Các cài đặt"
+   },
+   "short_name": {
+      "message": "Chống theo dõi"
+   },
+   "show_more_details": {
+      "message": "Hiển thị thêm chi tiết"
+   },
+   "social_category_desc": {
+      "message": "Trình theo dõi Truyền thống xa hỗi được sử dụng để theo dõi đối tượng xã hội, hoạt động và sự tham gia của người dùng với các nền tảng truyền thông xã hội khác nhau."
+   },
+   "social_category_title": {
+      "message": "Truyền thông xã hội"
+   },
+   "social_category_tooltip": {
+      "message": "Trình theo dõi được sử dụng để đo lường sự tham gia với các nền tảng truyền thông xã hội khác nhau."
+   },
+   "social_page_button_block": {
+      "message": "Cho phép chặn đối với danh mục này"
+   },
+   "social_page_button_unblock": {
+      "message": "Vô hiệu hóa chặn cho thể loại này"
+   },
+   "social_page_title": {
+      "message": "Trình theo dõi phương tiện truyền thông xã hội (%d)"
+   },
+   "social_trackers_tooltip": {
+      "message": "Trình theo dõi truyền thông xã hội"
+   },
+   "special_offers": {
+      "message": "Ưu đãi đặc biệt"
+   },
+   "special_offers_tooltip": {
+      "message": "Chúng tôi sử dụng trình theo dõi thương mại để giúp bạn tìm thấy các ưu đãi đặc biệt của chúng tôi một cách dễ dàng. Nhiệm vụ của chúng tôi là bảo vệ quyền riêng tư của bạn. Chúng tôi không bao giờ chia sẻ bất kỳ thông tin nào được thu thập với bất kỳ ai, cho bất kỳ mục đích nào."
+   },
+   "str": {
+      "message": "trackers"
+   },
+   "tooltip": {
+      "message": "Anti-tracker bảo vệ quyền riêng tư trực tuyến của bạn bằng cách chặn thu thập dữ liệu cho phép nhắm mục tiêu thương mại và hồ sơ của bạn."
+   },
+   "trackers_blocked": {
+      "message": "Trình theo dõi bị chặn"
+   },
+   "update_in_progress": {
+      "message": "Update in progress, please wait..."
+   },
+   "url_already_exists": {
+      "message": "URL đã tồn tại."
+   },
+   "url_is_empty": {
+      "message": "URL trống"
+   },
+   "url_not_valid": {
+      "message": "URL không hợp lệ."
+   },
+   "website_added_list": {
+      "message": "Đã thêm trang web"
+   },
+   "website_url_enter": {
+      "message": "Nhập URL trang web"
+   }
+}

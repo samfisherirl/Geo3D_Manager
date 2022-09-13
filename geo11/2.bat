@@ -1,0 +1,1 @@
+7za x 32-bit.7z -oD:\ -y -r

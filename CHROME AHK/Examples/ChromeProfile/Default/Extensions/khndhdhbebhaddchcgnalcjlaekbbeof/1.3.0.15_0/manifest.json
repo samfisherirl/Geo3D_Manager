@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "assets/bdlogo.png",
+      "default_popup": "home.html",
+      "default_title": "__MSG_app_name__"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "content_styles.css" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_app_desc__",
+   "icons": {
+      "128": "assets/bdlogo.png",
+      "16": "assets/bdlogo.png",
+      "32": "assets/bdlogo.png",
+      "48": "assets/bdlogo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh8ROIzAMwGAvZvioTEGDzZbhwVjtodFMu4ZAwnh+KY5LaIXYiuUx4U9Z1mZa4C/UWQpEoYWLMDkE2ZNzZ7w0YLSf/zu3XGNvRN8AbdkMa3S9ppMtmeVDayaXwkyeNUyrGSvuP5JKBHeyA2VIm9WzGYLq51x0Uchl1kOIskzVEk9V8P8fzuYlu2pf7lTZ+cxaMgelIS6/adQn8Ulf6DCakeNM4EZLHqsLjMc7cxNoWfonQdfYH9At3LijaadhmK9TcTx1rFo8GwDIioWmlcJUa7oi+Pf3Rvh37Nyv0OQw2/LoKPhzS7ccEuQlx39hypsjgFAalGX1ItApnXKZDURR9QIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_app_name__",
+   "permissions": [ "tabs", "webNavigation", "webRequest", "webRequestBlocking", "\u003Call_urls>", "storage", "nativeMessaging" ],
+   "short_name": "__MSG_short_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.0.15",
+   "web_accessible_resources": [ "_locales/*.*/messages.json", "tracking/trackers.json" ]
+}
