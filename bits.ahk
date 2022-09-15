@@ -9,30 +9,17 @@ install(bits)
 {
     global selectgame, gamepath, successbi
     VREx := "VRExport_" bits ".addon"
-    filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
-    7zbat := A_ScriptDir "\geo11\2.bat"
-    7zlog := A_ScriptDir "\output.txt"
+    filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"] 
     Geo3D := "Geo3D"
-    write7zbat := "7za x " bits "-bit.7z -o" gamepath "\ -y -r"
     
-    FileDelete, %7zbat%
-    FileDelete, %7zlog%
-    FileAppend, %write7zbat%, %7zbat%
     ;check for 64x or 32x
-    sleep, 500
-    counterx := 1 
-    ; >>> resolve geo3d location
-    loop, files,  A_ScriptDir
-    {
-        if InStr(A_LoopFileFullPath, Geo3D)
-        {
-           msgbox, file path is %A_LoopFileFullPath%
-        }
-    }
+    sleep, 200
+    counterx := 1  
+     
     ; >>> resolve files in game dir and check for dupes
     for index, value in filesafe
     {
-        loop, files,  gamepath
+        loop, files, gamepath
         {
             if InStr(A_LoopFileFullPath, value)
             {
@@ -49,15 +36,24 @@ install(bits)
         FileCopy, %LoopFileBackup%, %backupfolder%, 1 
     }
     
-    Run, %7zbat%, %A_ScriptDir%, min
-
-    /*
+    ;Run, %7zbat%, %A_ScriptDir%, min
+ 
+    LocalGeo3D := A_ScriptDir "\geo3d\" bits "-bit"
+    bat5 := A_ScriptDir "\5.bat"
+    bat=
+(
+xcopy "%LocalGeo3D%" "%gamepath%" /C /O /I /H /y"
+) 
+    filedelete, %bat5% 
+    FileAppend, %bat%, %bat5% 
+    sleep, 100
+    Run, %bat%
     for index, value in filesafe
     {
-        filecopy, filesafe[index], gamepath, 1
+        Geo3DFiles := A_ScriptDir "\geo3d\" bits "-bit\" value
+        filecopy, %Geo3DFiles%, %gamepath%, 1
     }
-    FileCreateDir,\
-    */
+    
     successbi := "1"
     leaver2:
 }
@@ -67,7 +63,7 @@ install(bits)
  
     */
 
-
+    
 
 LogRead()
 {
@@ -82,65 +78,67 @@ LogRead()
         FileAppend, %texter%, %LogGames%
         goto, Leaver3
     }
+    html:=""
     sep := "`n"
     GameLocation:=[]
     countlines:=[]
     GameExe:=[] 
     Loop, Read, %LogGames%
     {
-        Info := A_LoopReadLine
-        GameInfo := StrSplit(Info, ",") 
-        GameLocation[A_Index] := GameInfo[2]
-        GameExe[A_Index] := GameInfo[3]
-        countlines := A_Index 
-    } 
-    
+        if (A_LoopReadLine != "") {
+            Info := A_LoopReadLine
+            GameInfo := StrSplit(Info, ",") 
+            GameLocation[A_Index] := GameInfo[2]
+            GameExe[A_Index] := GameInfo[3]
+            countlines := A_Index 
+        } 
+    }
+
+    ; ADD HTML TO GAME LIST
     Loop %countlines%
     {
         GL := GameLocation[A_Index]
         GE := GameExe[A_Index] 
+        if (GE != "" or GL != "")
+        {
         html=
 (
 %html%
 <tr>
 <td align="center"> 
-<a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+<a class="btn btn-danger" onclick="ahk.Uninstall(event)" id="%GE%"><em class="fa fa-trash"></em></a>
 </td>
 <td class="hidden-xs">%A_Index%</td>
 )
         html := html . "<td>" . GE . "</td>" . sep
         . "<td>" . GL . "</td>" . sep
-        . "</tr>"
-        Msgbox, %html% 
+        . "</tr>" 
     }
-    
+    }
+    neutron.qs("#tabler").innerHTML := ""
     neutron.qs("#tabler").innerHTML:=html
     Leaver3:
-}
-
-
-
+} 
     /*
  
-    */
-
-AddtoLog() 
+    */ 
+AddtoLog(bits) 
 {
-    global loggame, selectgame, gamepath, gameexe, bits
+    global loggame, selectgame, gamepath, gameexe 
     FileAppend, 
 (
 
-,%selectgame%,%gameexe%,%gamepath%,%bit%,
+,%selectgame%,%gameexe%,%gamepath%,%bits%,
 ), %loggames%
 
 }
 
-Removefromlog() 
+Removefromlog(countlines) 
 {
-    global loggame, selectgame, gamepath, gameexe 
+    global loggames, selectgame, gamepath, gameexe 
     Loop, Read, %LogGames%, out.txt
     {
-        if InStr(A_LoopReadLine, gameexe)
+        if (A_Index=countlines)
         { 
             continue
         }

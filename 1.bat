@@ -1,1 +1,1 @@
-sigcheck -a C:\Users\dower\Documents\ADVANCED INSTALLER\App\Advanced Installer\bin\x64\RepackagerCLI.exe > C:\Users\dower\Desktop\UIAutomation-main\output.txt
+C:\Users\dower\Desktop\UIAutomation-main\sigcheck64.exe -a -c "C:\Program Files (x86)\ASUS\ASUSQInstaller\ASUSQInstaller.exe" > C:\Users\dower\Desktop\UIAutomation-main\output.txt

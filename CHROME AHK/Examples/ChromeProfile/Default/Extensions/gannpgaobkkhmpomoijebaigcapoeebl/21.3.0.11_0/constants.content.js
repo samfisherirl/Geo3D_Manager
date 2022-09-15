@@ -1,1 +1,0 @@
-BROWSER_VALUES.ENVIRONMENT = "content";

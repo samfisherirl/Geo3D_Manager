@@ -3,23 +3,20 @@
 SetWorkingDir, %A_ScriptDir%
 SetBatchLines -1 
 #SingleInstance, Force
-#Include bits.ahk 
-;#Include %A_ScriptDir%\lib\Neutron.ahk
+    ;#Include %A_ScriptDir%\lib\Neutron.ahk
 global LogGames := A_AppDataCommon "\geo3d\gameslist.txt" 
-
+global Dir := A_AppDataCommon "\geo3d"
 ;LogRead()
 
 ;browsefor()
 ;Gameexe := "samsung"
 ;Removefromlog() 
 
-
-
 browsefor()
 {
-    global selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly, successbi
+    global Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly, successbi
     ;declare to be used elsewhere
-    
+    selectgame := ""
     FileSelectFile, Selectgame, 1, , Select a game, Application (*.exe)
     ;browse for file
     if (Selectgame = "")
@@ -31,30 +28,24 @@ browsefor()
     {
         SplitPath, Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly
     }
-    bat := Gamepath "\1.bat"
-    sigcheck := A_ScriptDir "\sigcheck.exe"
-    logger := A_ScriptDir "\output.txt"
+    bat := A_ScriptDir "\1.bat"
+    sigcheck := A_ScriptDir "\sigcheck64.exe"
+    logger := A_ScriptDir "\output.txt" 
     
-    filecopy, %sigcheck%, %Gamepath%
-    sigcheck := Gamepath "\sigcheck.exe"
-    writetobat = 
-    (
-    sigcheck.exe -a -c %Gameexe% > %logger% 
-    
-    )
     FileDelete, %bat%
-    FileDelete, %logger%
+    FileDelete, %logger% 
+    ;check for 64x or 32x  
+    writetobat := sigcheck " -a -c """ Selectgame """ > " logger 
     FileAppend, %writetobat%, %bat%
-    ;check for 64x or 32x
-    Run, %bat%, %GamePath%, min
-    sleep, 500
+    Run, %bat%, %A_ScriptDir%, min
+    sleep, 100
     Loop, read, %logger%
     {
         if (A_Index="2")
         { 
             Col := A_LoopReadLine
             Field := StrSplit(Col, ",") 
-            bit := Field[12]
+            bit := Field[10]
             Delim := `""""
             
             bit := StrReplace(bit, Delim)
@@ -77,16 +68,61 @@ browsefor()
         }
     }
     
-    Addtolog()
-
-
+    Addtolog(bits)
+    
+    
     LogRead()
-
+    
     leaver:
     }
-    /*
+    
+    RemoveGame(gametouninstall)
+    {
+        global LogGames, neutron, backupfolder, bits
+        html:=""
+        sep := "`n"
+        GameLocation:=[]
+        countlines:=[]
+        GameExe:=[] 
+        found := "0"  
+        ; map button id to log file  
+        Loop, Read, %LogGames%
+        {
+            if (A_LoopReadLine != "") {
+                Info := A_LoopReadLine
+                GameInfo := StrSplit(Info, ",") 
+                GameLocation[A_Index] := GameInfo[4]
+                GameExe[A_Index] := GameInfo[3]
+                countlines := A_Index  
+            } 
+            GE := GameExe[A_Index]
+            GL := GameLocation[A_Index]
+            if InStr(GE, gametouninstall)
+            { 
+                found := "1"
+                break
+            }
+        }  
+        backupfolder := GL "\backup_files_geo_vr"
+        if (found = "1")
+        { 
+            bat6 := A_ScriptDir "\6.bat"
+            bat=
+(
+xcopy "%backupfolder%" "%GL%" /C /O /I /H /y"
+)
+            filedelete, %bat6%
+            fileappend, %bat%, %bat6%
+            run, %bat6%
+        }
+        
+        ; restore backups 
+    }
+    Removefromlog(countlines)
+    LogRead()
+}
+/*
 
-    next function
+next function
 
-        */
- 
+*/

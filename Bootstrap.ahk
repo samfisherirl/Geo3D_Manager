@@ -18,6 +18,9 @@ SetBatchLines, -1
 ; Include the Neutron library
 #Include Neutron.ahk
 #Include sigcheck.ahk
+#Include OTA.ahk
+#Include bits.ahk 
+#include JSON.ahk 
 
 ; Create a new NeutronWindow and navigate to our HTML page
 neutron := new NeutronWindow()
@@ -28,16 +31,19 @@ neutron.Load("Bootstrap.html")
 neutron.Gui("+LabelNeutron")
 
 ; Show the Neutron window
-neutron.Show()
+neutron.Show("w1000 h800")
 LogRead()
+;Geo3DDL()
+OTA.currentvers()
 return
 
 
 ; FileInstall all your dependencies, but put the FileInstall lines somewhere
 ; they won't ever be reached. Right below your AutoExecute section is a great
-; location!
-FileInstall, Bootstrap.html, Bootstrap.html
+; location! sigcheck64.exe 7za.exe
+FileInstall, Bootstrap.html, Bootstrap.html 
 FileInstall, bootstrap.min.css, bootstrap.min.css
+FileInstall, 7za.exe, geo3d\7za.exe
 FileInstall, bootstrap.min.js, bootstrap.min.js
 FileInstall, jquery.min.js, jquery.min.js
 
@@ -53,6 +59,23 @@ return
 Button(neutron, event)
 {
 	MsgBox, % "You clicked " event.target.innerText
+}
+
+Installer(neutron, event)
+{
+	browsefor()
+
+}
+
+Uninstall(neutron, event)
+{
+	gametouninstall := event.target.getAttribute("id")
+	MsgBox 0x4, Remove game, Would you like to remove %gametouninstall%?
+
+IfMsgBox Yes, {
+	RemoveGame(gametouninstall)
+} Else IfMsgBox No, {
+}
 }
 
 Submit(neutron, event)
