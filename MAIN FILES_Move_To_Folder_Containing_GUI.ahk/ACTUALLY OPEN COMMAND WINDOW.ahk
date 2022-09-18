@@ -11,3 +11,4 @@ SetWorkingDir, %A_ScriptDir%
         FileAppend, %x%, %B%  
         DllCall("AllocConsole")  ; Give me a console window.
         Run, %x%  
+exitapp
