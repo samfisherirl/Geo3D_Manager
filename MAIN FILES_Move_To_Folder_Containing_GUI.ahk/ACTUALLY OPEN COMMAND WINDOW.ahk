@@ -1,4 +1,4 @@
-WorkingDir, %A_ScriptDir% 
+setWorkingDir, %A_ScriptDir% 
         a := "timeout /t 10"
         a := A_Desktop "\2.txt"
         B := A_Desktop "\1.txt"
