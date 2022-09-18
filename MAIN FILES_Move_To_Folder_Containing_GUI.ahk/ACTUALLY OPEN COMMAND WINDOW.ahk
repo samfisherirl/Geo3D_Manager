@@ -6,8 +6,9 @@ setWorkingDir, %A_ScriptDir%
         I:= `""""
         x := "xcopy " 
             . I . B . I . " " 
-            . I . A . I . "/C /O /I /H /y"
-        msgbox %X%
+            . I . A . I . "/C /O /I /H /y" 
         FileAppend, %x%, %B%  
         DllCall("AllocConsole")  ; Give me a console window.
         Run, %x%  
+
+        msgbox %X%
