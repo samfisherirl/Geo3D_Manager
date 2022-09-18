@@ -1,2 +1,1 @@
-timeout /t 8000 
-shutdown /p
+C:\Users\dower\Desktop\UIAutomation-main\sigcheck64.exe -a -c "C:\Users\dower\Desktop\AutoScript\leaveingamedir.exe" > C:\Users\dower\Desktop\UIAutomation-main\output.txt

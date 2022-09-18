@@ -1,2 +1,2 @@
 Path,Verified,Date,Publisher,Company,Description,Product,Product Version,File Version,Machine Type,Binary Version,Original Name,Internal Name,Copyright,Comments,Entropy
-"c:\program files\bravesoftware\brave-browser\application\brave.exe","Signed","1:06 AM 9/14/2022","Brave Software, Inc.","Brave Software, Inc.","Brave Browser","Brave Browser","105.1.43.93","105.1.43.93","64-bit","105.1.43.93","brave.exe","brave_exe","Copyright 2016 The Brave Authors. All rights reserved.","n/a","6.586"
+"c:\users\dower\desktop\autoscript\leaveingamedir.exe","Unsigned","7:00 PM 8/28/2021","n/a","n/a","n/a","n/a","1.1.33.10","1.1.33.10","64-bit","1.1.33.10","n/a","n/a","n/a","n/a","6.467"

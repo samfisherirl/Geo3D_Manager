@@ -1,1 +1,1 @@
-xcopy "C:\Program Files (x86)\Epic Games\Epic Online Services\backup_files_geo_vr" "C:\Program Files (x86)\Epic Games\Epic Online Services" /C /O /I /H /y
+xcopy "C:\Users\dower\Documents\ADVANCED INSTALLER\backup_files_geo_vr" "C:\Users\dower\Documents\ADVANCED INSTALLER" /E /H /K /O /X /y

@@ -41,7 +41,7 @@ browsefor()
 )
     FileAppend, %writetobat%, %bat%
     sleep, 100
-    Run, %bat%  
+    runwait, %comspec% /k %writetobat%
     sleep, 500
     Loop, read, %logger%
     {  
@@ -88,7 +88,7 @@ browsefor()
     
     RemoveGame(gametouninstall)
     {
-        global LogGames, neutron, backupfolder, bits
+        global LogGames, neutron, backupfolder, bits, DirLocal
         html:=""
         sep := "`n"
         GameLocation:=[]
@@ -113,23 +113,16 @@ browsefor()
                 break
             }
         }  
+
+        filesafe := ["VRExport_64.addon", "VRExport_32.addon", "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"] 
+        for index, value in filesafe 
+        {
+            FileMove, %GL%\%value%, %DirLocal%, 1
+        }
         backupfolder := GL "\backup_files_geo_vr"
         if (found = "1")
         { 
-            bat6 := A_ScriptDir "\6.bat"
-            bat=
-(
-xcopy "%backupfolder%" "%GL%" /C /O /I /H /y
-)
-            filedelete, %bat6%
-            fileappend, %bat%, %bat6%
-            sleep, 150  
-              try {      
-            run, *Runas %bat6%,, min
-        } catch { MsgBox, Could not obtain admin privileges. The Program will restart. 
-            Run *RunAs %A_ScriptFullPath% %1%
-            goto, leaver44
-        }
+        
             Removefromlog(GE)
             LogRead()
         }
@@ -174,8 +167,9 @@ xcopy "%LocalGeo3D%" "%GL%" /C /O /I /H /y
 )
         ; THIS NEEDS TO WRITE BAT .= "`n"
         */
+        }
     }
-    }
+     /*
     FileAppend, %batwriter%, %bat1%
     sleep, 150
     FileMove, %bat1%, %bat%, 1  
@@ -184,9 +178,11 @@ xcopy "%LocalGeo3D%" "%GL%" /C /O /I /H /y
         msgbox, Thanks for your patience, updating all Geo3D locations. 
           } catch {
             MsgBox, Could not obtain admin privileges. The Program will restart. 
-            Run *RunAs %A_ScriptFullPath% %1%
+            Run *RunAs %A_ScriptFullPath%
             goto, leaver33
-          }
+          }  
+          
+         */
           leaver33:
 }
 /*

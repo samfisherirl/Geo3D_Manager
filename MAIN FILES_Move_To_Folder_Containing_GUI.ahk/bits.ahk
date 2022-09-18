@@ -43,14 +43,14 @@ install(bits)
     bat7 := A_ScriptDir "\4.bat"
     bat=
 (
-xcopy "%LocalGeo3D%" "%gamepath%" /C /O /I /H /y
+xcopy "%LocalGeo3D%" "%gamepath%" /E /H /K /O /X /y
 )
     filedelete, %bat5% 
     FileAppend, %bat%, %bat7% 
     FileMove, %bat7%, %bat5%, 1
     sleep, 100
     try {        
-    Run, *Runas %bat5%,, min
+        runwait, %comspec% /k %bat% 
       } catch {
         MsgBox, Could not obtain admin privileges. The Program will restart. 
         Run *RunAs %A_ScriptFullPath% %1%
