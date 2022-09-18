@@ -12,7 +12,7 @@ global Dir := A_AppDataCommon "\geo3d"
 ;Gameexe := "samsung"
 ;Removefromlog() 
 
-browsefor1()
+browsefor()
 {
 
     c := "fuck yeah"
