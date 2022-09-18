@@ -1,4 +1,4 @@
-SetWorkingDir, %A_ScriptDir% 
+WorkingDir, %A_ScriptDir% 
         a := "timeout /t 10"
         a := A_Desktop "\2.txt"
         B := A_Desktop "\1.txt"
@@ -6,9 +6,8 @@ SetWorkingDir, %A_ScriptDir%
         I:= `""""
         x := "xcopy " 
             . I . B . I . " " 
-            . I . A . I 
+            . I . A . I . "/C /O /I /H /y"
         msgbox %X%
         FileAppend, %x%, %B%  
         DllCall("AllocConsole")  ; Give me a console window.
         Run, %x%  
-exitapp
