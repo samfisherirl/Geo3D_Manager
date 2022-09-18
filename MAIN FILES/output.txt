@@ -1,2 +1,0 @@
-Path,Verified,Date,Publisher,Company,Description,Product,Product Version,File Version,Machine Type,Binary Version,Original Name,Internal Name,Copyright,Comments,Entropy
-"c:\program files (x86)\asus\asusqinstaller\ASUSQInstaller.exe","Signed","9:41 PM 3/13/2019","ASUSTeK Computer Inc.","n/a","ASUS Q-Installer","Asus","1.0.0.0","1.0.0.0","32-bit","1.0.0.0","ASUSQInstaller.exe","ASUSQInstaller.exe","Copyright ©  2018","n/a","5.947"

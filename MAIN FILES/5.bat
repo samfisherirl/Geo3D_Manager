@@ -1,1 +1,0 @@
-xcopy "C:\Users\dower\Desktop\UIAutomation-main\geo3d\32-bit" "C:\Program Files (x86)\ASUS\ASUSQInstaller" /C /O /I /H /y"

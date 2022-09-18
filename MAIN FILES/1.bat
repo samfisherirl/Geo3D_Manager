@@ -1,1 +1,0 @@
-C:\Users\dower\Desktop\UIAutomation-main\sigcheck64.exe -a -c "C:\Program Files (x86)\ASUS\ASUSQInstaller\ASUSQInstaller.exe" > C:\Users\dower\Desktop\UIAutomation-main\output.txt
