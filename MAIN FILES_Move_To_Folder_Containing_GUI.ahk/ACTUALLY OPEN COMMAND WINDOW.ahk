@@ -1,4 +1,24 @@
-DllCall("AllocConsole")  ; Give me a console window.
-Run, timeout /t 10
-MsgBox, Once both the script and net.exe have exited`, the console will close.
-ExitApp
+a := "timeout /t 10"
+        a := A_Desktop "\2.txt"
+        B := A_Desktop "\1.txt"
+
+ 
+
+
+        I:= `""""
+        x := "xcopy " 
+            . I . B . I . " " 
+            . I . A . I . ""
+        msgbox %X%
+        FileAppend, %x%, %B%  
+        DllCall("AllocConsole")  ; Give me a console window.
+        Run, %x% 
+
+
+        batcommand=
+        (
+        xcopy "%locationA%" "%locationB%" /K /C /O
+        )
+
+
+
