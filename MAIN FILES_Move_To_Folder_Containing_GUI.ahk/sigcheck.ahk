@@ -12,7 +12,7 @@ global Dir := A_AppDataCommon "\geo3d"
 ;Gameexe := "samsung"
 ;Removefromlog() 
 
-browsefor()
+browsefor1()
 {
 
     c := "fuck yeah"
@@ -39,7 +39,7 @@ browsefor()
     msgbox % "xcopy " . I . B . I . " " . I . "C:\Users\dower\Desktop\2.txt" . I . " /C /F /O /I /H /y" I
 }
 
-browsefor1()
+browsefor()
 {
     global Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly, successbi
     ;declare to be used elsewhere
@@ -56,19 +56,24 @@ browsefor1()
         SplitPath, Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly
     }
     bat := A_ScriptDir "\1.bat"
+    txt := A_ScriptDir "\1.txt"
     sigcheck := A_ScriptDir "\sigcheck64.exe"
     logger := A_ScriptDir "\output.txt" 
     Field:=[]
     FileDelete, %bat%
     FileDelete, %logger% 
+    T := `""""
     ;check for 64x or 32x  
-    writetobat=
-(
-%sigcheck% -a -c "%Selectgame%" > %logger% 
-)
-    FileAppend, %writetobat%, %bat%
+    writetobat := T . sigcheck . T . " -a -c " . T . Selectgame . T . " > " . T . logger . T 
+    msgbox, %writetobat%
+    ;DllCall("AllocConsole")  ; Give me a console window.
     sleep, 100
-    runwait, %comspec% /k %writetobat%
+    ;Run, %writetobat%  
+    ;Run, "timeout /t 10"
+    sleep, 100  
+    FileAppend, %writetobat%, %txt%
+    filemove, %txt%, %bat%, 1
+    Run *Runas %bat%
     sleep, 500
     Loop, read, %logger%
     {  

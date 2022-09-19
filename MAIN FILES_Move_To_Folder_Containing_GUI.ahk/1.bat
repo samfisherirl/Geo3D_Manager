@@ -1,1 +1,1 @@
-C:\Users\dower\Desktop\UIAutomation-main\sigcheck64.exe -a -c "C:\Users\dower\Desktop\AutoScript\leaveingamedir.exe" > C:\Users\dower\Desktop\UIAutomation-main\output.txt
+"C:\Users\dower\Documents\GitHub\Geo3D_Manager\MAIN FILES_Move_To_Folder_Containing_GUI.ahk\sigcheck64.exe" -a -c "C:\Users\dower\Desktop\DriverBoosterPortable.exe" > "C:\Users\dower\Documents\GitHub\Geo3D_Manager\MAIN FILES_Move_To_Folder_Containing_GUI.ahk\output.txt"

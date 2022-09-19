@@ -1,2 +1,2 @@
 Path,Verified,Date,Publisher,Company,Description,Product,Product Version,File Version,Machine Type,Binary Version,Original Name,Internal Name,Copyright,Comments,Entropy
-"c:\users\dower\desktop\autoscript\leaveingamedir.exe","Unsigned","7:00 PM 8/28/2021","n/a","n/a","n/a","n/a","1.1.33.10","1.1.33.10","64-bit","1.1.33.10","n/a","n/a","n/a","n/a","6.467"
+"c:\users\dower\desktop\DriverBoosterPortable.exe","Unsigned","2:19 PM 2/24/2012","n/a","LRepacks / FoxxApp","Driver Booster Portable Launcher","IObit Driver Booster","2.2.1.1","2.2.1.1","32-bit","2.2.1.1","DriverBoosterPortable.exe","PortableApp Launcher","Copyright (C) 2021 IObit. All rights reserved.","A build of the Launcher for Driver Booster Portable, allowing it to be run from a removable drive.","6.111"
