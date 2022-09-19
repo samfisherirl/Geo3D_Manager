@@ -1,0 +1,2 @@
+Path,Verified,Date,Publisher,Company,Description,Product,Product Version,File Version,Machine Type,Binary Version,Original Name,Internal Name,Copyright,Comments,Entropy
+"c:\users\dower\downloads\digicertutil\DigiCertUtil.exe","Signed","3:59 PM 8/29/2018","DigiCert, Inc.","DigiCert, Inc.","DigiCert Certificate Utility for Windows©","DigiCert Certificate Utility for Windows©","2.3.5.2","2.3.5.2","32-bit","2.3.5.2","DigiCertUtil.exe","DigiCertUtil.exe","DigiCert Copyright (C) 2013.  All rights reserved.","n/a","6.69"

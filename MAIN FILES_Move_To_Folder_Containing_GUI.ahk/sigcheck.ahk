@@ -64,7 +64,6 @@ browsefor()
     T := `""""
     ;check for 64x or 32x  
     writetobat := T . sigcheck . T . " -a -c " . T . Selectgame . T . " > " . T . logger . T 
-    msgbox, %writetobat%
     ;DllCall("AllocConsole")  ; Give me a console window.
     sleep, 100
     ;Run, %writetobat%  
@@ -116,6 +115,18 @@ browsefor()
     
     leaver:
     }
+
+
+    SteamImport()
+    {   
+        powershell=
+(
+Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | ? { -not [string]::IsNullOrEmpty($_.DisplayName) } | Sort-Object -Property DisplayName | Select-Object -Property DisplayName, DisplayVersion, InstallLocation | Export-Csv -Path .\WmiData.csv -NoTypeInformation 
+)
+ Run powershell -NoExit -Command %powershell%
+;Run, *RunAs "powershell" -Command "&{%powershell%}"
+
+    }
     
     RemoveGame(gametouninstall)
     {
@@ -139,7 +150,7 @@ browsefor()
                 if InStr(GE, gametouninstall)
                 { 
                     found := "1"
-                    global founder := "1"
+                    founder := "1"
                     msgbox, % GE GL founder 
                     break
                 }
@@ -155,7 +166,7 @@ browsefor()
         backupfolder := GL "\backup_files_geo_vr"
         if (founder = "1")
         { 
-        
+            found:=0
             Removefromlog(GE)
             LogRead()
         }
@@ -171,7 +182,7 @@ PushUpdates() {
     countlines:=1
     GameExe:=[] 
     bits:=[]
-    found := "0"  
+    founder := "0"  
     ; map button id to log file  
     Loop, Read, %LogGames%
     {
@@ -183,10 +194,7 @@ PushUpdates() {
             bits[countlines] := GameInfo[5]
             countlines++
         }  
-    }  
-    bat := A_ScriptDir "\updater.bat"
-    bat1 := A_ScriptDir "\updater1.bat"
-    batwriter := ""
+    }   
     Loop, %countlines%
     {
         GL := GameLocation[A_Index]
@@ -201,6 +209,7 @@ xcopy "%LocalGeo3D%" "%GL%" /C /O /I /H /y
 )
         ; THIS NEEDS TO WRITE BAT .= "`n"
         */
+        msgbox, 1
         }
     }
      /*
