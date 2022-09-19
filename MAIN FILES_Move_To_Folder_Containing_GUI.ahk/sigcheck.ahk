@@ -5,6 +5,7 @@ SetBatchLines -1
     ;#Include %A_ScriptDir%\lib\Neutron.ahk
 global LogGames := A_AppDataCommon "\geo3d\gameslist.txt" 
 global Dir := A_AppDataCommon "\geo3d"
+SettitleMatchmode, 2
 ;LogRead()
 
 ;browsefor()
@@ -117,7 +118,7 @@ browsefor()
     }
 
 
-    SteamImport()
+SteamImport()
     {   
         powershell=
 (
@@ -125,7 +126,9 @@ Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | G
 )
  Run powershell -NoExit -Command %powershell%
 ;Run, *RunAs "powershell" -Command "&{%powershell%}"
-
+winwait, powershell  
+    sleep, 200
+Winclose, Windows PowerShell
     }
     
     RemoveGame(gametouninstall)
