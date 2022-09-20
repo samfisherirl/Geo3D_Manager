@@ -92,8 +92,7 @@ browsefor()
             bit := StrReplace(bit, Delim) 
             ; NewStr := StrReplace(Str, """")
             
-            ; bit := Trim(bit) """
-            Msgbox % bit ; <<<<<<< the field 1 and row 1
+            ; bit := Trim(bit) """ 
             if InStr(bit,"32")
             {
                 bits := "32"
@@ -105,7 +104,11 @@ browsefor()
                 install(bits)                
             }
             else
-                msgbox, unknown game version                       
+            {
+                msgbox, unknown game version     
+                bits := "64"
+                install(bits)    
+             }                 
         }
     }
     
@@ -153,8 +156,7 @@ Winclose, Windows PowerShell
                 if InStr(GE, gametouninstall)
                 { 
                     found := "1"
-                    founder := "1"
-                    msgbox, % GE GL founder 
+                    founder := "1" 
                     break
                 }
                 countlines++  
@@ -211,8 +213,7 @@ PushUpdates() {
 xcopy "%LocalGeo3D%" "%GL%" /C /O /I /H /y
 )
         ; THIS NEEDS TO WRITE BAT .= "`n"
-        */
-        msgbox, 1
+        */ 
         }
     }
      /*
