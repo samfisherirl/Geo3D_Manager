@@ -55,8 +55,7 @@ browsefor()
     else
     {
         SplitPath, Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly
-        
-    }
+     }
 
     bat := A_ScriptDir "\1.bat"
     txt := A_ScriptDir "\1.txt"
@@ -115,47 +114,57 @@ browsefor()
         }
     }
     
-    Addtolog(bits)
-    CleanLog()
-    
-    LogRead()
-    
-    leaver:
-    }
+Addtolog(bits)
+CleanLog()
+
+LogRead()
+
+leaver:
+}
 
 
 SteamImport()
     {   
-        CSVer:= A_ScriptDir "\WmiData.csv"
-        FileDelete, %CSVer%
-        powershell=
+    global CSVer:= A_ScriptDir "\WmiData.csv"
+    FileDelete, %CSVer%
+    powershell=
 (
 Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | ? { -not [string]::IsNullOrEmpty($_.DisplayName) } | Sort-Object -Property DisplayName | Select-Object -Property DisplayName, DisplayVersion, InstallLocation | Export-Csv -Path .\WmiData.csv -NoTypeInformation 
 )
- Run, powershell -NoExit -Command "%powershell%"
-;Run, *RunAs "powershell" -Command "&{%powershell%}"
-winwait, powershell  
-Loop, 25
-{
+    Run, powershell -NoExit -Command "%powershell%"
+    ;Run, *RunAs "powershell" -Command "&{%powershell%}"
+    winwait, powershell  
+    county:=1 
+    Title := "Importing Steam Library...", 
+    Sec := 3 
+    MsgBox, 64, %Title%, Importing Steam Library in... %Sec% seconds, %Sec% 
+    settimer, Countdown, 500
+    Countdown:
     if fileexist(CSVer) 
     {        
-        FileGetSize, Sizer, %CSVer% 
-        Loop, 25
-        {
+        FileGetSize, Sizer, %CSVer%  
             FileGetSize, Sizer2, %CSVer% 
             if (Sizer=Sizer2)
             {
-                break 2
-            }
+                settimer, Countdown, off
+                Goto, exiter
+                        }    
+            else {
+           
+                    sleep, 500 
+                    if (Sec<=1)
+                    { 
+                        Exitapp
+                    }
+                ControlSetText, Static2, % "Importing Steam Library in... " (Sec:=Sec-1) " seconds", %Title% ahk_class #32770
+                return
+                } 
+         
         }
-        
-    }
-    else {
-        sleep, 100
-    }
-}
-Winclose, Windows PowerShell
-    }
+        exiter:
+    Sleep, 500
+    Winclose, Windows PowerShell
+} 
     
     RemoveGame(gametouninstall)
     {

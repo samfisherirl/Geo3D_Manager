@@ -127,6 +127,7 @@ LogRead()
     }
     FileMove, log.txt, %LogGames%, 1
     ; ADD HTML TO GAME LIST
+    /*
     Loop %countlines%
     {
         GL := GameLocation[A_Index]
@@ -154,6 +155,8 @@ LogRead()
         . "</tr>" 
     }
     }
+    */
+    Lib.writehtml(countlines, GameLocation, GameExe)
     neutron.qs("#tabler").innerHTML := ""
     neutron.qs("#tabler").innerHTML := html
     Leaver3:
@@ -213,6 +216,28 @@ CleanLog()
     }
 }
 
+Class PS {
+
+    MsgboxStart() 
+    {
+    global CSVer
+    global Title := "Importing Steam Library...", 
+    global Sec := 5 
+    MsgBox, 64, %Title%, Importing Steam Library in... %Sec% seconds, %Sec% 
+    
+    
+    }
+
+    Countdown() { 
+        global Title, Sec
+        if (Sec<=1)
+            { 
+                Exitapp
+            }
+        ControlSetText, Static2, % "Importing Steam Library in... " (Sec:=Sec-1) " seconds", %Title% ahk_class #32770
+    }
+}
+
 class Lib
 {
     addonfiles(bits)
@@ -256,5 +281,47 @@ class Lib
         FileAppend, %line%, %log%   
         }
         FileMove, %log%, %LogGames%, 1
-    }    
+    }
+
+
+        /*
+        lib.writehtml() takes game list and writes html
+        */
+
+
+    writehtml(countlines, GameLocation, GameExe) 
+    {
+        global html:=""
+        sep := "`n"
+         Loop %countlines%
+        {
+            GL := GameLocation[A_Index]
+            if (GL = "")
+                continue
+            placeholder := []
+            placeholder := StrSplit(GL, "\")
+            GL := placeholder[1] "\" placeholder[2] "\" placeholder[3]
+            GE := GameExe[A_Index] 
+            if (GE != "" or GL != "")
+            {
+             html=
+(
+%html%
+<tr>
+<td align="center"> 
+<a class="btn btn-danger" onclick="ahk.Uninstall(event)" id="%GE%" name="%GE%"><em class="fa fa-trash"></em></a>
+</td>
+<td class="hidden-xs" style="text-align: center">
+<input class="chex" type="checkbox" id="%GE%" value="" aria-label="" />
+</td>
+)
+            html := html . "<td>" . GE . "</td>" . sep
+            . "<td>" . GL . "</td>" . sep
+            . "</tr>" 
+        }
+        }    
+    }
+
+
+
 }

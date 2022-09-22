@@ -2,17 +2,20 @@
 #NoEnv
 SetWorkingDir, %A_ScriptDir%
 SetBatchLines -1  
-global LogGames := A_AppDataCommon "\geo3d\gameslist.txt" 
+Title := "Please Confirm?", Sec := 5
+
+SetTimer, Countdown, 1000
+
+MsgBox, 64, %Title%, Will launch in %Sec% seconds, %Sec%
+
+Return
 
 
-class Lib
-{
-    a1() { 
-    global a:="1"
-    global b:="2"
-    return [a, b]
-}
-}
-Lib.a1()
-msgbox % a b
 
+Countdown:
+
+ ControlSetText, Static2, % "Will launch in " (Sec:=Sec-1) " seconds"
+
+               , %Title% ahk_class #32770
+
+Return
