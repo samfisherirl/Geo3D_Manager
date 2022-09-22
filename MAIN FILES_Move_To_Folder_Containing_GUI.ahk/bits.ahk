@@ -9,13 +9,13 @@ install(bits)
 {
     global selectgame, gamepath, successbi
     VREx := "VRExport_" bits ".addon"
-    filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"] 
     Geo3D := "Geo3D"
-    
+
+        filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
+     
     ;check for 64x or 32x
     sleep, 200
-    counterx := 1  
-     
+    counterx := 1      
     ; >>> resolve files in game dir and check for dupes
     for index, value in filesafe
     {
@@ -37,7 +37,7 @@ install(bits)
     }
     
     ;Run, %7zbat%, %A_ScriptDir%, min
- 
+    
     LocalGeo3D := A_ScriptDir "\geo3d\" bits "-bit"
     bat5 := A_ScriptDir "\3.bat"
     /*
@@ -183,7 +183,6 @@ Removefromlog(GE)
         if InStr(A_LoopReadLine, GE)
         { 
             line:=""
-
         }
         else
         {
@@ -194,7 +193,7 @@ Removefromlog(GE)
 )        
         }
         FileAppend, %line%, %log%   
-    } 
+    }
     FileMove, %log%, %LogGames%, 1 
 
 }
@@ -212,4 +211,50 @@ CleanLog()
             FileLooper .= A_LoopReadLine "`n"
         }
     }
+}
+
+class Lib
+{
+    addonfiles(bits)
+    { 
+        ; bits + if (VRx = 1) then {both x64 & x32}
+        ; bits + if (VRx = 0) then {only %bits%}
+        if (bits="")
+        {
+            VRex:="VRExport_32.addon"
+            VRex2:="VRExport_64.addon"
+        }
+        else
+        {
+            VREx := "VRExport_" bits ".addon"
+            VREx2 := ""
+        }
+
+        global filesafe := [VREx, VRex2, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
+    }
+
+    cleanlogs(GE)
+    {
+        global LogGames
+        log := A_ScriptDir "\out.txt" 
+        founder:=0
+        Loop, Read, %LogGames%, %log%
+        {
+            line := ""
+            if InStr(A_LoopReadLine, GE)
+            {
+                line:=""
+            }
+            else
+            {
+                line=
+(
+%A_LoopReadLine%
+
+)
+            }
+        FileAppend, %line%, %log%   
+        }
+        FileMove, %log%, %LogGames%, 1
+    }    
 }

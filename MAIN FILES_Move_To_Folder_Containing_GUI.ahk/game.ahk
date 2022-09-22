@@ -12,6 +12,26 @@ class Games {
 		SplitPath, % this.name, fileName
 		return fileName
 	}
+}
+
+
+class G3DFiles {
+	__New(Input) { 
+            LineSplit:=[]
+			LineSplit := StrSplit(Input, ",")
+			this.path := LineSplit[2]
+			this.name := LineSplit[3]  ;and there it will set the path to the value we need
+	}
+	getPath() { 
+		return this.path
+	}
+	getPathName() {  
+		SplitPath, % this.name, fileName
+		return fileName
+	}
+}
+
+	/*
 	getPathDir() { ;same as getDirectory
 		return This.getPathDirectory()
 	}

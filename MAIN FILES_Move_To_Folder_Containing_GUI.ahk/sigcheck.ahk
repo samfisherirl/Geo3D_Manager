@@ -11,7 +11,7 @@ SettitleMatchmode, 2
 ;browsefor()
 ;Gameexe := "samsung"
 ;Removefromlog() 
-
+/*
 browsefor1()
 {
 
@@ -38,6 +38,7 @@ browsefor1()
     
     msgbox % "xcopy " . I . B . I . " " . I . "C:\Users\dower\Desktop\2.txt" . I . " /C /F /O /I /H /y" I
 }
+*/
 
 browsefor()
 {
@@ -54,7 +55,9 @@ browsefor()
     else
     {
         SplitPath, Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly
+        
     }
+
     bat := A_ScriptDir "\1.bat"
     txt := A_ScriptDir "\1.txt"
     sigcheck := A_ScriptDir "\sigcheck64.exe"
@@ -123,14 +126,34 @@ browsefor()
 
 SteamImport()
     {   
+        CSVer:= A_ScriptDir "\WmiData.csv"
+        FileDelete, %CSVer%
         powershell=
 (
 Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | ? { -not [string]::IsNullOrEmpty($_.DisplayName) } | Sort-Object -Property DisplayName | Select-Object -Property DisplayName, DisplayVersion, InstallLocation | Export-Csv -Path .\WmiData.csv -NoTypeInformation 
 )
- Run powershell -NoExit -Command %powershell%
+ Run, powershell -NoExit -Command "%powershell%"
 ;Run, *RunAs "powershell" -Command "&{%powershell%}"
 winwait, powershell  
-    sleep, 200
+Loop, 25
+{
+    if fileexist(CSVer) 
+    {        
+        FileGetSize, Sizer, %CSVer% 
+        Loop, 25
+        {
+            FileGetSize, Sizer2, %CSVer% 
+            if (Sizer=Sizer2)
+            {
+                break 2
+            }
+        }
+        
+    }
+    else {
+        sleep, 100
+    }
+}
 Winclose, Windows PowerShell
     }
     
@@ -198,8 +221,8 @@ PushUpdates() {
             GameExe[countlines] := GameInfo[3]
             bits[countlines] := GameInfo[5]
             countlines++
-        }  
-    }   
+        }
+    }
     Loop, %countlines%
     {
         GL := GameLocation[A_Index]

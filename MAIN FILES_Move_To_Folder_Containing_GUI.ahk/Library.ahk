@@ -1,7 +1,7 @@
 #Include Game.ahk
 
 global LogGames := A_AppDataCommon "\geo3d\gameslist.txt" 
-global indx := 1
+global indx := ;,?
 /*
 #Include File.ahk
 file1 := new File( A_ScriptFullPath ) ;a file object of our test.ahk
@@ -12,7 +12,6 @@ Msgbox % file2.getPathDir() ;get containing folder
 */
 Loop, Read, %LogGames%
 { 
-
     Game%A_Index% := new Games(A_LoopReadLine)
     indx++
 }

@@ -79,7 +79,6 @@ Button(neutron, event)
 Installer(neutron, event)
 {
 	browsefor()
-
 }
 
 Uninstall(neutron, event)
