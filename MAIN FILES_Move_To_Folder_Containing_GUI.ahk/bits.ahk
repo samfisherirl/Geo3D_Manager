@@ -11,7 +11,7 @@ install(bits)
     VREx := "VRExport_" bits ".addon"
     Geo3D := "Geo3D"
 
-        filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
+    filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
      
     ;check for 64x or 32x
     sleep, 200
