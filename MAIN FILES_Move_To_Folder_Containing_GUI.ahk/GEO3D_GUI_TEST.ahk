@@ -13,14 +13,15 @@ example scripts first.
 */
 
 #NoEnv
-;SetBatchLines, -1 
+SetBatchLines, -1 
 SetWorkingDir, %A_ScriptDir%
 ; Include the Neutron library
-#Include Neutron.ahk
-#Include sigcheck.ahk
-#Include OTA.ahk
-#Include bits.ahk 
-#include JSON.ahk 
+#Include %A_ScriptDir%\lib\Neutron.ahk
+#Include %A_ScriptDir%\lib\sigcheck.ahk
+#Include %A_ScriptDir%\lib\OTA.ahk
+#Include %A_ScriptDir%\lib\RTA.ahk
+#Include %A_ScriptDir%\lib\bits.ahk 
+#include %A_ScriptDir%\lib\JSON.ahk  
 
 ; Create a new NeutronWindow and navigate to our HTML page
 neutron := new NeutronWindow()
@@ -31,7 +32,7 @@ neutron.Load("Bootstrap.html")
 neutron.Gui("+LabelNeutron")
 
 ; Show the Neutron window
-neutron.Show("w1000 h800")
+neutron.Show("w1200 h900")
 LogRead() 
 OnLoad()
 return
@@ -41,10 +42,10 @@ return
 ; location! sigcheck64.exe 7za.exe
 
 FileInstall, image.png, %A_ScriptDir%\image.png, 1 ;
-FileInstall, Bootstrap.html, %A_ScriptDir%\Bootstrap.html, 1
-FileInstall, bootstrap.min.css, bootstrap.min.css 
-FileInstall, bootstrap.min.js, bootstrap.min.js
-FileInstall, jquery.min.js, jquery.min.js 
+FileInstall, Bootstrap.html, %A_ScriptDir%\lib\Bootstrap.html, 1
+FileInstall, bootstrap.min.css, %A_ScriptDir%\lib\bootstrap.min.css 
+FileInstall, bootstrap.min.js, %A_ScriptDir%\lib\bootstrap.min.js
+FileInstall, jquery.min.js, %A_ScriptDir%\lib\jquery.min.js 
 
 ; The built in GuiClose, GuiEscape, and GuiDropFiles event handlers will work
 ; with Neutron GUIs. Using them is the current best practice for handling these
@@ -80,6 +81,7 @@ OnLoad() {
 			IfMsgBox Yes, {
 				latest_tag:=OTA.checkupd()
 				OTA.download(latest_tag)
+                RTA.checkupd()
 				/*
 					NEED TO ADD VRSCREENCAPDOWNLOADGUI
 				*/

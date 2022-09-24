@@ -1,4 +1,4 @@
-#Include Game.ahk
+#Include test.ahk
 
 global LogGames := A_AppDataCommon "\geo3d\gameslist.txt" 
 global indx := ;,?
@@ -10,9 +10,11 @@ Msgbox % file1.getPathDir() ;get containing folder
 Msgbox % file2.getPathDir() ;get containing folder
 
 */
-Loop, Read, %LogGames%
+Loop, 3
 { 
-    Game%A_Index% := new Games(A_LoopReadLine)
+    a:=[]
+    a:=["a","b","c"]
+    Game%A_Index% := new Games(a)
     indx++
 }
  
