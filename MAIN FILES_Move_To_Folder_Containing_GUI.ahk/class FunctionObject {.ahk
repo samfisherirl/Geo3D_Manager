@@ -6,7 +6,7 @@ class FunctionObject {
             return this.Call(method, args*)
     }
 }
-The following example defines a function array which can be called; when called, it calls each element of the array in turn.
+;The following example defines a function array which can be called; when called, it calls each element of the array in turn.
 
 ; This example requires the FunctionObject class above in order to work.
 class FuncArrayType extends FunctionObject {

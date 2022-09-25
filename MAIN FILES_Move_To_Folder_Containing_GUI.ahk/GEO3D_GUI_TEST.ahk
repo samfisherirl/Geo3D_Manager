@@ -77,16 +77,17 @@ OnLoad() {
     current:=OTA.currentvers()
     if (current="")
     {         
-		MsgBox, 68,, It appears this is your first time using the app. It is recommended that you download both VR_Screen_Cap and the latest Geo3D. Select an option. 
-			IfMsgBox Yes, {
-				latest_tag:=OTA.checkupd()
-				OTA.download(latest_tag)
-                RTA.checkupd()
-				/*
-					NEED TO ADD VRSCREENCAPDOWNLOADGUI
-				*/
-                
-			} 
+        global msg:=0
+		OT.UpdateMsg()
+        if (msg=1) {
+    
+            latest_tag:=OTA.checkupd()
+            OTA.download(latest_tag)
+            RTA.checkupd()
+            /*
+                NEED TO ADD VRSCREENCAPDOWNLOADGUI
+            */
+        }
     }
     else   
     {

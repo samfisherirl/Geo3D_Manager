@@ -87,7 +87,14 @@ Class OT
                 countlines++
             } 
         } 
-        } 
+        }
+        UpdateMsg() {
+            MsgBox, 68,, It appears this is your first time using the app. It is recommended that you download both VR_Screen_Cap and the latest Geo3D. Select an option. 
+            IfMsgBox Yes, {
+                global msg := 1
+                return msg
+            } 
+    } 
 
 }
     /*

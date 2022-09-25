@@ -1,5 +1,4 @@
 
-SetWorkingDir, %A_ScriptDir% 
 
 global gh_rep = "artumino/VRScreenCap"
 global file_to_DL = "vr-screen-cap.exe"
@@ -38,8 +37,8 @@ class RTA
         download_url := "https://github.com/" gh_rep "/releases/download/" value "/" file_to_DL 
         UrlDownloadToFile, %download_url%, %file_to_Save%-%value%.exe  
         FileCreateDir, %DirLocal% 
-        FileMove, %file_to_Save%-%value%.exe, %file_to_DL%, 1
-        FileCreateShortcut, %file_to_Save%-%value%.exe, VR_Screen_Cap.url, %A_Desktop%,,,,
+        FileMove, %file_to_Save%-%value%.exe, %DirLocal%\%file_to_DL%, 1
+        FileCreateShortcut, %DirLocal%\%file_to_DL%,  %A_Desktop%\VR_Screen_Cap.lnk, %DirLocal%,"%A_ScriptFullPath%",,,
         msgbox, Completed! 
     }
 
