@@ -11,7 +11,7 @@ install(bits)
     VREx := "VRExport_" bits ".addon"
     Geo3D := "Geo3D"
 
-        filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
+    filesafe := [VREx, "ReShade.ini", "Geo3D.addon", "dxgi.dll", "3DToElse.fx"]
      
     ;check for 64x or 32x
     sleep, 200
@@ -87,7 +87,14 @@ Class OT
                 countlines++
             } 
         } 
-        } 
+        }
+        UpdateMsg() {
+            MsgBox, 68,, It appears this is your first time using the app. It is recommended that you download both VR_Screen_Cap and the latest Geo3D. Select an option. 
+            IfMsgBox Yes, {
+                global msg := 1
+                return msg
+            } 
+    } 
 
 }
     /*

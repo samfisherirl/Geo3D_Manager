@@ -1,4 +1,4 @@
-#include JSON.ahk 
+;#include JSON.ahk 
 #include Downloader.ahk 
 SetWorkingDir, %A_ScriptDir% 
 
@@ -13,7 +13,6 @@ global 3DScriptDir := A_ScriptDir "\geo3d"
 
 class OTA
 {
-
     checkupd()
     {
         jsonStr := JSON.GetFromUrl("https://api.github.com/repos/" gh_repo "/releases/latest")
