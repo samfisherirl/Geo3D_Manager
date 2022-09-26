@@ -1,0 +1,155 @@
+[
+  {
+    "": 1,
+    "Game Name": "Alan Wake Remastered",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 2,
+    "Game Name": "Assassin's Creed 1",
+    "Arch": 32,
+    "Reshade": "dxgi.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 3,
+    "Game Name": "Assassin's Creed II",
+    "Arch": 32,
+    "Reshade": "d3d9.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 4,
+    "Game Name": "Assassin's Creed IV Black Flag",
+    "Arch": 32,
+    "Reshade": "dxgi.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 5,
+    "Game Name": "Control",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 6,
+    "Game Name": "Cyberpunk 2077",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 7,
+    "Game Name": "Days Gone",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 8,
+    "Game Name": "Forza Horizon 5",
+    "Arch": 64,
+    "Reshade": "d3d12.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 9,
+    "Game Name": "Judgement",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 10,
+    "Game Name": "Lost Judgement",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 11,
+    "Game Name": "Marvel's Spider-Man Remastered",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 12,
+    "Game Name": "Need For Speed Hot Pursuit Remastered",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 13,
+    "Game Name": "!32-bit DX10-11",
+    "Arch": 32,
+    "Reshade": "dxgi.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 14,
+    "Game Name": "!32-bit DX9",
+    "Arch": 32,
+    "Reshade": "d3d9.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 15,
+    "Game Name": "!64-bit DX10-11",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 16,
+    "Game Name": "!64-bit DX12",
+    "Arch": 64,
+    "Reshade": "dxgi.dll",
+    "DXIL": "Yes",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  },
+  {
+    "": 17,
+    "Game Name": "!64-bit DX9",
+    "Arch": 64,
+    "Reshade": "d3d9.dll",
+    "DXIL": "",
+    "Convergence": "",
+    "DXIL\" ini": ""
+  }
+]

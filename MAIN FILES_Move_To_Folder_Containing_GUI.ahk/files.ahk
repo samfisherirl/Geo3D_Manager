@@ -34,7 +34,7 @@ Loop, read, out.txt
     Line := StrSplit(A_LoopReadLine, ",")
     fuck%indx% := Line[3]
     Game%indx% := new File(Line)
-    indx++ 
+    global indx++ 
 }
  
 
