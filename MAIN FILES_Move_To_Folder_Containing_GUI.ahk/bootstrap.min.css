@@ -46,6 +46,8 @@
 ::after,
 ::before {
     box-sizing: border-box;
+    margin-right: 0px;
+    right: 0px;
 }
 
 html {
@@ -628,8 +630,6 @@ pre code {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .no-gutters {
@@ -7623,7 +7623,7 @@ button.bg-dark:hover {
 }
 
 .d-flex {
-    display: -ms-flexbox!important;
+    display: -ms-flexbox !important;
     display: flex!important;
 }
 
@@ -7922,7 +7922,7 @@ button.bg-dark:hover {
 
 .flex-grow-1 {
     -ms-flex-positive: 1!important;
-    flex-grow: 1!important;
+    flex-grow: 1 !important;
 }
 
 .flex-shrink-0 {

@@ -2,6 +2,7 @@ class Github {
 	__New(Repo) { 
 		Username := Repo[1]
 		Release := Repo[2]
+		FileDelete, 1.json
 		Rep := Username "/" Release
         url := "https://api.github.com/repos/" Rep "/releases/latest"
 		UrlDownloadToFile,%url%,1.json

@@ -6,7 +6,9 @@ global gh_repo = "Flugan/Geo3D-Release"
 global x := 0
 #SingleInstance, force
     #NoEnv
-urll := "https://api.github.com/repos/" gh_repo "/releases/latest" 
+SoundPlay, %A_ScriptDir%\raw\complete.mp3
+
+;urll := "https://api.github.com/repos/" gh_repo "/releases/latest" 
 
 UI.GU() 
 global array2
