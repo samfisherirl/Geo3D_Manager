@@ -316,7 +316,7 @@ class Lib
 %html%
 <tr>
 <td align="center"> 
-<a class="btn btn-danger" onclick="ahk.Uninstall(event)" id="%GE%" name="%GE%"><em class="fa fa-trash"></em></a>
+<a class="btn btn-success" onclick="ahk.Uninstall(event)" id="%GE%" name="%GE%"><em class="fa fa-gamepad"></em></a>
 </td>
 <td class="hidden-xs" style="text-align: center">
 <input class="chex" type="checkbox" id="%GE%" value="" aria-label="" />

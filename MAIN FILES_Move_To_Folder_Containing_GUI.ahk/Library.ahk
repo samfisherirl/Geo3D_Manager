@@ -1,7 +1,7 @@
-#Include test.ahk
+#Include test2.ahk
 
-global LogGames := A_AppDataCommon "\geo3d\gameslist.txt" 
-global indx := ;,?
+global LogGames := A_AppDataCommon "\geo3d\geo3dlist.csv" 
+global indx := 1
 /*
 #Include File.ahk
 file1 := new File( A_ScriptFullPath ) ;a file object of our test.ahk
@@ -10,14 +10,18 @@ Msgbox % file1.getPathDir() ;get containing folder
 Msgbox % file2.getPathDir() ;get containing folder
 
 */
-Loop, 3
-{ 
+
+
+Loop, read, %LogGames%
+{
+    if (A_Index != 1) {
     a:=[]
-    a:=["a","b","c"]
-    Game%A_Index% := new Games(a)
+    a := StrSplit(A_LoopReadLine,",")
+    G%indx% := new Games(a)
     indx++
+}
 }
  
 
-msgbox % Game1.getPath()
+msgbox % G1.getName()
 

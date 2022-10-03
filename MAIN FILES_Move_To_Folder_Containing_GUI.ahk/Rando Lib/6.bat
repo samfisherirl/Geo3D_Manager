@@ -1,1 +1,0 @@
-xcopy "C:\Users\dower\Documents\ADVANCED INSTALLER\backup_files_geo_vr" "C:\Users\dower\Documents\ADVANCED INSTALLER" /E /H /K /O /X /y

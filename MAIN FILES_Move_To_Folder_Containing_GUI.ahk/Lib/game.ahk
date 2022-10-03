@@ -1,9 +1,10 @@
 class Games {
-	__New(Input) { 
-            LineSplit:=[]
-			LineSplit := StrSplit(Input, ",")
-			this.path := LineSplit[2]
-			this.name := LineSplit[3]  ;and there it will set the path to the value we need
+	__New(Input) {   
+		this.id := Input[1]
+		this.name := Input[2]
+		this.bit := Input[3]
+		this.dxgi := Input[4]
+		this.dxil := Input[5]  ;and there it will set the path to the value we need
 	}
 	getPath() { 
 		return this.path
