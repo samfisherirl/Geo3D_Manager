@@ -1,0 +1,1 @@
+7za x "C:\Users\dower\Documents\AccessibilityInsights\geo3d\Geo3D.v1.2.0.zip" -oC:\Users\dower\Documents\AccessibilityInsights\geo3d\ -y -r"

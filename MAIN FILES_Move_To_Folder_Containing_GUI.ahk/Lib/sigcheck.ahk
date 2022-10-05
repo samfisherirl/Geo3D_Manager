@@ -42,9 +42,11 @@ browsefor1()
 
 browsefor()
 {
-    global Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly, successbi
+    global Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly, successbi, Loggames
     ;declare to be used elsewhere
     selectgame := ""
+    lib.selector.file()
+    /*
     FileSelectFile, Selectgame, 1, , Select a game, Application (*.exe)
     ;browse for file
     if (Selectgame = "")
@@ -56,7 +58,11 @@ browsefor()
     {
         SplitPath, Selectgame, Gameexe, Gamepath, Gameextenstion, Gamenameonly
      }
+     */
+     lib.bitchecker()
+     lib.PushBits()
 
+     /*
     bat := A_ScriptDir "\1.bat"
     txt := A_ScriptDir "\1.txt"
     sigcheck := A_ScriptDir "\sigcheck64.exe"
@@ -113,12 +119,13 @@ browsefor()
              }                 
         }
     }
+    */
     
-Addtolog(bits)
+Addtolog(LogGames, bits)
 CleanLog()
 
-LogRead()
-
+LogCustom.read()
+msgbox, Geo3D has been added to %Gameexe%!
 leaver:
 }
 
@@ -164,7 +171,7 @@ Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | G
         exiter:
     Sleep, 500
     Winclose, Windows PowerShell
-} 
+    } 
     
     RemoveGame(gametouninstall)
     {
@@ -205,7 +212,7 @@ Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | G
         { 
             found:=0
             Removefromlog(GE)
-            LogRead()
+            LogCustom.read()
         }
     }
         leaver44:
