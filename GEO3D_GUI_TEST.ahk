@@ -3,25 +3,7 @@ Compile Me!
 
 NEEED TO DO
 
-
-
-
-
-
 GET FILE STRUCTURES AND ADD TO CSV
-
-
-
- 
-
-
-
-
-
-
-
-
-
 
 */
 
@@ -29,10 +11,14 @@ GET FILE STRUCTURES AND ADD TO CSV
 SetBatchLines, -1 
 SetWorkingDir, %A_ScriptDir%
 #SingleInstance, Force
-global LogGames := A_AppDataCommon "\geo3d\gameslist.txt"
+    global LogGames := A_AppDataCommon "\geo3d\gameslist.txt"
 global CSVLog := A_ScriptDir "\Lib\geo3d.csv"
+global logger := A_AppDataCommon "\output.txt"
+global DirLocal := A_AppDataCommon "\geo3d"
+FileCreateDir, A_AppDataCommon "\Geo3d"
 ; Include the Neutron library
 #Include %A_ScriptDir%\lib\Neutron.ahk
+#Include %A_ScriptDir%\lib\UIA_Browser.ahk
 #Include %A_ScriptDir%\lib\sigcheck.ahk
 #Include %A_ScriptDir%\lib\OTA.ahk
 #Include %A_ScriptDir%\lib\RTA.ahk
@@ -88,9 +74,9 @@ updateimage()
 }
 */
 
-OnLoad() 
+OnLoad()
 { 
-    global countlines, Gameexe, GameLocation
+    global  
     Logs.ReadLog()
     ;LogCustom.read()
     ;LogCustom.find()
@@ -103,21 +89,20 @@ OnLoad()
         lib.7za.move7za("\lib\profiles")
         
         ;profiles := "profiles.7z"
-        lib.7za.batwrite("profiles.7z", "\lib\profiles")
+        lib.7za.batwrite("profiles.7z")
     }
-    Lib.writehtml(countlines, GameLocation, GameExe)
+    Lib.writehtml()
     
     Logs.FeaturedUpdate()
     
     Logs.ReadList()
-
-    Lib.customhtml(countlines, GameLocation, GameExe)
+     
+    Lib.customhtml()
     Logs.CustomUpdate()
     current:=OTA.currentvers()
     
     if (current="")
     { 
-        global msg:=0
         Logs.UpdateMsg()
         if (msg=1) {
             
@@ -137,6 +122,7 @@ OnLoad()
 Featured(neutron, event)
 {     
     global
+    event.preventDefault()
     /*
     
     
@@ -147,14 +133,14 @@ Featured(neutron, event)
     
     loop, 7 {
         
-    Gametoinstall := event.target.getAttribute("name")
-    GameID := event.target.getAttribute("id")
-    if (Gametoinstall="" and GameID="") {
-        sleep, 200
-        msgbox fail
-    }
-    else
-        break
+        Gametoinstall := event.target.getAttribute("name")
+        GameID := event.target.getAttribute("id")
+        if (Gametoinstall="" and GameID="") {
+            sleep, 200
+            msgbox fail
+        }
+        else
+            break
     }
     
     msgbox, Select Folder for: %Gametoinstall%
@@ -168,10 +154,11 @@ Featured(neutron, event)
     else {  
         Source :=  A_ScriptDir "\Lib\profiles\" GameID  
         lib.selector.CopyFilesAndFolders(Source, Selectgame)  
+        lib2.looper()
         linenumber := lib.selector.getline(GameID)
         lib.selector.addorremove(linenumber)
         Logs.ReadLog()
-        Lib.writehtml(countlines, GameLocation, GameExe)
+        Lib.writehtml()
         Logs.FeaturedUpdate()
     } 
     
@@ -188,61 +175,106 @@ Button(neutron, event)
 
 Installer(neutron, event)
 {
+    global
+    event.preventDefault()
     browsefor()
-
+        if (Selectgame="")
+    {
+        msgbox FAIL
+        goto, failer
     }
+    lib.selector.VerifyNSplit()
+    lib.bitchecker()  
+    sleep, 400
+    WinClose, command prompt
+    Lib.PushBits()
+    install() 
+    Addtolog()
+    CleanLog()
+   ; >>>>>>>>>>>>>>>>>>>>>>> logs.takeownership()
+    logs.ReadList()
+    Lib.customhtml()
+    Logs.CustomUpdate()
+    msgbox, Geo3D has been added to %Gameexe%!
+failer:
+}
 
 Uninstall1(neutron, event)
 {
-    global 
-    loop, 3 {
-        
-    GameID := event.target.getAttribute("id")
+    global   
+    event.preventDefault()
     gametoremove := event.target.getAttribute("name")
-        if (gametoremove="") {
-            sleep, 200
-        }
-        else
-            break
-        }
-        
-    MsgBox 0x4, Remove game, Would you like to remove %gametoremove%?
+    GameID := event.target.getAttribute("id")
+     
+    
+    MsgBox 0x4, Remove game, Would you like to remove %gametoremove% ?
     
     ;@ahk-neko-ignore-fn 1 line; at 10/4/2022, 8:11:14 AM ; param is assigned but never used.
     IfMsgBox Yes, {
         linenumber := ""
-        linenumber := lib.selector.getline(GameID)
-         
-        if (linenumber="" and GF="") { 
+    linenumber := lib.selector.getline(GameID)
+    
+    if (linenumber="" and GF="") { 
         msgbox fail
         goto, leaverr
-        }
-        location := lib.selector.FandFloop(GF)
-        filesafe := []
-        filesafe := lib.selector.Register() 
-        lib.selector.Uninstaller(filesafe, location)
-
-        Selectgame := "Not Installed"
-        lib.selector.addorremove(linenumber)
-        Logs.ReadLog()
-
-        Lib.writehtml(countlines, GameLocation, GameExe)
-        Logs.FeaturedUpdate()
+    }
+    location := lib.selector.FandFloop(GF)
+    filesafe := []
+    filesafe := lib.selector.Register() 
+    lib.selector.Uninstaller() 
+    lib.batremove(GF)
+    Selectgame := "Not Installed"
+    lib.selector.addorremove(linenumber)
+    Logs.ReadLog()
+    
+    Lib.writehtml(countlines, GameLocation, GameExe)
+    Logs.FeaturedUpdate()
 } Else IfMsgBox No, {
 }
 leaverr:
 }
 
-Uninstall(neutron, event)
-{
+Uninstall2(neutron, event)
+{	  
+  global 
+  event.preventDefault()
     gametouninstall := event.target.getAttribute("id")
-    MsgBox 0x4, Remove game, Would you like to remove %gametouninstall%?
+    if (gametouninstall = "") {
+        loop, 5 { 
+            gametouninstall := event.target.getAttribute("id")
+            if (gametouninstall="")  {
+                sleep, 150
+            }
+            else
+                break
+        }
+    }
     
+    
+    /*
+    GameID := event.target.getAttribute("id")
+    gametouninstall := event.target.getAttribute("name")
+    MsgBox 0x4, Remove game, Would you like to remove %gametouninstall% %GameID%? 
+    */
     ;@ahk-neko-ignore-fn 1 line; at 10/4/2022, 8:11:14 AM ; param is assigned but never used.
+    
+    MsgBox 0x34, Would you like to remove?, Would you like to remove  %gametouninstall%?
+    
     IfMsgBox Yes, {
-        RemoveGame(gametouninstall)
+        logs.ReadList()
+    
+        file:=lib.ArrayRemove(gametouninstall)
+        lib.batremove(file)
+    lib.RemoveGame()
+ ;UIN.remove()
+    ; UIN.Removefromlog()
+    Logs.ReadList()
+    Lib.customhtml()
+    Logs.CustomUpdate()
+    
 } Else IfMsgBox No, {
-}
+
+} 
 }
 Update(neutron, event) 
 {
@@ -256,6 +288,22 @@ Steam(neutron, event)
     
 }
 
+Discord(neutron, event) { 
+  browserExe := "chrome.exe"
+  Run, %browserExe% -incognito --force-renderer-accessibility ; Run in Incognito mode to avoid any extensions interfering. Force accessibility in case its disabled by default.
+  WinWaitActive, ahk_exe %browserExe%
+  cUIA := new UIA_Browser("ahk_exe " browserExe) ; Initialize UIA_Browser, which also initializes UIA_Interface
+  cUIA.Navigate("https://discord.gg/hkPR82bx9u") 
+  }
+
+  Patreon(neutron, event) { 
+    browserExe := "chrome.exe"
+    Run, %browserExe% -incognito --force-renderer-accessibility ; Run in Incognito mode to avoid any extensions interfering. Force accessibility in case its disabled by default.
+    WinWaitActive, ahk_exe %browserExe%
+    cUIA := new UIA_Browser("ahk_exe " browserExe) ; Initialize UIA_Browser, which also initializes UIA_Interface
+    cUIA.Navigate("https://www.patreon.com/Flugan/posts") 
+    }
+      
 Submit(neutron, event)
 {
     ; Some events have a default action that needs to be prevented. A form will

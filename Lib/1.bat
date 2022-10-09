@@ -1,0 +1,1 @@
+"C:\Users\dower\OneDrive\Geo3D_Manager\MAIN FILES_Move_To_Folder_Containing_GUI.ahk\lib\sigcheck64.exe" -a -c "C:\Program Files (x86)\Adobe\Adobe Creative Cloud Experience\CCXProcess.exe" > "C:\ProgramData\output.txt"
