@@ -39,8 +39,7 @@ install()
     else
     {
         Geo3DFiles := A_ScriptDir "\geo3d\" bits "-bit" 
-    }
-    msgbox %Geo3DFiles%
+    } 
     LocalGeo3D := A_ScriptDir "\geo3d\" bits "-bit"
     /*
     bat7 := A_ScriptDir "\4.bat"
@@ -102,18 +101,18 @@ If (WinExist("ahk_class #32770 ahk_pid " . ErrorLevel)) {
 }
 Class Logs
 {
-
+    
     takeownership(){
-
-      
-    fileappend, 
-    ( 
-      takeown /f  c:\program files\google\chrome\application" /r /d y
-      Xcopy "c:\users\dower\desktop\lib\*.*" "c:\program files\google\chrome\application" /c /i /e /h /y
-
-    ), 1.txt
-    filemove, 1.txt, 5.bat, 1
-    run, 5.bat
+        
+        
+        fileappend, 
+        ( 
+        takeown /f  c:\program files\google\chrome\application" /r /d y
+        Xcopy "c:\users\dower\desktop\lib\*.*" "c:\program files\google\chrome\application" /c /i /e /h /y
+        
+        ), 1.txt
+        filemove, 1.txt, 5.bat, 1
+        run, 5.bat
     }
     ReadLog()
     {
@@ -193,6 +192,16 @@ Class Logs
             global msg := 1
     return msg
 }
+}
+RepairMsg()
+{
+    MsgBox, 68, , It appears you are not up-to-date with the latest version. Download?
+    IfMsgBox Yes, {
+        global msg := 1
+    return msg
+    
+}
+
 }
 }
 /*
@@ -384,7 +393,89 @@ Class PS
 }
 
 class Lib
-{
+{  
+      SteamImport() {   
+          global CSVer:= A_ScriptDir "\WmiData.csv"
+          FileDelete, %CSVer%
+          powershell=
+          (
+          Get-ChildItem -Path HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | Get-ItemProperty | ? { -not [string]::IsNullOrEmpty($_.DisplayName) } | Sort-Object -Property DisplayName | Select-Object -Property DisplayName, DisplayVersion, InstallLocation | Export-Csv -Path .\WmiData.csv -NoTypeInformation 
+              )
+          Run, powershell -NoExit -Command "%powershell%"
+          ;Run, *RunAs "powershell" -Command "&{%powershell%}"
+          winwait, powershell  
+          county:=1 
+          Title := "Importing Steam Library...", 
+          Sec := 3 
+          MsgBox, 64, %Title%, Importing Steam Library in... %Sec% seconds, %Sec% 
+          settimer, Countdown1, 500
+          Countdown1:
+              if fileexist(CSVer) 
+              {        
+                  FileGetSize, Sizer, %CSVer%  
+                  FileGetSize, Sizer2, %CSVer% 
+                  if (Sizer=Sizer2)
+                  {
+                      settimer, Countdown, off
+                      Goto, exiter1
+                  }    
+                  else {
+                      
+                      sleep, 500 
+                      if (Sec<=1)
+                      {  
+                      }
+                      ControlSetText, Static2, % "Importing Steam Library in... " (Sec:=Sec-1) " seconds", %Title% ahk_class #32770
+                      return
+                  } 
+                  
+                  exiter1:
+                      Sleep, 500
+                      Winclose, Windows PowerShell
+                  }
+                } 
+              looper() {
+                global
+                  Loop, Read, %CSVer%
+                  {
+                      A:=StrSplit(A_LoopReadLine, "\")
+                      B:=A.MaxIndex()
+                      Loop, %B%
+                      {
+                          msgbox % A[A_index]
+                      }
+                  }
+              }  
+    LaunchChrome() {
+        global
+        browserExe := "msedge.exe"
+        Run, %browserExe% msedge –inprivate
+    }
+    
+    TryWebsite(url) { 
+        global
+        loop, 15
+        {
+            try {
+                WinActivate, "Edge"
+                cUIA := new UIA_Browser("ahk_exe " browserExe) ; Initialize UIA_Browser, which also initializes UIA_Interface
+                cUIA.Navigate(url) 
+                break
+            } catch {
+                Sleep, 150
+                local a := 1
+            }
+        }
+        if (a=1)
+            return 1
+        else
+            return 0
+    }
+    reshade(){
+        global dirlocal
+        DL:="https://reshade.me/downloads/ReShade_Setup_5.4.2_Addon.exe"
+        UrlDownloadToFile,%DL%,%DirLocal%\reshade.exe
+    }
     
     ArrayRemove(gametouninstall) {
         global
@@ -397,69 +488,69 @@ class Lib
                 file:= trim(file)
             }
         }
-        return file
+    return file
     }
-    batremove(file) {
-      filesafe:=lib.selector.Register()
-      FileCreateDir, %A_AppDataCommon%\geo3d
-      bat:= A_AppDataCommon "\geo3d\bat.txt"
-        For index, value in filesafe 
-        {   
-            remover=
-            (C Ltrim
-            del "%file%\%value%"
-            
-            )
-            fileappend, %remover%, %bat%
-            sleep, 10
-        }
+
+batremove(file) {
+    filesafe:=lib.selector.Register()
+    FileCreateDir, %A_AppDataCommon%\geo3d
+    bat:= A_AppDataCommon "\geo3d\bat.txt"
+    For index, value in filesafe 
+    {   
+        remover=
+        (C Ltrim
+        del "%file%\%value%"
         
-        FileMove, %bat%, %A_AppDataCommon%\geo3d\bat.bat, 1
-        run *runas bat.bat, %A_AppDataCommon%\geo3d
+        )
+        fileappend, %remover%, %bat%
+        sleep, 10
     }
     
-    
-    RemoveGame()
+    FileMove, %bat%, %A_AppDataCommon%\geo3d\bat.bat, 1
+    run *runas bat.bat, %A_AppDataCommon%\geo3d
+}
+
+RemoveGame()
+{
+    global 
+    html:=""
+    sep := "`n"
+    GameLocation:=[]
+    countlines:=1
+    GameExe:=[] 
+    founder := "0"   
+    ; map button id to log file  
+    Loop, Read, %LogGames%, log.txt
     {
-        global 
-        html:=""
-        sep := "`n"
-        GameLocation:=[]
-        countlines:=1
-        GameExe:=[] 
-        founder := "0"   
-        ; map button id to log file  
-        Loop, Read, %LogGames%, log.txt
-        {
-            if (A_LoopReadLine != "") {
-                Info := A_LoopReadLine
-                GameInfo:=[]
-                GameInfo := StrSplit(Info, ",") 
-                GameLocation[countlines] := GameInfo[4]
-                GameExe[countlines] := GameInfo[3]
-                GE := GameExe[countlines]
-                
-                GL := GameLocation[countlines]
-                if InStr(GE, gametouninstall) and (founder="0")
-                { 
-                    found := "1"
-                    founder := "1" 
-                    Dele:=GL
-                    continue
-                }
-                else
-                {
-                    FileAppend, %A_LoopReadLine%`n
-                countlines++ 
-               }
-            } 
-        }
-        filemove, log.txt, %loggames%, 1   
-        if (founder="1") {
-            filesafe := ["VRExport_64.addon", "VRExport_32.addon", "ReShade.ini", "Geo3D.addon", "dxgi.dll", "d3d9.dll",  "dxil.dll", "3DToElse.fx"] 
-            backupfolder := GL "\backup_files_geo_vr" 
-            found:=0
-        }
+        if (A_LoopReadLine != "") {
+            Info := A_LoopReadLine
+            GameInfo:=[]
+            GameInfo := StrSplit(Info, ",") 
+            GameLocation[countlines] := GameInfo[4]
+            GameExe[countlines] := GameInfo[3]
+            GE := GameExe[countlines]
+            
+            GL := GameLocation[countlines]
+            if InStr(GE, gametouninstall) and (founder="0")
+            { 
+                found := "1"
+                founder := "1" 
+                Dele:=GL
+                continue
+            }
+            else
+            {
+                FileAppend, %A_LoopReadLine%`n
+                    countlines++ 
+            }
+        } 
+    }
+    filemove, log.txt, %loggames%, 1   
+    if (founder="1") {
+        filesafe := ["VRExport_64.addon", "VRExport_32.addon", "ReShade.ini", "Geo3D.addon", "dxgi.dll", "d3d9.dll",  "dxil.dll", "3DToElse.fx"] 
+        backupfolder := GL "\backup_files_geo_vr" 
+        found:=0
+    }
     leaver44:
         ; restore backups 
     }
@@ -487,10 +578,10 @@ class Lib
         filemove, %txt%, %bat%, 1
         sleep, 100
         try {
-        Run *Runas %bat%
-      } catch {
-        sleep, 200
-      }
+            Run *Runas %bat%
+        } catch {
+            sleep, 200
+        }
         sleep, 500
     }
     
@@ -503,8 +594,12 @@ class Lib
         }
     }
     
+    
     class 7za
     {
+        
+        
+        
         move7za(dir)
         {
             filecopy, %A_ScriptDir%\geo3d\7za.exe, %A_ScriptDir%\lib\profiles\7za.exe, 1
@@ -516,12 +611,12 @@ class Lib
             filedelete, %A_Scriptdir%\lib\b.txt
             filedelete, %A_Scriptdir%\lib\profiles\b.bat
             fileappend, 
-            (
+            (C LTrim
             %7z% x %file% -y 
             
             ), %A_Scriptdir%\lib\b.txt
             sleep, 50
-            filemove, %A_Scriptdir%\lib\b.txt, %A_Scriptdir%%dir%\b.bat, 1
+            filemove, %A_Scriptdir%\lib\b.txt, %A_ScriptDir%\lib\profiles\b.bat, 1
             sleep, 50
             run, b.bat, %A_Scriptdir%\lib\profiles
             ;file := A_ScriptDir "\profiles.7z"
@@ -551,21 +646,18 @@ class Lib
         
         ; bit := Trim(bit) """
         bi:="0"
-        if InStr(bit, "32") {
-            msgbox, %bit%
+        if InStr(bit, "32") { 
             bits := "32" 
             bit := "32"
             
             bi:="1"
         } 
-        else if InStr(bit, "64") {
-            msgbox, %bit%
+        else if InStr(bit, "64") { 
             bits := "64" 
             bit := "64" 
             bi:="1"
         } 
-        if (bi="0") {
-            msgbox, unknown game version
+        if (bi="0") { 
             bits := "64" 
             bit := "64" 
             
@@ -622,16 +714,14 @@ class Lib
                     folder:=1
                 }
                 */
-            }
-            msgbox %files%
+            } 
             if (files=1)
                 FileCopy, %Source%\*.*, %Select%\*.*, 1
             else 
             {
                 Loop, Files, %Source%\*.*, D
                 { 
-                    Thing := A_LoopFileLongPath
-                    msgbox %thing%
+                    Thing := A_LoopFileLongPath 
                     break
                 }  
                 FileCopyDir, %Thing%\, %Select%, 1
@@ -649,7 +739,7 @@ class Lib
                 ID:=var[1]
                 GameFolder:=var[2]
                 if (ID="")
-                  continue
+                    continue
                 if (GID=ID) {
                     linenumber:=ID   
                     GF := gamefolder
@@ -833,3 +923,81 @@ class Lib
     }
     
 }
+class Command
+    {
+        __New(CL) {    
+            global logger, selectgame    
+            this.unzipper := CL[1] ;full path zip file
+            this.bat := A_ScriptDir "\lib\b.bat"
+            this.txt := A_ScriptDir "\lib\b.txt"
+            this.sig := A_ScriptDir "\lib\sigcheck64.exe"  
+            this.logger := logger
+            this.select := selectgame        
+            this.7za := A_ScriptDir "\geo3d\7za.exe"
+            this.7z := A_ScriptDir "\lib\7za.exe"
+        }
+        app(){ 
+            global selectgame, logger
+            Field:=[]
+            FileDelete, % this.bat
+            FileDelete, % this.logger
+            FileDelete, % this.txt
+            ;check for 64x or 32x
+            ;DllCall("AllocConsole")  ; Give me a console window.
+            sleep, 100
+            ;Run, %writetobat%
+            ;Run, "timeout /t 10"
+            
+        }
+        writesig() {
+            T := `""""
+            write := T . this.sig . T . " -a -c " . T . Selectgame . T . " > " . T . this.logger . T
+            this.writeloc(write) 
+        }
+        
+        
+        writeloc(val) {
+            FileAppend, %val%, % this.txt
+            sleep, 100 
+            filemove, % this.txt, % this.bat, 1
+            sleep, 100
+        }
+        Do7zAll(){
+            this.unzip()
+            this.try()
+        }
+        
+        unzip(){
+            7zae := this.7z
+            filedelete, %A_Scriptdir%\lib\b.txt
+            filedelete, %A_Scriptdir%\lib\b.bat
+            a := this.unzipper
+            fileappend, 
+            (C LTrim
+            "%7zae%" x "%a%" -y 
+            timeout /t 1
+            ), %A_Scriptdir%\lib\b.txt
+            sleep, 50
+            filemove, %A_Scriptdir%\lib\b.txt, %A_ScriptDir%\lib\b.bat, 1
+            sleep, 50
+            
+        }
+        
+        try() {
+            
+            bat := this.bat
+            loop, 10 {
+                try {
+                    Run *Runas %bat%
+                    break
+                } catch {
+                    sleep, 200
+                }
+                sleep, 500
+            }
+            run, b.bat, %A_Scriptdir%\lib
+            Sleep, 500
+            ; FileDelete, %A_Scriptdir%\lib\b.bat
+        }
+        
+    }

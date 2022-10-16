@@ -1,13 +1,11 @@
-;#include JSON.ahk 
-#include Downloader.ahk 
-SetWorkingDir, %A_ScriptDir% 
+;#include JSON.ahk   
 
+#Include Downloader.ahk
 global gh_repo = "Flugan/Geo3D-Release"
 global file_to_download = "Geo3D." ; .v1.1.2.zip
 global file_to_saving = "Geo3D." ; v1.1.2
 global currentvers := A_Appdatacommon "\geo3d\currentvers.txt"
-global currentvers1 := A_Appdatacommon "\geo3d\currentvers1.txt"
-global DirLocal := A_AppDataCommon "\geo3d"
+global currentvers1 := A_Appdatacommon "\geo3d\currentvers1.txt" 
 global 3DScriptDir := A_ScriptDir "\geo3d"
  
 

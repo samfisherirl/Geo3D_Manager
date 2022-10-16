@@ -44,8 +44,7 @@ class lib2
         Loop, Files,  %Select%\*.*, FR
         {
             if instr(A_LoopFileFullPath, "reshade")
-            {
-                msgbox, Installed
+            { 
                 looped:=1
                     break
             }

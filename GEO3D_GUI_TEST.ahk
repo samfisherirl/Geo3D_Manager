@@ -76,14 +76,14 @@ updateimage()
 
 OnLoad()
 { 
-    global  
+    global 
     Logs.ReadLog()
     ;LogCustom.read()
     ;LogCustom.find()
     bat := a_scriptdir "\lib\profiles\b.bat"
     
     
-    if !fileexist(bat) {
+    if !fileexist(bat) or !fileexist(LogGames) or !FileExist(CSVLog) {
         
         ;profiles := "\lib\profiles"
         lib.7za.move7za("\lib\profiles")
@@ -96,7 +96,7 @@ OnLoad()
     Logs.FeaturedUpdate()
     
     Logs.ReadList()
-     
+    
     Lib.customhtml()
     Logs.CustomUpdate()
     current:=OTA.currentvers()
@@ -104,21 +104,28 @@ OnLoad()
     if (current="")
     { 
         Logs.UpdateMsg()
+        
         if (msg=1) {
             
             latest_tag:=OTA.checkupd()
             OTA.download(latest_tag)
-            RTA.checkupd()
+            RTA.checkupd() 
+            lib.reshade()
             /*
             NEED TO ADD VRSCREENCAPDOWNLOADGUI
             */
         }
     }
+    
     else   
     {
-        OTA.runcheck(current)
-    }
+        if !FileExist(DirLocal "\vr-screen-cap.exe")
+            RTA.checkupd() 
+        if !FileExist(DirLocal "\reshade.exe")
+            lib.reshade()
+    }    
 }
+
 Featured(neutron, event)
 {     
     global
@@ -137,7 +144,7 @@ Featured(neutron, event)
         GameID := event.target.getAttribute("id")
         if (Gametoinstall="" and GameID="") {
             sleep, 200
-            msgbox fail
+            msgbox fail, notify github.com/samfisherirl
         }
         else
             break
@@ -155,13 +162,12 @@ Featured(neutron, event)
         Source :=  A_ScriptDir "\Lib\profiles\" GameID  
         lib.selector.CopyFilesAndFolders(Source, Selectgame)  
         lib2.looper()
-        linenumber := lib.selector.getline(GameID)
+            linenumber := lib.selector.getline(GameID)
         lib.selector.addorremove(linenumber)
         Logs.ReadLog()
         Lib.writehtml()
         Logs.FeaturedUpdate()
     } 
-    
     
     
     
@@ -184,14 +190,14 @@ Installer(neutron, event)
         goto, failer
     }
     lib.selector.VerifyNSplit()
-    lib.bitchecker()  
+        lib.bitchecker()  ; selects for 32/64 bits
     sleep, 400
     WinClose, command prompt
-    Lib.PushBits()
-    install() 
-    Addtolog()
-    CleanLog()
-   ; >>>>>>>>>>>>>>>>>>>>>>> logs.takeownership()
+    Lib.PushBits() ; send bit info to log
+    install() ; send proper bit folder to game folder
+    Addtolog() ;write to exteneded log
+    CleanLog() 
+    ; >>>>>>>>>>>>>>>>>>>>>>> logs.takeownership()
     logs.ReadList()
     Lib.customhtml()
     Logs.CustomUpdate()
@@ -205,7 +211,7 @@ Uninstall1(neutron, event)
     event.preventDefault()
     gametoremove := event.target.getAttribute("name")
     GameID := event.target.getAttribute("id")
-     
+    
     
     MsgBox 0x4, Remove game, Would you like to remove %gametoremove% ?
     
@@ -236,8 +242,8 @@ leaverr:
 
 Uninstall2(neutron, event)
 {	  
-  global 
-  event.preventDefault()
+    global 
+    event.preventDefault()
     gametouninstall := event.target.getAttribute("id")
     if (gametouninstall = "") {
         loop, 5 { 
@@ -263,17 +269,18 @@ Uninstall2(neutron, event)
     IfMsgBox Yes, {
         logs.ReadList()
     
-        file:=lib.ArrayRemove(gametouninstall)
-        lib.batremove(file)
+    file:=lib.ArrayRemove(gametouninstall)
+    lib.batremove(file)
     lib.RemoveGame()
- ;UIN.remove()
+    ;UIN.remove()
     ; UIN.Removefromlog()
     Logs.ReadList()
     Lib.customhtml()
     Logs.CustomUpdate()
     
-} Else IfMsgBox No, {
-
+} 
+Else IfMsgBox No, {
+    
 } 
 }
 Update(neutron, event) 
@@ -284,26 +291,41 @@ Update(neutron, event)
 
 Steam(neutron, event)
 {
-    SteamImport()
+  lib.SteamImport()
+  lib.Looper()
     
 }
 
-Discord(neutron, event) { 
-  browserExe := "chrome.exe"
-  Run, %browserExe% -incognito --force-renderer-accessibility ; Run in Incognito mode to avoid any extensions interfering. Force accessibility in case its disabled by default.
-  WinWaitActive, ahk_exe %browserExe%
-  cUIA := new UIA_Browser("ahk_exe " browserExe) ; Initialize UIA_Browser, which also initializes UIA_Interface
-  cUIA.Navigate("https://discord.gg/hkPR82bx9u") 
-  }
+Discord(neutron, event) {  
+    
+    lib.LaunchChrome()
+    lib.TryWebsite("https://discord.gg/hkPR82bx9u")
+    
+}
 
-  Patreon(neutron, event) { 
+Patreon(neutron, event) { 
+    
+    
+    
+    lib.LaunchChrome()
+    lib.TryWebsite("https://www.patreon.com/Flugan/posts")
+    
+    /*
     browserExe := "chrome.exe"
-    Run, %browserExe% -incognito --force-renderer-accessibility ; Run in Incognito mode to avoid any extensions interfering. Force accessibility in case its disabled by default.
-    WinWaitActive, ahk_exe %browserExe%
-    cUIA := new UIA_Browser("ahk_exe " browserExe) ; Initialize UIA_Browser, which also initializes UIA_Interface
-    cUIA.Navigate("https://www.patreon.com/Flugan/posts") 
+    Run, %browserExe% -incognito --force-renderer-accessibility ; Run in Incognito mode to avoid any extensions interfering. Force accessibility in case its disabled by default. 
+        loop, 15
+    {
+        try {
+            cUIA := new UIA_Browser("ahk_exe " browserExe) ; Initialize UIA_Browser, which also initializes UIA_Interface
+            cUIA.Navigate("https://www.patreon.com/Flugan/posts") 
+            break
+        } catch {
+            Sleep, 150
+        }
     }
-      
+    */
+}
+
 Submit(neutron, event)
 {
     ; Some events have a default action that needs to be prevented. A form will
@@ -335,3 +357,25 @@ Submit(neutron, event)
     ; Show the output
     MsgBox, %out%
 }
+
+OnError("LogError")
+%cause% := error
+
+LogError(exception) {
+    msgbox, please restart application, if you can, provide the log file sent to the relative path: %A_ScriptDir%
+    FileAppend % "Error on line " exception.Line ": " exception.Message "`n"
+    , errorlog.txt
+return true
+}
+Class do
+{
+    
+    Class reshade{
+      unzip() {
+        FL := [A_ScriptDir "\lib\reshade.exe"] 
+        com := new Command(FL)
+        com.unzip() 
+        com.try()
+      }
+    }
+  } 
