@@ -1,10 +1,8 @@
 ﻿/*
-Compile Me!
-
-NEEED TO DO
-
-GET FILE STRUCTURES AND ADD TO CSV
-
+THIS SCRIPT LAUNCHES BOOTSTRAP.HTML
+IMPORTS LOCAL LIBRARIES
+PUSHES JAVASCRIPT TO DOM TABLES / SETUP TAB 
+BUTTONS ON BOOTSTRAP.HTML CORRISPOND TO FUNCTIONS ON THIS PAGE 
 */
 
 #NoEnv
@@ -77,23 +75,16 @@ OnLoad() ; ==> On page load actions
     Logs.ReadLog() ; ==> On page load logs 
     ;LogCustom.read()
     ;LogCustom.find()
-    bat := a_scriptdir "\lib\profiles\b.bat"
-    
-    
-    if !fileexist(bat) or !fileexist(LogGames) or !FileExist(CSVLog) {
-        
+    bat := a_scriptdir "\lib\profiles\b.bat" 
+    if !fileexist(bat) or !fileexist(LogGames) or !FileExist(CSVLog) { 
         ;profiles := "\lib\profiles"
-        lib.7za.move7za("\lib\profiles") ; ==> export profiles from zip  
-        
+        lib.7za.move7za("\lib\profiles") ; ==> export profiles from zip   
         ;profiles := "profiles.7z"
         lib.7za.batwrite("profiles.7z")  ; ==> export profiles from zip
     }
-    Lib.writehtml()  ; ==> write javascript for page tables
-    
-    Logs.FeaturedUpdate() ; ==> write javascript for page tables
-    
-    Logs.ReadList() ; ==> On page load logs 
-    
+    Lib.writehtml()  ; ==> write javascript for page tables 
+    Logs.FeaturedUpdate() ; ==> write javascript for page tables 
+    Logs.ReadList() ; ==> On page load logs  
     Lib.customhtml() ; ==> write javascript for page tables
     Logs.CustomUpdate() ; ==> write javascript for page tables
     current:=OTA.currentvers() ; ==> On page load version check 
@@ -123,20 +114,14 @@ OnLoad() ; ==> On page load actions
     }    
 }
 
-Featured(neutron, event)
+Featured(neutron, event) ;=======> INSTALL PRECONFIGED PROFILE 
 {     
     global
     event.preventDefault()
-    /*
-    
-    
-    ;lib.7za() 
-    
-    */
-    
-    
-    loop, 7 {
-        
+    /* 
+    ;lib.7za()   
+    */ 
+    loop, 7 { 
         Gametoinstall := event.target.getAttribute("name")
         GameID := event.target.getAttribute("id")
         if (Gametoinstall="" and GameID="") {
@@ -145,12 +130,9 @@ Featured(neutron, event)
         }
         else
             break
-    }
-    
-    msgbox, Select Folder for: %Gametoinstall%
-    
-    Lib.Selector.folder()
-    
+    } 
+    msgbox, Select Folder for: %Gametoinstall% 
+    Lib.Selector.folder() 
     if (Selectgame = "") {
         MsgBox, You didn't select anything.         
         goto, leaver99
@@ -164,10 +146,7 @@ Featured(neutron, event)
         Logs.ReadLog()
         Lib.writehtml()
         Logs.FeaturedUpdate()
-    } 
-    
-    
-    
+    }  
 leaver99:
 }
 
@@ -176,7 +155,7 @@ Button(neutron, event)
     MsgBox, % "You clicked " event.target.innerText
 }
 
-Installer(neutron, event)
+Installer(neutron, event) ;=======> INSTALL CUSTOM GAME
 {
     global
     event.preventDefault()
@@ -202,21 +181,17 @@ Installer(neutron, event)
 failer:
 }
 
-Uninstall1(neutron, event)
+Uninstall1(neutron, event) ;=======> UNINSTALL PRECONFIGED PROFILE 
 {
     global   
     event.preventDefault()
     gametoremove := event.target.getAttribute("name")
-    GameID := event.target.getAttribute("id")
-    
-    
-    MsgBox 0x4, Remove game, Would you like to remove %gametoremove% ?
-    
+    GameID := event.target.getAttribute("id") 
+    MsgBox 0x4, Remove game, Would you like to remove %gametoremove% ? 
     ;@ahk-neko-ignore-fn 1 line; at 10/4/2022, 8:11:14 AM ; param is assigned but never used.
     IfMsgBox Yes, {
         linenumber := ""
-    linenumber := lib.selector.getline(GameID)
-    
+    linenumber := lib.selector.getline(GameID) 
     if (linenumber="" and GF="") { 
         msgbox fail
         goto, leaverr
@@ -237,7 +212,7 @@ Uninstall1(neutron, event)
 leaverr:
 }
 
-Uninstall2(neutron, event)
+Uninstall2(neutron, event) ;=======> UNINSTALL CUSTOM PROFILE 
 {	  
     global 
     event.preventDefault()
