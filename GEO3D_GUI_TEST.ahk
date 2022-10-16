@@ -11,11 +11,15 @@ GET FILE STRUCTURES AND ADD TO CSV
 SetBatchLines, -1 
 SetWorkingDir, %A_ScriptDir%
 #SingleInstance, Force
-    global LogGames := A_AppDataCommon "\geo3d\gameslist.txt"
+
+
+global LogGames := A_AppDataCommon "\geo3d\gameslist.txt"
 global CSVLog := A_ScriptDir "\Lib\geo3d.csv"
 global logger := A_AppDataCommon "\output.txt"
 global DirLocal := A_AppDataCommon "\geo3d"
 FileCreateDir, A_AppDataCommon "\Geo3d"
+
+
 ; Include the Neutron library
 #Include %A_ScriptDir%\lib\Neutron.ahk
 #Include %A_ScriptDir%\lib\UIA_Browser.ahk
@@ -38,21 +42,14 @@ neutron.Show("w1200 h900")
 ;LogRead() 
 OnLoad()
 return
-
-; FileInstall all your dependencies, but put the FileInstall lines somewhere
-; they won't ever be reached. Right below your AutoExecute section is a great
-; location! sigcheck64.exe 7za.exe
+ 
 
 FileInstall, image.png, %A_ScriptDir%\image.png, 1 ;
 FileInstall, Bootstrap.html, %A_ScriptDir%\lib\Bootstrap.html, 1
 FileInstall, bootstrap.min.css, %A_ScriptDir%\lib\bootstrap.min.css 
 FileInstall, bootstrap.min.js, %A_ScriptDir%\lib\bootstrap.min.js
 FileInstall, jquery.min.js, %A_ScriptDir%\lib\jquery.min.js 
-
-; The built in GuiClose, GuiEscape, and GuiDropFiles event handlers will work
-; with Neutron GUIs. Using them is the current best practice for handling these
-; types of events. Here, we're using the name NeutronClose because the GUI was
-; given a custom label prefix up in the auto-execute section.
+ 
 NeutronClose:
     ExitApp
 return
@@ -74,10 +71,10 @@ updateimage()
 }
 */
 
-OnLoad()
+OnLoad() ; ==> On page load actions
 { 
     global 
-    Logs.ReadLog()
+    Logs.ReadLog() ; ==> On page load logs 
     ;LogCustom.read()
     ;LogCustom.find()
     bat := a_scriptdir "\lib\profiles\b.bat"
@@ -86,31 +83,31 @@ OnLoad()
     if !fileexist(bat) or !fileexist(LogGames) or !FileExist(CSVLog) {
         
         ;profiles := "\lib\profiles"
-        lib.7za.move7za("\lib\profiles")
+        lib.7za.move7za("\lib\profiles") ; ==> export profiles from zip  
         
         ;profiles := "profiles.7z"
-        lib.7za.batwrite("profiles.7z")
+        lib.7za.batwrite("profiles.7z")  ; ==> export profiles from zip
     }
-    Lib.writehtml()
+    Lib.writehtml()  ; ==> write javascript for page tables
     
-    Logs.FeaturedUpdate()
+    Logs.FeaturedUpdate() ; ==> write javascript for page tables
     
-    Logs.ReadList()
+    Logs.ReadList() ; ==> On page load logs 
     
-    Lib.customhtml()
-    Logs.CustomUpdate()
-    current:=OTA.currentvers()
+    Lib.customhtml() ; ==> write javascript for page tables
+    Logs.CustomUpdate() ; ==> write javascript for page tables
+    current:=OTA.currentvers() ; ==> On page load version check 
     
     if (current="")
     { 
-        Logs.UpdateMsg()
+        Logs.UpdateMsg() ;===> msgbox "timee for an update!"
         
         if (msg=1) {
             
-            latest_tag:=OTA.checkupd()
-            OTA.download(latest_tag)
-            RTA.checkupd() 
-            lib.reshade()
+            latest_tag:=OTA.checkupd() ;===> test for update
+            OTA.download(latest_tag) ;===> DL update
+            RTA.checkupd()  ;===> dl vrscreencap  
+            lib.reshade() ;===> DL reshade
             /*
             NEED TO ADD VRSCREENCAPDOWNLOADGUI
             */
@@ -368,8 +365,7 @@ LogError(exception) {
 return true
 }
 Class do
-{
-    
+{    
     Class reshade{
       unzip() {
         FL := [A_ScriptDir "\lib\reshade.exe"] 
