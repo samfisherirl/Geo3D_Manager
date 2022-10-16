@@ -7,7 +7,14 @@ framework: https://github.com/G33kDude/Neutron.ahk
 
 download: https://github.com/samfisherirl/Geo3D_Manager
  
+Release runs without dependencies 
+
+To edit:
+
 compile .ahk GUI with autohotkey.com 
+
+Move all files in support folder- to the same folder containing GUI...ahk. Then Run Gui...ahk . 
+
 
 
 
