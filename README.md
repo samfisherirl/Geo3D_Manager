@@ -7,6 +7,7 @@ framework: https://github.com/G33kDude/Neutron.ahk
 
 download: https://github.com/samfisherirl/Geo3D_Manager
  
+compile .ahk GUI with autohotkey.com 
 
 
 
