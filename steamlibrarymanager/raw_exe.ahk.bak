@@ -20,9 +20,8 @@ looper()
 
 looper() {
     global
-    Loop, Read, %CSVer%, log.txt
+    Loop, Read, %CSVer%
     {
-      id:=A_index
         loop, parse,A_LoopReadLine, `,
          ; parse string
         {
@@ -30,8 +29,8 @@ looper() {
             A:=StrSplit(A_LoopField, "\")
             Loop, % A.Length()
             {
-              if InStr(A[A_index], "steamapps")
-                c.= id "," A_LoopReadLine "`n"
+              if InStr(A[A_index], "SteamLibrary")
+                c.= "," A_LoopReadLine "`n"
             }
         }
     }
