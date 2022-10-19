@@ -865,10 +865,10 @@ install()
               %html%
               <tr>
               <td align="center">
-              <a class="btn btn-%color%" onclick="ahk.%action%(event)" id="%A_Index%" name="%GE%"><em class="%icon%"></em> %tooltip%</a>
+              <a class="btn btn-%color%" onclick="ahk.%action%(event)" name="%GE%"><em class="%icon%"></em> %tooltip%</a>
               </td>
               <td class="hidden-xs" style="text-align: center">
-              <input class="chex" type="checkbox" id="%GE%" value="" aria-label="" />
+              <input class="chex" type="checkbox" value="" aria-label="" />
               </td>
             )
             html := html . "<td>" . GE . "</td>" . sep
@@ -899,10 +899,10 @@ install()
               %html%
               <tr>
               <td align="center">
-              <a class="btn btn-danger" onclick="ahk.Uninstall2(event)" id="%GE%" name="%GE%"><em class="fa fa-trash"></em></a>
+              <a class="btn btn-danger" onclick="ahk.Uninstall2(event)" name="%GE%" ><em class="fa fa-trash"></em></a>
               </td>
               <td class="hidden-xs" style="text-align: center">
-              <input class="chex" type="checkbox" id="%GE%" value="" aria-label="" />
+              <input class="chex" type="checkbox" value="" aria-label="" />
               </td>
             )
             html := html . "<td>" . GE . "</td>" . sep

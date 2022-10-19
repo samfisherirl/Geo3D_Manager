@@ -2,13 +2,29 @@
 global CSVer:= A_ScriptDir "\WmiData.csv"
 global steamlog := A_ScriptDir "\steam.txt"
 
-steam.show()
+;steam.prompt()
 
 Class steam
 {
+  prompt() { 
+    OnMessage(0x44, "OnMsgBox1")
+    MsgBox 0x81, Select, Would you like to select from Steam Library games or select a Game Folder Manually?
+    OnMessage(0x44, "")
+
+    IfMsgBox OK, {
+      return 1 ;steamlibarry
+    } Else IfMsgBox Cancel, {
+      return 0 ;folder select
+    }
+  }
+
   show() {
     global
-    Gui, Add, ListView, r20 w700 y100 gMyListView, Name|Addy|ID
+    Gui +OwnDialogs
+    Gui, Color, 27283C, 27283C
+    Gui, Font, s10 c0xE3D2FF, Verdana
+    Gui, Add, ListView, cwhite r20 w700 y100 gMyListView, Name|Addy|ID
+    Gui Add, Text, x256 y7 w407 h23 , <== Search here. Then double click to select. 
     Gui Add, Edit, vSearch x16 y8 w220 h21,
     ; Gather a list of Finder names from a folder and put them into the ListView:
     Finder:=[]
@@ -39,6 +55,7 @@ Class steam
     ; For sorting purposes, indicate that column 2 is an integer.
 
     SetTimer, Find, 100
+
     ; Display the window and return. The script will be notified whenever the user double clicks a row.
     Gui, Show
     return
@@ -49,13 +66,13 @@ Class steam
         LV_GetText(RowText, A_EventInfo,3) ; Get the text from the row's first field.
         RowText := Trim(RowText)
         name := Finder[RowText].name()
-        ToolTip You double-clicked row number %RowText%. Text: %name%
+        msgbox, Install Geo3D for %name%?
       }
     find:
       steam.find()
     return
 
-    GuiEscape:
+    GuiEscape: 
     Exitapp
   }
 
@@ -79,9 +96,11 @@ Class steam
     }
     if (Search="") and (d!="")
     {
+      LV_Delete()
       loop, % Finder.Length()
       {
-        LV_Add("", Finder[A_Index].name(), A_Index)
+        k:=Finder[A_Index]
+        LV_Add("", k.name(), k.path(), A_Index)
         length := A_Index
 
       }
@@ -109,5 +128,20 @@ class Srch {
   }
   ID(){
     return this.identity
+  }
+}
+
+OnMsgBox1() {
+  DetectHiddenWindows, On
+  Process, Exist
+  If (WinExist("ahk_class #32770 ahk_pid " . ErrorLevel)) {
+    hIcon := LoadPicture("C:\Users\dower\Documents\icons\Steam.ico", "w32 Icon1", _)
+    SendMessage 0x172, 1, %hIcon%, Static1 ; STM_SETIMAGE
+    ControlSetText Button1, Steam
+    hIcon := LoadPicture("C:\Users\dower\Documents\icons\Steam.ico", "h16 Icon1", _)
+    SendMessage 0xF7, 1, %hIcon%, Button1
+    ControlSetText Button2, Browse
+    hIcon := LoadPicture("C:\Users\dower\Documents\icons\File Explorer.ico", "h16 Icon1", _)
+    SendMessage 0xF7, 1, %hIcon%, Button2
   }
 }

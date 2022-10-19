@@ -1,1 +1,1 @@
-"C:\Users\dower\OneDrive\Geo3D_Manager\MAIN FILES_Move_To_Folder_Containing_GUI.ahk\lib\sigcheck64.exe" -a -c "C:\ProgramData\geo3d\vr-screen-cap.exe" > "C:\ProgramData\output.txt"
+"C:\Users\dower\OneDrive\Geo3D_Manager\MAIN FILES_Move_To_Folder_Containing_GUI.ahk\lib\sigcheck64.exe" -a -c "E:\SteamLibrary\steamapps\common\Teardown\teardown.exe" > "C:\ProgramData\output.txt"

@@ -1,20 +1,20 @@
-;#include JSON.ahk
+;#include JSON.ahk   
 
-#Include lib\Downloader.ahk
+#Include Downloader.ahk
 global gh_repo = "Flugan/Geo3D-Release"
 global file_to_download = "Geo3D." ; .v1.1.2.zip
 global file_to_saving = "Geo3D." ; v1.1.2
 global currentvers := A_Appdatacommon "\geo3d\currentvers.txt"
-global currentvers1 := A_Appdatacommon "\geo3d\currentvers1.txt"
+global currentvers1 := A_Appdatacommon "\geo3d\currentvers1.txt" 
 global 3DScriptDir := A_ScriptDir "\geo3d"
-
+ 
 
 class OTA
 {
     checkupd()
     {
         jsonStr := JSON.GetFromUrl("https://api.github.com/repos/" gh_repo "/releases/latest")
-        if IsObject(jsonStr)
+        if IsObject(jsonStr) 
         {
             MsgBox, % jsonStr[1]
             Return
@@ -32,24 +32,24 @@ class OTA
         if (version != latest_tag)
         {
             MsgBox, 68,, New version of Geo3D manager.`n`nLatest version: %latest_tag%`nChangelog:`n`n%change_log%`n`n`nDo you want to download?
-            IfMsgBox, Yes
+            IfMsgBox, Yes 
                 updater:=OTA.download(latest_tag)
         }
     }
-
+    
     download(value)
     {
         global currentvers
         global currentvers1
-        global DirLocal
+        global DirLocal  
         file_to_download := file_to_download value ".zip"
-        download_url := "https://github.com/" gh_repo "/releases/download/" value "/" file_to_download
-
-        UrlDownloadToFile, %download_url%, %file_to_saving%%value%-%value%.zip
-        FileCreateDir, %DirLocal%
+        download_url := "https://github.com/" gh_repo "/releases/download/" value "/" file_to_download 
+        
+        UrlDownloadToFile, %download_url%, %file_to_saving%%value%-%value%.zip  
+        FileCreateDir, %DirLocal% 
         FileDelete, %currentvers1%
         FileDelete, %currentvers%
-        FileAppend,
+        FileAppend, 
 (
 ,%value%,
 ), %currentvers1%
@@ -58,8 +58,8 @@ class OTA
         FileCreateDir, %3DScriptDir%
         FileMove, %file_to_saving%%value%-%value%.zip, %3DScriptDir%\%file_to_download%, 1
         Geo3D := 3DScriptDir "\" file_to_download
-        bat := 3DScriptDir "\3.bat"
-        write7zbat=
+        bat := 3DScriptDir "\3.bat" 
+        write7zbat= 
 (
 7za x "%Geo3D%" -o%3DScriptDir%\ -y -r"
 )
@@ -69,7 +69,7 @@ class OTA
         Sleep, 100
         Run, %bat%, %3DScriptDir%
         Sleep, 100
-        msgbox, Completed!
+        msgbox, Completed! 
     }
 
 
@@ -81,7 +81,7 @@ class OTA
         if FileExist(currentvers)
         {
         Loop, Read, %currentvers%
-            {
+            {   
                 if (A_LoopReadLine="")
                     continue
                 else
@@ -93,17 +93,17 @@ class OTA
             }
         }
         else
-        {
+        {   
             current:=""
             return, current
         }
     }
 
-
+    
     runcheck(version)
-    {
+    { 
         jsonStr := JSON.GetFromUrl("https://api.github.com/repos/" gh_repo "/releases/latest")
-        if IsObject(jsonStr)
+        if IsObject(jsonStr) 
         {
             MsgBox, % jsonStr[1]
             Return
@@ -130,9 +130,9 @@ class OTA
                 if (found = 0)
                     OTA.download(latest_tag)
             }
-
-            }
-    }
+ 
+            } 
+    } 
 
 Geo3DDL()
 {
@@ -156,14 +156,14 @@ Geo3DDL()
         {
             version2 := A_LoopReadLine
         }
-    }
+    } 
     versionstring := StrSplit(versionstring, ",")
     version := versionstring[1]
     if (version = version2)
-        goto, leaver4
+        goto, leaver4 
 
     }
-    else
+    else 
     {
         msgbox, Update needed, press okay and be patient
         versionstring := StrSplit(versionstring, ",")
@@ -175,13 +175,13 @@ Geo3DDL()
     updatelocation := A_ScriptDir "\Geo3D\Geo3DUpdate.zip"
     updatefolder := A_ScriptDir "\Geo3D\"
     FileCreateDir, %updatefolder%
-    FileDelete, %updatelocation%
+    FileDelete, %updatelocation%  
     sleep, 500
     finallink := "https://drive.google.com/u/0/uc?id=" versID "&export=download"
     url := finallink
     target := updatelocation
-    download(url, target)
-
+    download(url, target) 
+     
     7zbat := A_ScriptDir "\Geo3D\2.bat"
     FileDelete, %7zbat%
     7zlog := A_ScriptDir "\output.txt"
