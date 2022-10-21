@@ -1,0 +1,87 @@
+SetWorkingDir, %A_ScriptDir%
+#SingleInstance, force
+#Include Json.ahk
+
+games:=[]
+j := new Jton("")
+/*
+;parse origin library json
+loop, files, %A_AppDataCommon%\origin\*.ddc, R
+{
+  FileRead, Json, %A_LoopFileFullPath%
+  data := json_load(Json)
+  games.Push(data["ddInstanceData"]["packageRootPath"])
+}
+loop % games
+msgbox % games[A_Index]
+msgbox % J.steam()
+;parse steam library json
+if fileexist(J.86()) { ; Test for steam
+  ;location if in Program Files (x86) vs null
+  ;j := new Jton(Jton.a86())
+  msgbox % J.steam()
+  data := json_load(Json)
+  games .= data["libraryfolders"]["path"]
+  games .= "`n"
+}
+if fileexist(J.a86())
+{
+  FileRead, Json, % J.a64()
+  data := json_load(Json)
+  games .= data["libraryfolders"]["path"]
+  games .= "`n"
+}
+*/
+j.steam()
+showgames()
+
+Class Jton ;parse steam library and origin
+{
+  __New(ar) {
+    this.file := ar
+    this.dat := "C:\Program Files (x86)\Steam\steamapps\libraryfolders.vdf"
+    this.dater := "C:\Program Files (x86)\Steam\steamapps\libraryfolders.json"
+    ; test for program 86 vs 64 steam
+    fileread, store, % ar
+    this.data := store
+    this.programfile := "C:\Program Files"
+    this.quotes := `""""
+    this.eightsix := " (x86)"
+    this.libvdf := "\Steam\steamapps\libraryfolders.vdf"
+  }
+  a64()
+  {
+    a64 := this.programfile . this.libvdf
+    return, a64
+  }
+  a86() {
+    a86 := this.programfile . this.eightsix . this.libvdf
+    return, a86
+  }
+  steam() {
+    global
+    val:=[]
+    ;filecopy, this.dat, this.dater
+    loop, read, % this.dat
+    {
+      if instr(A_LoopReadLine, "path")
+      {
+        value:=StrSplit(A_LoopReadLine, `"""")
+        val.Push(StrReplace((trim(value[4])), "\\" , "\"))
+        games.Push(trim(val))
+        ;games.Push((StrReplace(line[A_Index], "\\", "\")))
+      } ;msgbox, %msg%
+    }
+    Jton.itemize(val)
+    return, val
+  }
+  itemize(val) {
+    for i, v in val
+    fileappend, %v%, log.txt
+  }
+}
+
+showgames() {
+  global
+  msgbox % val[1] val[2] val[3] val[4] val[5]
+}

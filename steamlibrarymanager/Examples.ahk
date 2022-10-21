@@ -19,8 +19,7 @@ Class steam
   }
 
   show() {
-    global
-    Gui +OwnDialogs
+    global 
     Gui, Color, 27283C, 27283C
     Gui, Font, s10 c0xE3D2FF, Verdana
     Gui, Add, ListView, cwhite r20 w700 y100 gMyListView, Name|Addy|ID
@@ -66,14 +65,17 @@ Class steam
         LV_GetText(RowText, A_EventInfo,3) ; Get the text from the row's first field.
         RowText := Trim(RowText)
         name := Finder[RowText].name()
-        msgbox, Install Geo3D for %name%?
+        MsgBox 0x34, Install Geo3D for %name%?
+        IfMsgBox Yes, {
+          Finder[RowText].path()
+        } 
       }
     find:
       steam.find()
     return
-
     GuiEscape: 
-    Exitapp
+    ExitApp  ; All of the above labels will do this.
+    
   }
 
   find() {
